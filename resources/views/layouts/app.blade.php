@@ -164,7 +164,7 @@
     </div>
 
     <!-- Main Content - Fixed Responsive -->
-    <main class="w-full overflow-x-hidden p-2 sm:p-4 lg:p-6">
+    <main class="w-full overflow-x-hidden p-2 sm:p-2 lg:p-4">
         @yield('content')
     </main>
 
