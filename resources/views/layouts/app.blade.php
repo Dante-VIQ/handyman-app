@@ -163,8 +163,8 @@
         <x-nav-bar />
     </div>
 
-    <!-- Main Content - Fixed Responsive -->4
-    <main class="w-full overflow-x-hidden p-4 sm:p-6 lg:p-8">
+    <!-- Main Content - Fixed Responsive -->
+    <main class="w-full overflow-x-hidden p-2 sm:p-4 lg:p-6">
         @yield('content')
     </main>
 
@@ -190,7 +190,7 @@
 
     @livewireScripts()
     @stack('scripts')
-    
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -232,7 +232,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuButton = document.querySelector('[data-mobile-menu-button]');
             const mobileMenu = document.querySelector('[data-mobile-menu]');
-            
+
             if (menuButton && mobileMenu) {
                 menuButton.addEventListener('click', function() {
                     mobileMenu.classList.toggle('active');
