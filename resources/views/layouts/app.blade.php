@@ -15,6 +15,7 @@
     <meta name="robots" content="@yield('robots', 'index, follow')">
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
+<meta name="google-site-verification" content="k5pI9JSyx2tyMJAqzBHh0iHRg1L6AjXWR5FwU6Dhe0w" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="@yield('canonical', url()->current())">
