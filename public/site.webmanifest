@@ -1,0 +1,35 @@
+{
+  "name": "Amazing Palace",
+  "short_name": "Amazing Palace",
+  "description": "Adult care services providing exceptional care and support",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0a2463",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/images/logo0.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo0.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo0.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": [
+    "healthcare",
+    "services"
+  ]
+}

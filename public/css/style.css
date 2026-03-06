@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.care_one{
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.section-bg {
+background-color: #f9f7f2;
+}
+.room-bg {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80');
+background-size: cover;
+background-position: center;
+}
+.care-bg {
+background-image: url('images/care_bg.jpg');
+background-size: cover;
+background-position: center;
+}
+.logo-text {
+font-family: 'Cormorant Garamond', serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero-bg {
+background-image: url('images/hero1.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+}
+.story-bg {
+background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+background-size: cover;
+background-position: center;
+}
+.values-bg {
+background-color: #f9f7f2;
+}
+.btn-gold {
+background: linear-gradient(to right, #d4af37, #f7ef8a);
+color: #0a2463;
+font-weight: 600;
+}
+.btn-gold:hover {
+background: linear-gradient(to right, #b8941f, #e6d97a);
+transform: translateY(-2px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.timeline::before {
+content: '';
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+height: 100%;
+background-color: #d4af37;
+}
+.service-card {
+transition: all 0.3s ease;
+border-top: 4px solid #d4af37;
+}
+.service-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.memory-care-bg {
+background-image:
+url('https://images.unsplash.com/photo-1581579431531-5c65f537180d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+background-size: cover;
+background-position: center;
+}
+.assisted-living-bg {
+background-color: #f9f7f2;
+}
+
+.tab-active {
+background-color: #0a2463;
+color: white;
+border-color: #0a2463;
+}
+@media (max-width: 768px) {
+.timeline::before {
+left: 30px;
+}
+.hero-bg {
+background-attachment: scroll;
+}
+}
+
+.team-hero-bg {
+background-image: url('images/pave.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.team-bg {
+background-color: #f9f7f2;
+}
+
+.team-card {
+transition: all 0.3s ease;
+border-top: 4px solid transparent;
+}
+
+.team-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+border-top: 4px solid #d4af37;
+}
+
+.btn-gold {
+background: linear-gradient(to right, #d4af37, #f7ef8a);
+color: #0a2463;
+font-weight: 600;
+}
+
+.btn-gold:hover {
+background: linear-gradient(to right, #b8941f, #e6d97a);
+transform: translateY(-2px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.9);
+z-index: 1000;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+
+.team-modal.active {
+display: flex;
+}
+
+.modal-content {
+background-color: white;
+border-radius: 1rem;
+max-width: 800px;
+width: 100%;
+max-height: 90vh;
+overflow-y: auto;
+}
+
+.cert-badge {
+display: inline-block;
+background-color: #e8f0f7;
+color: #0a2463;
+padding: 4px 12px;
+border-radius: 20px;
+font-size: 0.875rem;
+font-weight: 600;
+margin-right: 8px;
+margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+.team-hero-bg {
+background-attachment: scroll;
+}
+}
+
+.facility-hero-bg {
+background-image: url('images/yard.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.amenities-bg {
+background-color: #f9f7f2;
+}
+.room-card {
+transition: all 0.3s ease;
+border: 1px solid #e5e7eb;
+}
+.room-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+border-color: #d4af37;
+}
+.btn-gold {
+background: linear-gradient(to right, #d4af37, #f7ef8a);
+color: #0a2463;
+font-weight: 600;
+}
+.btn-gold:hover {
+background: linear-gradient(to right, #b8941f, #e6d97a);
+transform: translateY(-2px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.gallery-image {
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.gallery-image:hover {
+transform: scale(1.02);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.image-modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.9);
+z-index: 1000;
+justify-content: center;
+align-items: center;
+}
+.image-modal.active {
+display: flex;
+}
+.modal-image {
+max-width: 90%;
+max-height: 90%;
+object-fit: contain;
+}
+.tab-button {
+transition: all 0.3s ease;
+}
+.tab-button.active {
+background-color: #0a2463;
+color: white;
+border-color: #0a2463;
+}
+@media (max-width: 768px) {
+.facility-hero-bg {
+background-attachment: scroll;
+}
+}

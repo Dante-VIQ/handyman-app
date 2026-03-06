@@ -1,0 +1,42 @@
+User-agent: *
+Allow: /
+
+# Disallow all admin and master/engineer routes
+Disallow: /admin/
+Disallow: /Admin/
+Disallow: /analysis
+Disallow: /team/
+Disallow: /dashboard
+Disallow: /profile
+Disallow: /requests
+
+# Disallow admin resource license routes (except public /licenses GET)
+Disallow: /licenses/*/edit
+Disallow: /licenses/create
+Disallow: /licenses/update-order
+
+# Disallow admin-only endpoints
+Disallow: /*/edit
+Disallow: /*/create
+
+# Disallow URLs with query parameters
+Disallow: /*?*
+
+# Disallow authentication routes
+Disallow: /auth/
+
+# Public routes to allow
+Allow: /
+Allow: /all-services
+Allow: /all-about
+Allow: /service-area
+Allow: /contact
+Allow: /facility
+Allow: /careteam
+Allow: /gallery
+Allow: /booking
+Allow: /licenses
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://amazingpalace.com/sitemap.xml

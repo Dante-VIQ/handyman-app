@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#img {
+background-image: url('/images/RIDE TOP.png'); /* Adjust the path as necessary */
+background-size: cover; /* or 'contain' depending on your preference */
+background-repeat: no-repeat;
+background-position: top left; /* Adjust position as needed */
+}
+
+[x-cloak] { display: none !important; }
+
+/* Smooth transitions for Alpine.js */
+.transition {
+transition-property: opacity, transform;
+transition-duration: 150ms;
+transition-timing-function: ease-in-out;
+}
+
+.transition-opacity {
+transition-property: opacity;
+}
+
+.duration-150 {
+transition-duration: 150ms;
+}
