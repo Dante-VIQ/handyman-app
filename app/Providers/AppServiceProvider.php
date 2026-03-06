@@ -6,7 +6,7 @@ use App\Models\User;
 use App\View\Components\Button;
 use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\Auth;s
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
