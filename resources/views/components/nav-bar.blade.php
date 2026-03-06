@@ -1,5 +1,5 @@
 <header x-data="{ mobileMenuOpen: false }"
-        class="relative flex flex-wrap items-center justify-between gap-4 mb-10 bg-white/70 backdrop-blur-sm py-3 px-4 sm:px-7 rounded-2xl sm:rounded-full border border-soft-blue/60 soft-shadow">
+        class="relative flex flex-wrap items-center justify-between gap-4 mb-10 bg-white/70 backdrop-blur-sm py-3 px-4 sm:px-7 rounded-2xl sm:rounded-full border border-soft-blue/60 soft-shadow z-50">
     <!-- Logo -->
     <div class="flex items-center gap-2 z-20">
         <a href="/" class="text-2xl sm:text-3xl font-bold bg-gradient-to-br from-[#166b8a] to-[#2e8cad] bg-clip-text text-transparent">
