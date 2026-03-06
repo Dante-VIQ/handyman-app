@@ -1,4 +1,4 @@
-<header x-data="{ mobileMenuOpen: false }" 
+<header x-data="{ mobileMenuOpen: false }"
         class="relative flex flex-wrap items-center justify-between gap-4 mb-10 bg-white/70 backdrop-blur-sm py-3 px-4 sm:px-7 rounded-2xl sm:rounded-full border border-soft-blue/60 soft-shadow">
     <!-- Logo -->
     <div class="flex items-center gap-2 z-20">
@@ -10,7 +10,7 @@
     </div>
 
     <!-- Mobile Menu Button -->
-    <button @click="mobileMenuOpen = !mobileMenuOpen" 
+    <button @click="mobileMenuOpen = !mobileMenuOpen"
             class="lg:hidden flex items-center justify-center w-10 h-10 rounded-full bg-soft-blue border border-soft-blue z-20 focus:outline-none"
             :aria-expanded="mobileMenuOpen">
         <svg x-show="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
@@ -41,7 +41,7 @@
         <a href="/contact" class="px-5 py-2 rounded-full text-[#1e607b] hover:bg-soft-blue transition-all duration-200 {{ request()->is('contact') ? 'bg-soft-green border border-soft-green font-semibold' : '' }}">
             Contact
         </a>
-        
+
         @role('master|engineer')
             <a href="/analysis" class="px-5 py-2 rounded-full text-[#1e607b] hover:bg-soft-blue transition-all duration-200 {{ request()->is('analysis') ? 'bg-soft-green border border-soft-green font-semibold' : '' }}">
                 Analysis
@@ -61,12 +61,10 @@
                         <div class="font-medium text-gray-800">{{ Auth::user()->name }}</div>
                         <div class="text-sm text-gray-500 truncate">{{ Auth::user()->email }}</div>
                     </div>
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
-                        <button type="submit" class="w-full text-left px-4 py-3 text-red-600 hover:bg-red-50 rounded-b-2xl transition">
-                            <i class="fas fa-sign-out-alt mr-2"></i>Log Out
-                        </button>
-                    </form>
+                   <button wire:click="logout" @click="mobileMenuOpen = false"
+                            class="w-full mt-2 px-5 py-3 rounded-2xl bg-red-50 text-red-600 font-semibold hover:bg-red-100 transition text-center">
+                        <i class="fas fa-sign-out-alt mr-2"></i>Log Out
+                    </button>
                 </div>
             </div>
         @endauth
@@ -84,7 +82,7 @@
     </nav>
 
     <!-- Mobile Navigation Menu -->
-    <div x-show="mobileMenuOpen" 
+    <div x-show="mobileMenuOpen"
          x-transition:enter="transition ease-out duration-200"
          x-transition:enter-start="opacity-0 scale-95"
          x-transition:enter-end="opacity-100 scale-100"
@@ -94,9 +92,9 @@
          class="absolute top-full left-0 right-0 mt-2 lg:hidden bg-white/95 backdrop-blur-sm rounded-3xl shadow-xl border border-soft-blue/60 p-4 z-50"
          @click.away="mobileMenuOpen = false"
          x-cloak>
-        
+
         <nav class="flex flex-col space-y-1">
-            <a href="/" @click="mobileMenuOpen = false" 
+            <a href="/" @click="mobileMenuOpen = false"
                class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all duration-200 {{ request()->is('/') ? 'bg-soft-green font-semibold' : '' }}">
                 Home
             </a>
@@ -120,7 +118,7 @@
                class="px-5 py-3 rounded-2xl bg-soft-blue border border-soft-blue font-semibold hover:bg-[#c5e0ff] transition text-center mt-2">
                 Contact
             </a>
-            
+
             @role('master|engineer')
                 <a href="/analysis" @click="mobileMenuOpen = false"
                    class="px-5 py-3 rounded-2xl bg-soft-blue border border-soft-blue font-semibold hover:bg-[#c5e0ff] transition text-center">
@@ -134,13 +132,10 @@
                         <div class="font-medium text-gray-800">{{ Auth::user()->name }}</div>
                         <div class="text-sm text-gray-500 truncate">{{ Auth::user()->email }}</div>
                     </div>
-                    <form method="POST" action="{{ route('logout') }}" class="mt-2">
-                        @csrf
-                        <button type="submit" @click="mobileMenuOpen = false"
-                                class="w-full px-5 py-3 rounded-2xl bg-red-50 text-red-600 font-semibold hover:bg-red-100 transition text-center">
-                            <i class="fas fa-sign-out-alt mr-2"></i>Log Out
-                        </button>
-                    </form>
+                    <button wire:click="logout" @click="mobileMenuOpen = false"
+                            class="w-full mt-2 px-5 py-3 rounded-2xl bg-red-50 text-red-600 font-semibold hover:bg-red-100 transition text-center">
+                        <i class="fas fa-sign-out-alt mr-2"></i>Log Out
+                    </button>
                 </div>
             @endauth
 
