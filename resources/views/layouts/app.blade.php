@@ -156,7 +156,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="antialiased text-[#1e4f63] bg-[#f5faff] overflow-x-hidden">
+<body class="text-[#1e4f63] bg-[#f5faff] overflow-x-hidden">
 
     <!-- Navigation - Fixed Responsive -->
     <div class="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6">

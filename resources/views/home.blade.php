@@ -135,8 +135,11 @@ $websiteSchema = [
                     📍 <span class="font-medium">6249 S 242nd Pl, Bldg8 Apt203, Kent</span>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
-                    <a href="tel:+12024601753" class="bg-soft-blue px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm text-center">+1 202 4601753</a>
-                    <a href="mailto:gbhandymanllc@yahoo.com" class="bg-soft-green px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm truncate text-center">gbhandymanllc@yahoo.com</a>
+                    <a href="tel:+12024601753"
+                        class="bg-soft-blue px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm text-center">+1 202
+                        4601753</a>
+                    <a href="mailto:gbhandymanllc@yahoo.com"
+                        class="bg-soft-green px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm truncate text-center">gbhandymanllc@yahoo.com</a>
                 </div>
             </div>
         </div>
@@ -246,36 +249,69 @@ $websiteSchema = [
     </div>
 
     <!-- Contact CTA - FIXED RESPONSIVE -->
-    <div
-        class="bg-soft-blue/20 rounded-3xl sm:rounded-[4rem] p-6 sm:p-8 md:p-10 soft-shadow border border-white/70 mb-12 sm:mb-16 backdrop-blur-sm mx-4 sm:mx-6 lg:mx-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
-            <div>
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f556e]">ready to fix it right?</h2>
-                <p class="mt-3 text-base sm:text-lg">Call or email — we'll schedule a remote consultation or arrive with our
-                    fully
-                    stocked trailer.</p>
-                <div class="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
-                    <div
-                        class="bg-white px-4 sm:px-6 py-3 sm:py-4 rounded-full text-base sm:text-xl font-medium flex gap-2 items-center">
-                        <span>📞</span> +1 202 4601753
+<div class="bg-soft-blue/20 rounded-3xl sm:rounded-[4rem] p-6 sm:p-8 md:p-10 soft-shadow border border-white/70 mb-12 sm:mb-16 backdrop-blur-sm mx-2 sm:mx-4 md:mx-6 lg:mx-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        
+        <!-- Left Column -->
+        <div class="space-y-5">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f556e]">ready to fix it right?</h2>
+            <p class="text-base sm:text-lg text-[#1e4f63]">Call or email — we'll schedule a remote consultation or arrive with our fully stocked trailer.</p>
+            
+            <!-- Contact Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a href="tel:+12024601753" 
+                   class="flex-1 bg-white px-4 py-4 rounded-2xl sm:rounded-full flex items-center justify-between hover:bg-soft-blue transition-all duration-300 border border-soft-blue/30">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xl sm:text-2xl bg-soft-yellow w-10 h-10 rounded-full flex items-center justify-center">📞</span>
+                        <span class="text-[#1e4f63] font-semibold text-sm">+1 202 4601753</span>
                     </div>
-                    <div
-                        class="bg-white px-4 sm:px-6 py-3 sm:py-4 rounded-full text-base sm:text-xl font-medium flex gap-2 items-center break-all">
-                        <span>✉️</span> gbhandymanllc@yahoo.com
+                    <span class="text-xs bg-soft-green px-3 py-1.5 rounded-full sm:hidden">Call</span>
+                </a>
+                
+                <a href="mailto:gbhandymanllc@yahoo.com" 
+                   class="flex-1 bg-white px-4 py-4 rounded-2xl sm:rounded-full flex items-center justify-between hover:bg-soft-blue transition-all duration-300 border border-soft-blue/30">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <span class="text-xl sm:text-2xl bg-soft-green w-10 h-10 rounded-full flex items-center justify-center">✉️</span>
+                        <span class="text-[#1e4f63] font-semibold text-sm truncate">gbhandymanllc@yahoo.com</span>
                     </div>
-                </div>
-                <p class="mt-3 sm:mt-4 text-sm sm:text-base text-[#266982]">📍 6249 S 242nd Place (bld 8 apt 203) Kent, WA
-                </p>
+                    <span class="text-xs bg-soft-yellow px-3 py-1.5 rounded-full sm:hidden">Email</span>
+                </a>
             </div>
-            <div class="bg-soft-yellow p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-soft-yellow/80">
-                <p class="font-medium text-base sm:text-lg">⚡ remote & mobile</p>
-                <p class="mt-2 text-sm sm:text-base">We cover: Auburn, Kent, Renton, Tacoma, Olympia, Lacey, Bellevue,
-                    Issaquah, Tukwila,
-                    Seatac, Port Orchard, Seattle, Federal Way, Everett, Redmond, Puyallup, Kirkland, Bothell, Lynwood,
-                    Chehalis, Centralia, Bremerton, Gig Harbor.</p>
-                <div class="mt-3 sm:mt-4 bg-white/60 rounded-full py-2 px-3 sm:px-4 text-xs sm:text-sm text-center">call for
-                    same‑week availability</div>
+            
+            <!-- Address -->
+            <p class="text-sm sm:text-base text-[#266982] flex items-start gap-2 pt-2">
+                <span class="text-lg shrink-0">📍</span>
+                <span>6249 S 242nd Place (bld 8 apt 203) Kent, WA</span>
+            </p>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="bg-soft-yellow p-6 sm:p-7 rounded-3xl border border-soft-yellow/80">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="text-2xl bg-white/80 w-12 h-12 rounded-2xl flex items-center justify-center shrink-0">⚡</span>
+                <h3 class="font-bold text-lg sm:text-xl text-[#0f556e]">remote & mobile</h3>
+            </div>
+            
+            <!-- Mobile: Scrollable city list -->
+            <div class="overflow-x-auto pb-3 -mx-1 px-1 sm:overflow-visible sm:pb-0 sm:mx-0 sm:px-0 mb-4 sm:mb-0">
+                <div class="flex sm:flex-wrap gap-2 min-w-max sm:min-w-0">
+                    @php
+                        $cities = ['Auburn', 'Kent', 'Renton', 'Tacoma', 'Olympia', 'Lacey', 'Bellevue', 'Issaquah', 'Tukwila', 'Seatac', 'Port Orchard', 'Seattle', 'Federal Way', 'Everett', 'Redmond', 'Puyallup', 'Kirkland', 'Bothell', 'Lynwood', 'Chehalis', 'Centralia', 'Bremerton', 'Gig Harbor'];
+                    @endphp
+                    
+                    @foreach($cities as $city)
+                        <span class="bg-white/80 px-3 py-1.5 rounded-full text-xs sm:text-sm border border-white/60 whitespace-nowrap sm:whitespace-normal shadow-sm">
+                            {{ $city }}
+                        </span>
+                    @endforeach
+                </div>
+            </div>
+            
+            <!-- Availability Badge -->
+            <div class="bg-white/80 rounded-full py-3 px-4 text-sm text-center font-medium text-[#0f556e] border border-soft-yellow/60 mt-4 sm:mt-6">
+                📞 call for same‑week availability • we respond within 2 hours
             </div>
         </div>
     </div>
+</div>
 @endsection
