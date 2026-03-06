@@ -172,7 +172,7 @@
     <footer class="border-t border-soft-blue/50 pt-6 sm:pt-8 pb-4 mt-12 sm:mt-16 w-full px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-center text-sm">
             <div class="font-semibold text-[#166b85] text-center lg:text-left order-3 lg:order-1">
-                © {{ date('Y') }} GB Handyman Solutions LLC · www.gbhandyman.com
+                © {{ date('Y') }} GB Handyman Solutions LLC
             </div>
             <div class="flex flex-wrap justify-center gap-4 sm:gap-6 order-1 lg:order-2">
                 <a href="/" class="hover:underline text-sm">Home</a>
