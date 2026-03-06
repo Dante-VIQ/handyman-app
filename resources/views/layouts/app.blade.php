@@ -104,49 +104,49 @@
             transition: all 0.25s ease;
         }
 
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .bg-soft-blue {
-            background-color: #d9ecff;
-        }
-
-        .bg-soft-white {
-            background-color: #fcfefc;
-        }
-
-        .bg-soft-green {
-            background-color: #e6f3e6;
-        }
-
-        .bg-soft-yellow {
-            background-color: #fff9db;
-        }
-
-        .border-soft-blue {
-            border-color: #c5e0ff;
-        }
-
-        .border-soft-green {
-            border-color: #d2ecce;
-        }
-
-        .border-soft-yellow {
-            border-color: #ffefb0;
-        }
-
-        .soft-shadow {
-            box-shadow: 0 15px 30px -12px rgba(27, 94, 117, 0.12);
-        }
-
         .text-soft-teal {
             color: #1f5f7a;
         }
 
-        .hover-lift:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 20px 25px -5px rgba(27, 94, 117, 0.1);
+        /* Mobile menu styles */
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 40;
+            display: none;
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 400px;
+            height: 100vh;
+            background-color: white;
+            z-index: 50;
+            transition: right 0.3s ease-in-out;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        @media (max-width: 640px) {
+            .container-padding {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
     </style>
 
@@ -156,35 +156,41 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="antialiased text-[#1e4f63] bg-[#f5faff]">
+<body class="antialiased text-[#1e4f63] bg-[#f5faff] overflow-x-hidden">
 
-    <!-- Navigation -->
-    <div class="max-w-7xl px-5 sm:px-4 lg:px-8 py-6">
+    <!-- Navigation - Fixed Responsive -->
+    <div class="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
         <x-nav-bar />
-
-        <!-- Main Content -->
-        <main>
-            @yield('content')
-        </main>
-
-        <!-- Footer -->
-        <footer
-            class="border-t border-soft-blue/50 pt-8 pb-4 flex flex-wrap justify-between items-center text-sm mt-16">
-            <div class="font-semibold text-[#166b85]">© {{ date('Y') }} GB Handyman Solutions LLC ·
-                www.gbhandyman.com</div>
-            <div class="flex gap-6">
-                <a href="/" class="hover:underline">Home</a>
-                <a href="/about" class="hover:underline">About</a>
-                <a href="/services" class="hover:underline">Services</a>
-                <a href="/service-area" class="hover:underline">Service area</a>
-                <a href="/gallery" class="hover:underline">Gallery</a>
-                <a href="/contact" class="hover:underline">Contact</a>
-            </div>
-            <div>📞 +1 202 4601753 | ✉️ gbhandymanllc@yahoo.com</div>
-        </footer>
     </div>
+
+    <!-- Main Content - Fixed Responsive -->4
+    <main class="w-full overflow-x-hidden p-4 sm:p-6 lg:p-8">
+        @yield('content')
+    </main>
+
+    <!-- Footer - Fixed Responsive -->
+    <footer class="border-t border-soft-blue/50 pt-6 sm:pt-8 pb-4 mt-12 sm:mt-16 w-full px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-center text-sm">
+            <div class="font-semibold text-[#166b85] text-center lg:text-left order-3 lg:order-1">
+                © {{ date('Y') }} GB Handyman Solutions LLC · www.gbhandyman.com
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6 order-1 lg:order-2">
+                <a href="/" class="hover:underline text-sm">Home</a>
+                <a href="/about" class="hover:underline text-sm">About</a>
+                <a href="/services" class="hover:underline text-sm">Services</a>
+                <a href="/service-area" class="hover:underline text-sm">Service area</a>
+                <a href="/gallery" class="hover:underline text-sm">Gallery</a>
+                <a href="/contact" class="hover:underline text-sm">Contact</a>
+            </div>
+            <div class="text-xs sm:text-sm text-center lg:text-right order-2 lg:order-3 break-words max-w-full">
+                📞 +1 202 4601753 | ✉️ gbhandymanllc@yahoo.com
+            </div>
+        </div>
+    </footer>
+
     @livewireScripts()
     @stack('scripts')
+    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -206,8 +212,32 @@
                             this.mobileMenuOpen = false;
                         }
                     });
+
+                    // Prevent body scroll when mobile menu is open
+                    this.$watch('mobileMenuOpen', (value) => {
+                        if (value) {
+                            document.body.style.overflow = 'hidden';
+                        } else {
+                            document.body.style.overflow = '';
+                        }
+                    });
                 }
             }));
+        });
+    </script>
+
+    <!-- Add this to your nav-bar component for mobile menu functionality -->
+    <script>
+        // Basic mobile menu toggle if not using Alpine
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('[data-mobile-menu-button]');
+            const mobileMenu = document.querySelector('[data-mobile-menu]');
+            
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('active');
+                });
+            }
         });
     </script>
 

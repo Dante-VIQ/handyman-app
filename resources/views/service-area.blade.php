@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
 @section('title', 'Handyman Service Area | 20+ Cities Across Western Washington')
-@section('meta_description', '📍 GB Handyman Solutions serves Kent, Auburn, Seattle, Tacoma, Olympia, Bellevue, Redmond, and 15+ more cities. Fully mobile and remote ready. Call today!')
-@section('meta_keywords', 'handyman service area, handyman Kent WA, handyman Auburn, handyman Seattle, handyman Tacoma, handyman Olympia, handyman Bellevue')
-  @section('canonical', route('service-area'))
+@section('meta_description', '📍 GB Handyman Solutions serves Kent, Auburn, Seattle, Tacoma, Olympia, Bellevue, Redmond,
+    and 15+ more cities. Fully mobile and remote ready. Call today!')
+@section('meta_keywords', 'handyman service area, handyman Kent WA, handyman Auburn, handyman Seattle, handyman Tacoma,
+    handyman Olympia, handyman Bellevue')
+@section('canonical', route('service-area'))
 @push('schema')
-<script type="application/ld+json">
+    <script type="application/ld+json">
 @php
 $areaServed = [
     ["@type" => "City", "name" => "Kent", "sameAs" => "https://en.wikipedia.org/wiki/Kent,_Washington"],
@@ -81,7 +83,7 @@ $breadcrumbSchema = [
 {!! json_encode($serviceAreaSchema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
 </script>
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {!! json_encode($breadcrumbSchema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
 </script>
 @endpush
@@ -94,6 +96,29 @@ $breadcrumbSchema = [
 
     <!-- City Grid (same as before) -->
     <!-- ... (keep your existing city grid) ... -->
+    <div class="bg-white/70 rounded-[4rem] p-10 soft-shadow border border-soft-blue/60 mb-16 mx-auto max-w-7xl">
+        <h2 class="text-2xl font-semibold text-[#1f647e] mb-6 justify-center text-center">📍 cities we serve</h2>
+        @php
+            $cityGroups = [
+                'Eastside' => ['Bellevue', 'Redmond', 'Kirkland', 'Issaquah', 'Bothell'],
+                'South King' => ['Kent', 'Auburn', 'Renton', 'Federal Way', 'Tukwila', 'Seatac'],
+                'Pierce/Thurston' => ['Tacoma', 'Puyallup', 'Olympia', 'Lacey', 'Centralia', 'Chehalis'],
+                'Seattle & North' => ['Seattle', 'Everett', 'Lynwood'],
+                'Kitsap & Beyond' => ['Bremerton', 'Port Orchard', 'Gig Harbor'],
+            ];
+        @endphp
+        @foreach ($cityGroups as $region => $cities)
+            <div class="mb-8 justify-center text-center">
+                <h3 class="text-lg font-bold text-[#115e7a] mb-3">{{ $region }}</h3>
+                <div class="flex flex-wrap gap-2 justify-center">
+                    @foreach ($cities as $city)
+                        <span class="bg-soft-blue px-4 py-2 rounded-full text-sm">{{ $city }}</span>
+                    @endforeach
+                </div>
+            </div>
+        @endforeach
+        <p class="text-sm text-[#3b6d82] mt-4">plus many smaller towns in between — if you're unsure, just call!</p>
+    </div>
 
     <!-- Map -->
     <div class="mb-16">
@@ -101,7 +126,8 @@ $breadcrumbSchema = [
         <div class="rounded-[3rem] overflow-hidden border-4 border-soft-blue soft-shadow h-96">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d345079.5045523308!2d-122.24163662265677!3d47.44116948183589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1617823901450!5m2!1sen!2sus"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="GB Handyman service area map"></iframe>
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                title="GB Handyman service area map"></iframe>
         </div>
     </div>
 @endsection
