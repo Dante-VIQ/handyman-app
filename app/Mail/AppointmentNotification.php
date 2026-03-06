@@ -1,0 +1,77 @@
+<?php
+
+namespace App\Mail;
+
+use App\Models\Appointment;
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Mail\Mailables\Address;
+use Illuminate\Queue\SerializesModels;
+
+class AppointmentNotification extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    public $appointment;
+
+    /**
+     * Create a new message instance.
+     */
+    public function __construct(Appointment $appointment)
+    {
+        $this->appointment = $appointment;
+    }
+
+    /**
+     * Get the message envelope.
+     */
+    // public function envelope(): Envelope
+    // {
+    //     return new Envelope(
+    //         from: new Address('notifications@gbhandyman.com', 'GB Handyman Solutions'),
+    //         subject: 'Your Appointment Request is Confirmed! (#' . $this->appointment->id . ')',
+    //         replyTo: [
+    //             new Address('gbhandymanllc@yahoo.com', 'GB Handyman Solutions'),
+    //         ],
+    //     );
+    // }
+
+    /**
+     * Get the message content definition.
+     */
+    public function content(): Content
+    {
+        return new Content(
+            view: 'emails.appointment-notification', // Changed from markdown to view for custom HTML
+            with: [
+                'appointment' => $this->appointment,
+                'year' => date('Y'),
+            ],
+        );
+    }
+
+    /**
+     * Get the attachments for the message.
+     */
+    public function attachments(): array
+    {
+        return [];
+    }
+    
+    /**
+     * Build the message (alternative method if not using envelope/content)
+     */
+    public function build()
+    {
+        return $this->from('notifications@gbhandyman.com', 'GB Handyman Solutions')
+                    ->subject('Your Appointment Request is Confirmed! (#' . $this->appointment->id . ')')
+                    ->view('emails.appointment-notification')
+                    ->with([
+                        'appointment' => $this->appointment,
+                        'year' => date('Y'),
+                    ]);
+    }
+}

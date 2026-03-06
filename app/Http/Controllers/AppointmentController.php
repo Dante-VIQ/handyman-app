@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AppointmentNotification;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -31,42 +32,36 @@ class AppointmentController extends Controller
         // Validate flexible form input (support both forms)
         $validated = $request->validate([
             'full_name' => 'nullable|string|max:255',
-            'first_name' => 'nullable|string|max:255',
-            'last_name' => 'nullable|string|max:255',
             'phone' => 'nullable|string|max:20',
-            'phone_number' => 'nullable|string|max:20',
-            'date' => 'nullable|string|max:255',
+            'city' => 'nullable|string|max:255',
             'email' => 'required|email|max:255',
-            'subject' => 'nullable|string|max:255',
+            'service' => 'nullable|string|max:255',
             'message' => 'required|string|max:2000',
         ]);
 
         try {
             // Build canonical fields expected by the Appointment model
-            $fullName = null;
-            if (!empty($validated['full_name'])) {
-                $fullName = $validated['full_name'];
-            } else {
-                $parts = array_filter([($validated['first_name'] ?? null), ($validated['last_name'] ?? null)]);
-                $fullName = $parts ? implode(' ', $parts) : null;
-            }
+            $fullName = $validated['full_name'] ?? null;
 
             // Fallback to email prefix if no name provided
             if (empty($fullName) && !empty($validated['email'])) {
                 $fullName = strstr($validated['email'], '@', true) ?: $validated['email'];
             }
 
-            $phone = $validated['phone_number'] ?? $validated['phone'] ?? null;
+            $phone = $validated['phone'] ?? $validated['phone'] ?? null;
 
             $message = $validated['message'];
             if (!empty($validated['subject'])) {
                 $message = trim($validated['subject'] . "\n\n" . $message);
             }
 
+            
+
             $data = [
                 'full_name' => $fullName,
-                'phone_number' => $phone,
-                'date' => $validated['date'] ?? null,
+                'phone' => $phone,
+                'city' => $validated['city'] ?? null,
+                'service' => $validated['service'] ?? null,
                 'email' => $validated['email'],
                 'message' => $message,
             ];
@@ -82,6 +77,8 @@ class AppointmentController extends Controller
             }
 
             Mail::to($masterRecipients)->send(new AppointmentRequestMail($appointment));
+            Mail::to($appointment->email, $appointment->full_name)
+            ->send(new AppointmentNotification($appointment));
 
             return back()->with('success', 'Your appointment request has been submitted successfully!');
         } catch (\Exception $e) {

@@ -95,27 +95,27 @@
 
         <nav class="flex flex-col space-y-1">
             <a href="/" @click="mobileMenuOpen = false"
-               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all duration-200 {{ request()->is('/') ? 'bg-soft-green font-semibold' : '' }}">
+               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all text-center duration-200 {{ request()->is('/') ? 'bg-soft-green font-semibold' : '' }}">
                 Home
             </a>
             <a href="/about" @click="mobileMenuOpen = false"
-               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all duration-200 {{ request()->is('about') ? 'bg-soft-green font-semibold' : '' }}">
+               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all text-center duration-200 {{ request()->is('about') ? 'bg-soft-green font-semibold' : '' }}">
                 About
             </a>
             <a href="/services" @click="mobileMenuOpen = false"
-               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all duration-200 {{ request()->is('services') ? 'bg-soft-green font-semibold' : '' }}">
+               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all text-center duration-200 {{ request()->is('services') ? 'bg-soft-green font-semibold' : '' }}">
                 Services
             </a>
             <a href="/service-area" @click="mobileMenuOpen = false"
-               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all duration-200 {{ request()->is('service-area') ? 'bg-soft-green font-semibold' : '' }}">
+               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all text-center duration-200 {{ request()->is('service-area') ? 'bg-soft-green font-semibold' : '' }}">
                 Service area
             </a>
             <a href="/gallery" @click="mobileMenuOpen = false"
-               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all duration-200 {{ request()->is('gallery') ? 'bg-soft-green font-semibold' : '' }}">
+               class="px-5 py-3 rounded-2xl text-[#1e607b] hover:bg-soft-blue transition-all text-center duration-200 {{ request()->is('gallery') ? 'bg-soft-green font-semibold' : '' }}">
                 Gallery
             </a>
             <a href="/contact" @click="mobileMenuOpen = false"
-               class="px-5 py-3 rounded-2xl bg-soft-blue border border-soft-blue font-semibold hover:bg-[#c5e0ff] transition text-center mt-2">
+               class="px-5 py-3 rounded-2xl border border-soft-blue font-semibold hover:bg-[#c5e0ff] transition text-center mt-2 {{ request()->is('contact') ? 'bg-soft-green border border-soft-green font-semibold' : '' }}">
                 Contact
             </a>
 
