@@ -8,7 +8,7 @@
                     <!-- Image container with proper aspect ratio -->
                     <div class="absolute inset-0 w-full h-full">
                         <img
-                            src="{{ asset($image->image) }}"
+                            src="{{ asset($image->photo) }}"
                             alt="{{ $image->alt ?? 'GB Handyman project showcase' }}"
                             class="w-full h-full object-contain md:object-cover bg-[#1e4f63]/10"
                             loading="{{ $image === 0 ? 'eager' : 'lazy' }}"
