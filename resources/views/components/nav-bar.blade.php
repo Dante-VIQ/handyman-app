@@ -121,7 +121,7 @@
 
             @role('master|engineer')
                 <a href="/analysis" @click="mobileMenuOpen = false"
-                   class="px-5 py-3 rounded-2xl bg-soft-blue border border-soft-blue font-semibold hover:bg-[#c5e0ff] transition text-center">
+                   class="px-5 py-3 rounded-2xl border border-soft-blue font-semibold hover:bg-[#c5e0ff] transition text-center">
                     Analysis
                 </a>
             @endrole

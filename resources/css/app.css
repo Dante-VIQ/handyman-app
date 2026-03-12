@@ -27,47 +27,71 @@ transition-property: opacity;
 transition-duration: 150ms;
 }
 
-    * { font-family: 'Inter', sans-serif; }
-    /* softer color palette — blue, white, green, yellow in lighter versions */
-    :root {
-      --soft-blue: #d9ecff;
-      --soft-white: #fcfefc;
-      --soft-green: #e6f3e6;
-      --soft-yellow: #fff9db;
-      --accent-blue: #c5e0ff;
-      --accent-green: #d2ecce;
-      --accent-yellow: #ffefb0;
-    }
-    .bg-soft-blue { background-color: #d9ecff; }
-    .bg-soft-white { background-color: #fcfefc; }
-    .bg-soft-green { background-color: #e6f3e6; }
-    .bg-soft-yellow { background-color: #fff9db; }
-    .border-soft-blue { border-color: #c5e0ff; }
-    .border-soft-green { border-color: #d2ecce; }
-    .border-soft-yellow { border-color: #ffefb0; }
-    .text-soft-teal { color: #1f5f7a; }
-    .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 30px -10px rgba(70, 130, 170, 0.15); }
-    .transition-soft { transition: all 0.25s ease; }
-    .soft-shadow { box-shadow: 0 15px 30px -12px rgba(27, 94, 117, 0.12); }
-    
-    /* custom animated gradient for hero */
-    .gradient-bg {
-      background: linear-gradient(145deg, #f0faff 0%, #ffffff 45%, #e6f3e6 90%);
-      background-size: 200% 200%;
-      animation: gradientShift 12s ease infinite;
-    }
-    @keyframes gradientShift {
-      0% { background-position: 0% 0%; }
-      50% { background-position: 100% 100%; }
-      100% { background-position: 0% 0%; }
-    }
-    
-    .gradient-card {
-      background: linear-gradient(135deg, #fff9db, #ffffff, #d9ecff);
-      border: 1px solid rgba(197, 224, 255, 0.6);
-    }
-    
-    .timeline-dot {
-      box-shadow: 0 0 0 4px #fff9db, 0 0 0 6px #d9ecff;
-    }
- 
+* { font-family: 'Inter', sans-serif; }
+/* softer color palette — blue, white, green, yellow in lighter versions */
+:root {
+--soft-blue: #d9ecff;
+--soft-white: #fcfefc;
+--soft-green: #e6f3e6;
+--soft-yellow: #fff9db;
+--accent-blue: #c5e0ff;
+--accent-green: #d2ecce;
+--accent-yellow: #ffefb0;
+}
+.bg-soft-blue { background-color: #d9ecff; }
+.bg-soft-white { background-color: #fcfefc; }
+.bg-soft-green { background-color: #e6f3e6; }
+.bg-soft-yellow { background-color: #fff9db; }
+.border-soft-blue { border-color: #c5e0ff; }
+.border-soft-green { border-color: #d2ecce; }
+.border-soft-yellow { border-color: #ffefb0; }
+.text-soft-teal { color: #1f5f7a; }
+.hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 30px -10px rgba(70, 130, 170, 0.15); }
+.transition-soft { transition: all 0.25s ease; }
+.soft-shadow { box-shadow: 0 15px 30px -12px rgba(27, 94, 117, 0.12); }
+
+/* custom animated gradient for hero */
+.gradient-bg {
+background: linear-gradient(145deg, #f0faff 0%, #ffffff 45%, #e6f3e6 90%);
+background-size: 200% 200%;
+animation: gradientShift 12s ease infinite;
+}
+@keyframes gradientShift {
+0% { background-position: 0% 0%; }
+50% { background-position: 100% 100%; }
+100% { background-position: 0% 0%; }
+}
+
+.gradient-card {
+background: linear-gradient(135deg, #fff9db, #ffffff, #d9ecff);
+border: 1px solid rgba(197, 224, 255, 0.6);
+}
+
+.timeline-dot {
+box-shadow: 0 0 0 4px #fff9db, 0 0 0 6px #d9ecff;
+}
+
+
+/* Additional responsive styles */
+@media (max-width: 640px) {
+.timeline-dot {
+width: 32px;
+height: 32px;
+border-width: 3px;
+}
+
+.hover-lift:hover {
+transform: translateY(-2px);
+}
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+.hover-lift:hover {
+transform: translateY(-3px);
+}
+}
+
+/* Ensure text doesn't overflow on small screens */
+.break-all {
+word-break: break-word;
+}

@@ -103,12 +103,12 @@ $websiteSchema = [
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-10 lg:mb-16 px-4 sm:px-6 lg:px-8">
         <div class="order-2 lg:order-1">
             <span
-                class="bg-soft-yellow/80 text-[#1a627b] px-4 sm:px-5 py-2 rounded-full text-sm font-medium border border-soft-yellow inline-block mb-4 sm:mb-6">⚡
-                works remotely · fully mobile</span>
+                class="bg-soft-yellow/80 text-[#1a627b] px-4 sm:px-5 py-2 rounded-full text-sm font-semibold border border-soft-yellow inline-block mb-4 sm:mb-6">⚡
+                Works Remotely · Fully Mobile</span>
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#0b4a61]">
-                craftsmanship <br><span
-                    class="text-[#217a95] bg-soft-blue/30 px-3 sm:px-4 inline-block rounded-2xl sm:rounded-3xl">that
-                    travels</span> to you
+                Craftsmanship <br><span
+                    class="text-[#217a95] bg-soft-blue/30 px-3 sm:px-4 inline-block rounded-2xl sm:rounded-3xl">That
+                    Travels</span> To You
             </h1>
             <p class="text-base sm:text-lg mt-4 sm:mt-6 text-[#2a647a] max-w-xl">From bathroom remodels to flooring, drywall,
                 electrical — we
@@ -121,7 +121,7 @@ $websiteSchema = [
                 </div>
                 <div class="flex items-center gap-2"><span
                         class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-soft-blue flex items-center justify-center text-base sm:text-lg">🔨</span>
-                    <span class="text-sm sm:text-base font-medium">15+ years</span>
+                    <span class="text-sm sm:text-base font-medium">10+ years</span>
                 </div>
                 <div class="flex items-center gap-2"><span
                         class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-soft-yellow flex items-center justify-center text-base sm:text-lg">🛻</span>
@@ -136,10 +136,10 @@ $websiteSchema = [
                 </div>
                 <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
                     <a href="tel:+12024601753"
-                        class="bg-soft-blue px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm text-center">+1 202
+                        class="bg-soft-blue px-5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm text-center ring-2 ring-purple-700">+1 202
                         4601753</a>
                     <a href="mailto:gbhandymanllc@yahoo.com"
-                        class="bg-soft-green px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm truncate text-center">gbhandymanllc@yahoo.com</a>
+                        class="bg-soft-green px-5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm truncate text-center ring-2 ring-purple-400">gbhandymanllc@yahoo.com</a>
                 </div>
             </div>
         </div>
@@ -153,13 +153,13 @@ $websiteSchema = [
     <div
         class="bg-white/70 rounded-3xl sm:rounded-[4rem] p-4 sm:p-6 soft-shadow border border-soft-blue/60 mb-12 sm:mb-14 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
-            <h2 class="text-xl sm:text-2xl font-semibold text-[#1f647e]">📍 service area — we cover all major cities</h2>
+            <h2 class="text-xl sm:text-2xl font-semibold text-[#1f647e]">📍 Service Area — We Cover All Major Cities</h2>
             <a href="{{ route('service-area') }}"
                 class="text-[#1d728f] underline-offset-4 hover:underline font-medium text-sm sm:text-base">
                 full service area page →
             </a>
         </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-2 mt-4 sm:mt-6">
+        <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-2 mt-4 sm:mt-6">
             @php
                 $cities = [
                     'Kent',
@@ -192,7 +192,7 @@ $websiteSchema = [
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center mb-16 md:mb-24 px-4 sm:px-6 lg:px-8">
         <div
             class="bg-soft-green/30 p-6 sm:p-8 rounded-2xl sm:rounded-[3rem] border border-soft-green/70 soft-shadow order-2 md:order-1">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">more than a handyman</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">More Than a Handyman</h2>
             <p class="mt-3 text-base sm:text-lg">Family owned, operating since 2012. We don't just fix things — we make them
                 better.
                 Based in Kent, fully remote ready, and obsessed with quality.</p>
@@ -203,31 +203,31 @@ $websiteSchema = [
                 <span
                     class="bg-soft-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm border border-soft-green">🛡️
                     insured</span>
-                <span
+                {{-- <span
                     class="bg-soft-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm border border-soft-yellow">⭐
-                    5 star</span>
+                    5 star</span> --}}
             </div>
             <a href="/about"
                 class="mt-6 sm:mt-8 inline-flex items-center gap-2 bg-soft-blue px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-medium hover:bg-[#c5e0ff] transition">read
                 full story →</a>
         </div>
         <div class="grid grid-cols-2 gap-3 sm:gap-4 order-1 md:order-2">
-            <div class="bg-soft-yellow p-4 sm:p-5 rounded-2xl sm:rounded-3xl text-center text-sm sm:text-base">🏠 500+
+            <div class="bg-soft-yellow p-4 sm:p-5 rounded-2xl sm:rounded-3xl text-center text-sm sm:text-base">🏠 200+
                 projects</div>
-            <div class="bg-soft-blue p-4 sm:p-5 rounded-2xl sm:rounded-3xl text-center text-sm sm:text-base">🔧 20+
-                specialties</div>
+            {{-- <div class="bg-soft-blue p-4 sm:p-5 rounded-2xl sm:rounded-3xl text-center text-sm sm:text-base">🔧 20+
+                specialties</div> --}}
             <div class="bg-soft-green p-4 sm:p-5 rounded-2xl sm:rounded-3xl text-center text-sm sm:text-base">📞 same-day
                 call</div>
-            <div
+            {{-- <div
                 class="bg-soft-white p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-soft-blue text-center text-sm sm:text-base">
-                🚐 remote trailer</div>
+                🚐 remote trailer</div> --}}
         </div>
     </div>
 
     <!-- Services Preview - FIXED RESPONSIVE -->
     <div class="mb-16 md:mb-24 px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">services we deliver</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">Services We Deliver</h2>
             <a href="/services"
                 class="bg-soft-yellow px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-medium border border-soft-yellow/80 hover:bg-[#ffefb5] transition whitespace-nowrap">
                 view all services →
@@ -239,7 +239,7 @@ $websiteSchema = [
     <!-- Gallery Preview - FIXED RESPONSIVE -->
     <div class="mb-16 md:mb-24 px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">recent transformations</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">Recent Transformations</h2>
             <a href="/gallery"
                 class="bg-soft-blue px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-medium border border-soft-blue/80 hover:bg-[#c5e0ff] transition whitespace-nowrap">
                 gallery page →
@@ -254,7 +254,7 @@ $websiteSchema = [
         
         <!-- Left Column -->
         <div class="space-y-5">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f556e]">ready to fix it right?</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f556e]">Ready To Fix It Right?</h2>
             <p class="text-base sm:text-lg text-[#1e4f63]">Call or email — we'll schedule a remote consultation or arrive with our fully stocked trailer.</p>
             
             <!-- Contact Buttons -->
@@ -289,7 +289,7 @@ $websiteSchema = [
         <div class="bg-soft-yellow p-6 sm:p-7 rounded-3xl border border-soft-yellow/80">
             <div class="flex items-center gap-3 mb-4">
                 <span class="text-2xl bg-white/80 w-12 h-12 rounded-2xl flex items-center justify-center shrink-0">⚡</span>
-                <h3 class="font-bold text-lg sm:text-xl text-[#0f556e]">remote & mobile</h3>
+                <h3 class="font-bold text-lg sm:text-xl text-[#0f556e]">Remote & Mobile</h3>
             </div>
             
             <!-- Mobile: Scrollable city list -->
