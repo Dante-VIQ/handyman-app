@@ -90,14 +90,14 @@ $breadcrumbSchema = [
 
 @section('content')
     <div class="text-center max-w-3xl mx-auto mb-12">
-        <h1 class="text-5xl font-bold text-[#115e7a]">handyman service area</h1>
+        <h1 class="text-5xl font-bold text-[#115e7a]">Handyman Service Area</h1>
         <p class="text-xl mt-4 text-[#2a647a]">we travel to you — throughout western Washington</p>
     </div>
 
     <!-- City Grid (same as before) -->
     <!-- ... (keep your existing city grid) ... -->
     <div class="bg-white/70 rounded-[4rem] p-10 soft-shadow border border-soft-blue/60 mb-16 mx-auto max-w-7xl">
-        <h2 class="text-2xl font-semibold text-[#1f647e] mb-6 justify-center text-center">📍 cities we serve</h2>
+        <h2 class="text-2xl font-semibold text-[#1f647e] mb-6 justify-center text-center">📍 Cities We Serve</h2>
         @php
             $cityGroups = [
                 'Eastside' => ['Bellevue', 'Redmond', 'Kirkland', 'Issaquah', 'Bothell'],
@@ -122,7 +122,7 @@ $breadcrumbSchema = [
 
     <!-- Map -->
     <div class="mb-16">
-        <h2 class="text-2xl font-bold text-[#115e7a] mb-6 text-center">our service region</h2>
+        <h2 class="text-2xl font-bold text-[#115e7a] mb-6 text-center">Our Service Region</h2>
         <div class="rounded-[3rem] overflow-hidden border-4 border-soft-blue soft-shadow h-96">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d345079.5045523308!2d-122.24163662265677!3d47.44116948183589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1617823901450!5m2!1sen!2sus"

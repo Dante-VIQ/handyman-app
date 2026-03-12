@@ -149,8 +149,8 @@ $faqSchema = [
 
 @section('content')
     <div class="text-center max-w-3xl mx-auto mb-12">
-        <h1 class="text-5xl font-bold text-[#115e7a]">professional handyman services<br><span
-                class="text-2xl text-[#2a647a] mt-2 block">serving Kent, Auburn, Seattle & beyond</span></h1>
+        <h1 class="text-5xl font-bold text-[#115e7a]">Professional Handyman Services<br><span
+                class="text-2xl text-[#2a647a] mt-2 block">Serving Kent, Auburn, Seattle & beyond</span></h1>
         <p class="text-xl mt-4 text-[#2a647a]">From small repairs to full renovations — we do it all with 15+ years of
             experience.</p>
     </div>
@@ -159,7 +159,7 @@ $faqSchema = [
 
     <!-- FAQ Section (visible content matching schema) -->
     <div class="bg-soft-blue/20 rounded-[4rem] p-10 soft-shadow border border-soft-blue/60 mb-16">
-        <h2 class="text-3xl font-bold text-[#115e7a] mb-8 text-center">frequently asked questions</h2>
+        <h2 class="text-3xl font-bold text-[#115e7a] mb-8 text-center">Frequently Asked Questions</h2>
         <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-white p-6 rounded-3xl">
                 <h3 class="font-bold text-lg">How much does a handyman cost in Kent, WA?</h3>
