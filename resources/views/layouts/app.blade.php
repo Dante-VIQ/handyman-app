@@ -25,7 +25,7 @@
     <meta property="og:url" content="@yield('og_url', url()->current())">
     <meta property="og:title" content="@yield('og_title', 'GB Handyman Solutions – Professional Home Repairs')">
     <meta property="og:description" content="@yield('og_description', 'Professional handyman services in Kent and across Western Washington. Family owned since 2012.')">
-    <meta property="og:image" content="@yield('og_image', asset('logo.png'))">
+    <meta property="og:image" content="@yield('og_image', asset('/images/logo.jpg'))">
     <meta property="og:site_name" content="GB Handyman Solutions">
     <meta property="og:locale" content="en_US">
 
@@ -34,7 +34,7 @@
     <meta name="twitter:url" content="@yield('twitter_url', url()->current())">
     <meta name="twitter:title" content="@yield('twitter_title', 'GB Handyman Solutions – Professional Home Repairs')">
     <meta name="twitter:description" content="@yield('twitter_description', 'Professional handyman services in Kent and across Western Washington.')">
-    <meta name="twitter:image" content="@yield('twitter_image', asset('logo.png'))">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('/images/logo.jpg'))">
 
     <!-- Geo Tags (for local SEO) -->
     <meta name="geo.region" content="US-WA">
@@ -48,8 +48,9 @@
 
     <!-- Favicon & App Icons -->
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
