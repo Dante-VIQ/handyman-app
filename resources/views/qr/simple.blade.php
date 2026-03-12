@@ -54,7 +54,7 @@
 
         <!-- Footer -->
         <p class="mt-4 text-xs text-gray-500">
-            gbhandyman.com
+            gbhandymanllc.com
         </p>
     </div>
 
@@ -62,7 +62,7 @@
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
     <script>
         new QRCode(document.getElementById("qrcode"), {
-            text: "https://gbhandyman.com",
+            text: "https://gbhandymanllc.com",
             width: 240,
             height: 240,
             correctLevel: QRCode.CorrectLevel.H
