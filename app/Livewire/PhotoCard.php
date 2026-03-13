@@ -8,7 +8,7 @@ use Livewire\Component;
 class PhotoCard extends Component
 {
 
-    public $Images = [];
+    public $images = [];
 
     public function mount()
     {
@@ -17,8 +17,8 @@ class PhotoCard extends Component
 
     private function loadImages()
     {
-        $this->Images = Image::all();
-        
+        $this->images = Image::all();
+
 
     }
 

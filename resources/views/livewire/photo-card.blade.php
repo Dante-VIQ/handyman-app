@@ -3,7 +3,7 @@
 
         <!-- Gallery Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            @foreach ($images as $image)
+            @forelse ($images as $image)
                 <div class="gallery-item relative rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
                     x-data="{ showLightbox: false }" @click="showLightbox = true">
                     @if ($image->image)
@@ -68,7 +68,10 @@
                         </div>
                     </div>
                 </div>
-            @endforeach
+
+            @empty
+            
+            @endforelse
         </div>
 
         <!-- Pagination if needed -->
