@@ -46,8 +46,8 @@
                     guaranteed</span>.</p>
         </div>
         <div class="flex-1">
-            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2069&auto=format&fit=crop"
-                alt="handyman working" class="rounded-[40px] rounded-bl-none border-8 border-white shadow-2xl w-full">
+            <img src="/images/glen.jpg"
+                alt="handyman working" class="rounded-[40px] rounded-bl-none border-8 border-white shadow-2xl w-full h-[80vh]">
         </div>
     </div>
 </section>
