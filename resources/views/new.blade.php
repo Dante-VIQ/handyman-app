@@ -1,166 +1,89 @@
-<div class="w-full h-screen overflow-y-hidden">
-        <!-- Desktop Header -->
-        <header class="w-full items-center bg-white py-2 px-6 hidden sm:flex">
-            <div class="w-1/2"></div>
-            <div x-data="{ isOpen: false }" class="relative w-1/2 flex justify-end">
-                <button @click="isOpen = !isOpen"
-                    class="realtive z-10 w-12 h-12 rounded-full overflow-hidden border-4 border-gray-400 hover:border-gray-300 focus:border-gray-300 focus:outline-none">
-                    <img src="https://source.unsplash.com/uJ8LNVCBjFQ/400x400">
-                </button>
-                <button x-show="isOpen" @click="isOpen = false"
-                    class="h-full w-full fixed inset-0 cursor-default"></button>
-                <div x-show="isOpen" class="absolute w-32 bg-white rounded-lg shadow-lg py-2 mt-16">
-                    <a href="#" class="block px-4 py-2 account-link hover:text-white">Account</a>
-                    <a href="#" class="block px-4 py-2 account-link hover:text-white">Support</a>
-                    <a href="#" class="block px-4 py-2 account-link hover:text-white">Sign Out</a>
-                </div>
-            </div>
-        </header>
-
-        <!-- Mobile Header & Nav -->
-        <header x-data="{ isOpen: false }" class="w-full bg-sidebar py-5 px-6 sm:hidden">
-            <div class="flex items-center justify-between w-full">
-                <a href="/" class="text-white text-3xl font-semibold uppercase hover:text-gray-300">Admin</a>
-                <button @click="isOpen = !isOpen" class="text-white text-3xl focus:outline-none">
-                    <template x-if="!isOpen">
-                        <span><i class="fas fa-bars"></i></span>
-                    </template>
-                    <template x-if="isOpen">
-                        <span><i class="fas fa-times"></i></span>
-                    </template>
-                </button>
-            </div>
-
-            <!-- Dropdown Nav -->
-            <nav x-show="isOpen" class="flex flex-col pt-4 bg-sidebar w-full left-0 z-20">
-                <a href="index.html" class="flex items-center active-nav-link text-white py-4 pl-6 nav-item">
-                    <i class="fas fa-tachometer-alt mr-3"></i>
-                    Dashboard
-                </a>
-                    <a href="{{ route('admin.view') }}"
-                        class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
-                        <i class="fas fa-align-left mr-3"></i>
-                        Employees
-                    </a>
-            </nav>
-            <!-- <button class="w-full bg-white cta-btn font-semibold py-2 mt-5 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
-                <i class="fas fa-plus mr-3"></i> New Report
-            </button> -->
-        </header>
-
-        <div class="w-full overflow-x-hidden border-t flex flex-col">
-            <main class="w-full flex-grow p-6">
-                <h1 class="text-3xl text-black pb-6">Dashboard</h1>
-
-                <div class="flex flex-wrap mt-6">
-                    <div class="w-full lg:w-1/2 pr-0 lg:pr-2">
-                        <p class="text-xl pb-3 flex items-center">
-                            <i class="fas fa-plus mr-3"></i> Monthly Reports
-                        </p>
-                        <div class="p-6 bg-white">
-                            <canvas id="chartOne" width="400" height="200"></canvas>
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-1/2 pl-0 lg:pl-2 mt-12 lg:mt-0">
-                        <p class="text-xl pb-3 flex items-center">
-                            <i class="fas fa-check mr-3"></i> Resolved Reports
-                        </p>
-                        <div class="p-6 bg-white">
-                            <canvas id="chartTwo" width="400" height="200"></canvas>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w-full mt-12">
-                    <p class="text-xl pb-3 flex items-center">
-                        <i class="fas fa-list mr-3"></i> Latest Reports
-                    </p>
-                    <div class="bg-white overflow-auto">
-                        <table class="min-w-full bg-white">
-                            <thead class="bg-gray-800 text-white">
-                                <tr>
-                                    <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Name</th>
-                                    <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Last name
-                                    </th>
-                                    <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Phone</th>
-                                    <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Email</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-gray-700">
-                                <tr>
-                                    <td class="w-1/3 text-left py-3 px-4">Lian</td>
-                                    <td class="w-1/3 text-left py-3 px-4">Smith</td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="tel:622322662">622322662</a></td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                                </tr>
-                                <tr class="bg-gray-200">
-                                    <td class="w-1/3 text-left py-3 px-4">Emma</td>
-                                    <td class="w-1/3 text-left py-3 px-4">Johnson</td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="tel:622322662">622322662</a></td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="w-1/3 text-left py-3 px-4">Oliver</td>
-                                    <td class="w-1/3 text-left py-3 px-4">Williams</td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="tel:622322662">622322662</a></td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                                </tr>
-                                <tr class="bg-gray-200">
-                                    <td class="w-1/3 text-left py-3 px-4">Isabella</td>
-                                    <td class="w-1/3 text-left py-3 px-4">Brown</td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="tel:622322662">622322662</a></td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="w-1/3 text-left py-3 px-4">Lian</td>
-                                    <td class="w-1/3 text-left py-3 px-4">Smith</td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="tel:622322662">622322662</a></td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                                </tr>
-                                <tr class="bg-gray-200">
-                                    <td class="w-1/3 text-left py-3 px-4">Emma</td>
-                                    <td class="w-1/3 text-left py-3 px-4">Johnson</td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="tel:622322662">622322662</a></td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="w-1/3 text-left py-3 px-4">Oliver</td>
-                                    <td class="w-1/3 text-left py-3 px-4">Williams</td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="tel:622322662">622322662</a></td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                                </tr>
-                                <tr class="bg-gray-200">
-                                    <td class="w-1/3 text-left py-3 px-4">Isabella</td>
-                                    <td class="w-1/3 text-left py-3 px-4">Brown</td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="tel:622322662">622322662</a></td>
-                                    <td class="text-left py-3 px-4"><a class="hover:text-blue-500"
-                                            href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </main>
-
-            <footer class="w-full bg-white text-right p-4">
-                Built by <a target="_blank" href="https://www.github.com/Dante-VIQ" class="underline">Daniel Maina</a>.
-            </footer>
-        </div>
-
+<!-- HERO with image slider (full blend of colors) -->
+<section class="pt-2">
+    <!-- sliding wrapper -->
+    <livewire:image-card />
+    <!-- small caption -->
+    <div
+        class="absolute bottom-5 right-5 z-20 bg-white/90 text-[#1e4a6f] px-4 py-2 rounded-full text-sm font-semibold border border-yellow-400 shadow">
+        <i class="fas fa-camera mr-1"></i> real GB projects
     </div>
+</section>
 
+<!-- SERVICES section (cards: blue, white, green, yellow) -->
+<section id="services" class="py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+        <h2
+            class="text-4xl md:text-5xl font-bold text-[#1e4a6f] relative inline-block after:content-[''] after:block after:w-20 after:h-1 after:bg-yellow-400 after:mt-2 after:rounded mb-4">
+            Our handyman services
+        </h2>
+
+        <livewire:service-card />
+    </div>
+</section>
+
+<!-- ABOUT / why us (green soft background + yellow highlights) -->
+<section id="about" class="py-20 bg-[#eef7f0]">
+    <div class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row gap-12 items-center">
+        <div class="flex-1">
+            <h2 class="text-4xl font-bold text-[#1e4a6f]">Why GB Handyman Solutions?</h2>
+            <div class="bg-[#fef9e6] p-6 rounded-3xl border-2 border-dashed border-[#2e6b4e] my-6 space-y-3">
+                <p><i class="fas fa-leaf text-[#2e6b4e] mr-3 text-xl"></i> <strong class="text-[#1e4a6f]">Green
+                        commitment</strong> – eco-friendly practices & materials</p>
+                <p><i class="fas fa-star text-yellow-400 mr-3 text-xl"></i> <strong class="text-[#1e4a6f]">5-star
+                        reputation</strong> – 10+ years of local trust</p>
+                <p><i class="fas fa-shield-alt text-[#1e4a6f] mr-3 text-xl"></i> <strong class="text-[#1e4a6f]">Fully
+                        insured</strong> & background-checked pros</p>
+            </div>
+            <div class="flex gap-4">
+                <span class="bg-white px-6 py-3 rounded-full font-bold text-[#1e4a6f] border-2 border-yellow-400"><i
+                        class="fas fa-smile text-[#2e6b4e] mr-2"></i>2k+ clients</span>
+                <span class="bg-white px-6 py-3 rounded-full font-bold text-[#1e4a6f] border-2 border-yellow-400"><i
+                        class="fas fa-clock text-[#1e4a6f] mr-2"></i>15 min response</span>
+            </div>
+            <p class="mt-6 text-lg">We blend the <span class="text-[#1e4a6f] font-semibold">reliability</span> of a big
+                company with the <span class="text-[#2e6b4e] font-semibold">personal touch</span> of a neighbor. <span
+                    class="bg-yellow-400 text-[#1e3b2c] px-3 py-1 inline-block rounded-full text-sm font-bold">Satisfaction
+                    guaranteed</span>.</p>
+        </div>
+        <div class="flex-1">
+            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2069&auto=format&fit=crop"
+                alt="handyman working" class="rounded-[40px] rounded-bl-none border-8 border-white shadow-2xl w-full">
+        </div>
+    </div>
+</section>
+
+<!-- CTA / quote section (gradient blue to green with yellow) -->
+<div class="container mx-auto px-4 md:px-8" id="quote">
+    <div
+        class="bg-gradient-to-br from-[#1e4a6f] to-[#2e6b4e] text-white py-16 px-8 my-16 rounded-[80px] rounded-tr-none text-center">
+        <h2 class="text-4xl md:text-5xl font-bold"><i class="fas fa-calendar-alt text-yellow-400 mr-4"></i>Ready to fix
+            that list?</h2>
+        <p class="text-xl max-w-2xl mx-auto mt-4">We bring the tools, expertise, and a smile. Same-day service
+            available.</p>
+        <a href="#"
+            class="inline-block mt-8 bg-yellow-400 text-[#1e3b2c] px-10 py-4 rounded-full text-xl font-bold hover:bg-white transition shadow-lg">📞
+            (555) 789-0123 — call or text</a>
+        <p class="mt-6"><i class="fas fa-envelope text-yellow-400 mr-2"></i> hello@gbhandyman.com | free estimates
+            24/7</p>
+    </div>
+</div>
+
+<!-- FOOTER (dark blue/green background) -->
+
+
+<!-- tiny script for smooth scroll (optional) -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === "#" || href === "") return;
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>

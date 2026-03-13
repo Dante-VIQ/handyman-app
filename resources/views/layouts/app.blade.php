@@ -158,37 +158,55 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="text-[#1e4f63] bg-[#f5faff] overflow-x-hidden">
+<body class="font-['Inter'] antialiased text-slate-700 bg-white scroll-smooth">
 
     <!-- Navigation - Fixed Responsive -->
-    <div class="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+    <div class="w-full px-4 sm:px-6 lg:px-8 py-2 sm:py-3">
         <x-nav-bar />
     </div>
 
     <!-- Main Content - Fixed Responsive -->
-    <main class="w-full overflow-x-hidden p-2 sm:p-2 lg:p-4">
+    <main class="w-full overflow-x-hidden">
         @yield('content')
     </main>
 
     <!-- Footer - Fixed Responsive -->
-    <footer class="border-t border-soft-blue/50 pt-6 sm:pt-8 pb-4 mt-12 sm:mt-16 w-full px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-center text-sm">
-            <div class="font-semibold text-[#166b85] text-center lg:text-left order-3 lg:order-1">
-                © {{ date('Y') }} GB Handyman Solutions LLC
-            </div>
-            <div class="flex flex-wrap justify-center gap-4 sm:gap-6 order-1 lg:order-2">
-                <a href="/" class="hover:underline text-sm">Home</a>
-                <a href="/about" class="hover:underline text-sm">About</a>
-                <a href="/services" class="hover:underline text-sm">Services</a>
-                <a href="/service-area" class="hover:underline text-sm">Service area</a>
-                <a href="/gallery" class="hover:underline text-sm">Gallery</a>
-                <a href="/contact" class="hover:underline text-sm">Contact</a>
-            </div>
-            <div class="text-xs sm:text-sm text-center lg:text-right order-2 lg:order-3 break-words max-w-full">
-                📞 +1 202 4601753 | ✉️ gbhandymanllc@yahoo.com
-            </div>
+ <footer class="bg-[#102b36] text-slate-300 pt-16 pb-6" id="contact">
+    <div class="container mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="text-3xl font-bold text-white"><i class="fas fa-hammer text-yellow-400 mr-2"></i>GB Handyman</div>
+        <p class="mt-3">Every job done right, every time.</p>
+        <div class="flex gap-5 mt-5 text-yellow-400 text-2xl">
+          <i class="fab fa-facefbook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin"></i>
         </div>
-    </footer>
+      </div>
+      <div>
+        <h4 class="text-white text-lg font-semibold">Explore</h4>
+        <ul class="mt-4 space-y-2">
+          <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+          <li><a href="#services" class="hover:text-yellow-400 transition">Services</a></li>
+          <li><a href="#about" class="hover:text-yellow-400 transition">About us</a></li>
+          <li><a href="#" class="hover:text-yellow-400 transition">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white text-lg font-semibold">Contact</h4>
+        <address class="not-italic mt-4 space-y-2">
+          <p><i class="fas fa-map-pin text-yellow-400 w-6 mr-2"></i> 412 Solution Ave, Springfield</p>
+          <p><i class="fas fa-phone-alt text-yellow-400 w-6 mr-2"></i> (555) 123-4567</p>
+          <p><i class="fas fa-envelope text-yellow-400 w-6 mr-2"></i> support@gbhandyman.com</p>
+        </address>
+      </div>
+      <div>
+        <h4 class="text-white text-lg font-semibold">Hours</h4>
+        <p class="mt-4">Mon-Fri: 7am – 8pm<br>Sat: 8am – 4pm<br>Sun: emergency only</p>
+        <span class="inline-block bg-[#2e6b4e] text-white px-4 py-2 rounded-full mt-4"><i class="fas fa-clock text-yellow-400 mr-2"></i>24/7 support</span>
+      </div>
+    </div>
+    <div class="text-center text-sm text-slate-500 border-t border-slate-700 mt-12 pt-6">
+      © 2025 GB Handyman Solutions. All rights reserved. Built with <i class="fas fa-heart text-yellow-400"></i> in USA.
+    </div>
+  </footer>
 
     @livewireScripts()
     @stack('scripts')

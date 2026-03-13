@@ -98,220 +98,251 @@ $websiteSchema = [
     @endpush
 
 @section('content')
-    <!-- Hero Slider Section -->
-    <!-- Main Content Grid - FIXED RESPONSIVE -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-10 lg:mb-16 px-4 sm:px-6 lg:px-8">
-        <div class="order-2 lg:order-1">
-            <span
-                class="bg-soft-yellow/80 text-[#1a627b] px-4 sm:px-5 py-2 rounded-full text-sm font-semibold border border-soft-yellow inline-block mb-4 sm:mb-6">⚡
-                Works Remotely · Fully Mobile</span>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#0b4a61]">
-                Craftsmanship <br><span
-                    class="text-[#217a95] bg-soft-blue/30 px-3 sm:px-4 inline-block rounded-2xl sm:rounded-3xl">That
-                    Travels</span> To You
-            </h1>
-            <p class="text-base sm:text-lg mt-4 sm:mt-6 text-[#2a647a] max-w-xl">From bathroom remodels to flooring, drywall,
-                electrical — we
-                bring the workshop to your doorstep. Serving 20+ cities with precision.</p>
+<!-- Hero Section with H1 -->
+<div class="gradient-bg min-h-screen">
+    <!-- container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
+        <!-- ===== HERO SECTION WITH GRADIENTS ===== -->
+        <div class="relative mb-16 sm:mb-20 lg:mb-24">
+            <!-- decorative gradient blobs - adjusted for mobile -->
+            <div class="absolute top-0 right-0 w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-soft-yellow/30 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 sm:w-72 sm:h-72 lg:w-80 lg:h-80 bg-soft-green/30 rounded-full blur-3xl -z-10"></div>
 
-            <div class="flex flex-wrap gap-4 sm:gap-6 mt-6 sm:mt-8">
-                <div class="flex items-center gap-2"><span
-                        class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-soft-green flex items-center justify-center text-base sm:text-lg">⭐</span>
-                    <span class="text-sm sm:text-base font-medium">4.9 · 350+ reviews</span>
-                </div>
-                <div class="flex items-center gap-2"><span
-                        class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-soft-blue flex items-center justify-center text-base sm:text-lg">🔨</span>
-                    <span class="text-sm sm:text-base font-medium">10+ years</span>
-                </div>
-                <div class="flex items-center gap-2"><span
-                        class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-soft-yellow flex items-center justify-center text-base sm:text-lg">🛻</span>
-                    <span class="text-sm sm:text-base font-medium">fully stocked</span>
-                </div>
-            </div>
-
-            <div
-                class="mt-6 sm:mt-10 bg-white/90 rounded-2xl sm:rounded-3xl p-4 sm:p-5 border border-soft-blue/70 flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-3 sm:gap-4 soft-shadow">
-                <div class="bg-soft-yellow p-2 sm:p-3 rounded-xl sm:rounded-2xl text-sm sm:text-base w-full sm:w-auto">
-                    📍 <span class="font-medium">6249 S 242nd Pl, Bldg8 Apt203, Kent</span>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
-                    <a href="tel:+12024601753"
-                        class="bg-soft-blue px-5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm text-center ring-2 ring-purple-700">+1 202
-                        4601753</a>
-                    <a href="mailto:gbhandymanllc@yahoo.com"
-                        class="bg-soft-green px-5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm truncate text-center ring-2 ring-purple-400">gbhandymanllc@yahoo.com</a>
-                </div>
+            <div class="text-center max-w-2xl sm:max-w-3xl mx-auto px-2 sm:px-0">
+                <span class="inline-block bg-soft-blue/80 text-[#1a627b] px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-medium border border-soft-blue mb-4 sm:mb-6 backdrop-blur-sm">🇺🇸 family owned · since 2012</span>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight bg-gradient-to-r from-[#0b4a61] via-[#1f7a95] to-[#2b6d7a] bg-clip-text text-transparent px-2">More Than a Handyman.<br><span class="bg-gradient-to-r from-[#166b8a] to-[#3c8daa] bg-clip-text text-transparent">I'm your neighbor.</span></h1>
+                <p class="text-base sm:text-lg md:text-xl mt-4 sm:mt-6 text-[#2a647a] max-w-xl sm:max-w-2xl mx-auto px-4">Based in Kent, Washington — I've been fixing, remodeling, and caring for homes across the region for over a decade. Remote ready, quality obsessed.</p>
             </div>
         </div>
 
-        <div class="order-1 lg:order-2 mb-4 lg:mb-8">
-            <livewire:image-card />
-        </div>
-    </div>
+        <!-- ===== OUR STORY TIMELINE ===== -->
+        <div class="mb-20 sm:mb-24 lg:mb-28">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#115e7a] mb-8 sm:mb-12">Our Journey</h2>
 
-    <!-- Service Area Teaser - FIXED RESPONSIVE -->
-    <div
-        class="bg-white/70 rounded-3xl sm:rounded-[4rem] p-4 sm:p-6 soft-shadow border border-soft-blue/60 mb-12 sm:mb-14 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
-            <h2 class="text-xl sm:text-2xl font-semibold text-[#1f647e]">📍 Service Area — We Cover All Major Cities</h2>
-            <a href="{{ route('service-area') }}"
-                class="text-[#1d728f] underline-offset-4 hover:underline font-medium text-sm sm:text-base">
-                full service area page →
-            </a>
-        </div>
-        <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-2 mt-4 sm:mt-6">
-            @php
-                $cities = [
-                    'Kent',
-                    'Auburn',
-                    'Renton',
-                    'Tacoma',
-                    'Olympia',
-                    'Lacey',
-                    'Bellevue',
-                    'Issaquah',
-                    'Tukwila',
-                    'Seattle',
-                    'Federal Way',
-                    'Everett',
-                    'Redmond',
-                    'Puyallup',
-                ];
-            @endphp
-            @foreach ($cities as $city)
-                <span
-                    class="bg-soft-blue/60 px-2 sm:px-3 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm text-center">{{ $city }}</span>
-            @endforeach
-        </div>
-        <p class="text-xs sm:text-sm text-[#3b6d82] mt-3 sm:mt-4">plus Kirkland, Bothell, Lynwood, Chehalis, Centralia,
-            Bremerton, Gig Harbor,
-            Port Orchard, Seatac …</p>
-    </div>
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Mobile timeline line (vertical) -->
+                <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-soft-blue via-soft-green to-soft-yellow rounded-full md:hidden"></div>
 
-    <!-- About Teaser - FIXED RESPONSIVE -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center mb-16 md:mb-24 px-4 sm:px-6 lg:px-8">
-        <div
-            class="bg-soft-green/30 p-6 sm:p-8 rounded-2xl sm:rounded-[3rem] border border-soft-green/70 soft-shadow order-2 md:order-1">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">More Than a Handyman</h2>
-            <p class="mt-3 text-base sm:text-lg">Family owned, operating since 2012. We don't just fix things — we make them
-                better.
-                Based in Kent, fully remote ready, and obsessed with quality.</p>
-            <div class="mt-4 sm:mt-6 flex flex-wrap gap-2 sm:gap-3">
-                <span
-                    class="bg-soft-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm border border-soft-blue">📋
-                    licensed</span>
-                <span
-                    class="bg-soft-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm border border-soft-green">🛡️
-                    insured</span>
-                {{-- <span
-                    class="bg-soft-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm border border-soft-yellow">⭐
-                    5 star</span> --}}
-            </div>
-            <a href="/about"
-                class="mt-6 sm:mt-8 inline-flex items-center gap-2 bg-soft-blue px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-medium hover:bg-[#c5e0ff] transition">read
-                full story →</a>
-        </div>
-        <div class="grid grid-cols-2 gap-3 sm:gap-4 order-1 md:order-2">
-            <div class="bg-soft-yellow p-4 sm:p-5 rounded-2xl sm:rounded-3xl text-center text-sm sm:text-base">🏠 200+
-                projects</div>
-            {{-- <div class="bg-soft-blue p-4 sm:p-5 rounded-2xl sm:rounded-3xl text-center text-sm sm:text-base">🔧 20+
-                specialties</div> --}}
-            <div class="bg-soft-green p-4 sm:p-5 rounded-2xl sm:rounded-3xl text-center text-sm sm:text-base">📞 same-day
-                call</div>
-            {{-- <div
-                class="bg-soft-white p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-soft-blue text-center text-sm sm:text-base">
-                🚐 remote trailer</div> --}}
-        </div>
-    </div>
+                <!-- Desktop timeline line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-soft-blue via-soft-green to-soft-yellow rounded-full hidden md:block"></div>
 
-    <!-- Services Preview - FIXED RESPONSIVE -->
-    <div class="mb-16 md:mb-24 px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">Services We Deliver</h2>
-            <a href="/services"
-                class="bg-soft-yellow px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-medium border border-soft-yellow/80 hover:bg-[#ffefb5] transition whitespace-nowrap">
-                view all services →
-            </a>
-        </div>
-        <livewire:service-card />
-    </div>
-
-    <!-- Gallery Preview - FIXED RESPONSIVE -->
-    <div class="mb-16 md:mb-24 px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">Recent Transformations</h2>
-            <a href="/gallery"
-                class="bg-soft-blue px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-medium border border-soft-blue/80 hover:bg-[#c5e0ff] transition whitespace-nowrap">
-                gallery page →
-            </a>
-        </div>
-        <livewire:gallery-card />
-    </div>
-
-    <!-- Contact CTA - FIXED RESPONSIVE -->
-<div class="bg-soft-blue/20 rounded-3xl sm:rounded-[4rem] p-6 sm:p-8 md:p-10 soft-shadow border border-white/70 mb-12 sm:mb-16 backdrop-blur-sm mx-2 sm:mx-4 md:mx-6 lg:mx-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-        
-        <!-- Left Column -->
-        <div class="space-y-5">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f556e]">Ready To Fix It Right?</h2>
-            <p class="text-base sm:text-lg text-[#1e4f63]">Call or email — we'll schedule a remote consultation or arrive with our fully stocked trailer.</p>
-            
-            <!-- Contact Buttons -->
-            <div class="flex flex-col sm:flex-row gap-3">
-                <a href="tel:+12024601753" 
-                   class="flex-1 bg-white px-4 py-4 rounded-2xl sm:rounded-full flex items-center justify-between hover:bg-soft-blue transition-all duration-300 border border-soft-blue/30">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xl sm:text-2xl bg-soft-yellow w-10 h-10 rounded-full flex items-center justify-center">📞</span>
-                        <span class="text-[#1e4f63] font-semibold text-sm">+1 202 4601753</span>
+                <div class="space-y-8 sm:space-y-10 md:space-y-12 relative">
+                    <!-- item 1 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 relative">
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:text-right">
+                            <div class="bg-white/90 p-4 sm:p-5 md:p-6 rounded-2xl sm:rounded-3xl border border-soft-blue/70 soft-shadow hover-lift transition-soft md:max-w-md md:ml-auto">
+                                <span class="text-xl sm:text-2xl font-bold text-[#0b5e7c]">2012</span>
+                                <h3 class="text-lg sm:text-xl font-semibold mt-1">The Beginning</h3>
+                                <p class="mt-2 text-sm sm:text-base text-[#306f86]">Glen started GB Handyman from a single truck in Kent. First job: a bathroom remodel in Auburn. Word spread fast.</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-0 md:relative md:flex md:items-center md:justify-center">
+                            <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-soft-yellow border-3 md:border-4 border-soft-blue z-10 ml-2 md:ml-0"></div>
+                        </div>
+                        <div class="hidden md:block md:w-1/2"></div>
                     </div>
-                    <span class="text-xs bg-soft-green px-3 py-1.5 rounded-full sm:hidden">Call</span>
-                </a>
-                
-                <a href="mailto:gbhandymanllc@yahoo.com" 
-                   class="flex-1 bg-white px-4 py-4 rounded-2xl sm:rounded-full flex items-center justify-between hover:bg-soft-blue transition-all duration-300 border border-soft-blue/30">
-                    <div class="flex items-center gap-3 min-w-0">
-                        <span class="text-xl sm:text-2xl bg-soft-green w-10 h-10 rounded-full flex items-center justify-center">✉️</span>
-                        <span class="text-[#1e4f63] font-semibold text-sm truncate">gbhandymanllc@yahoo.com</span>
+
+                    <!-- item 2 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 relative">
+                        <div class="hidden md:block md:w-1/2"></div>
+                        <div class="absolute left-0 md:relative md:flex md:items-center md:justify-center">
+                            <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-soft-green border-3 md:border-4 border-soft-blue z-10 ml-2 md:ml-0"></div>
+                        </div>
+                        <div class="ml-12 md:ml-0 md:w-1/2">
+                            <div class="bg-white/90 p-4 sm:p-5 md:p-6 rounded-2xl sm:rounded-3xl border border-soft-green/70 soft-shadow hover-lift transition-soft md:max-w-md">
+                                <span class="text-xl sm:text-2xl font-bold text-[#0b5e7c]">2016</span>
+                                <h3 class="text-lg sm:text-xl font-semibold mt-1">Growing Expertise</h3>
+                                <p class="mt-2 text-sm sm:text-base text-[#306f86]">Expanded services to include electrical and plumbing. Became fully licensed and insured as GB Handyman Solutions LLC.</p>
+                            </div>
+                        </div>
                     </div>
-                    <span class="text-xs bg-soft-yellow px-3 py-1.5 rounded-full sm:hidden">Email</span>
-                </a>
-            </div>
-            
-            <!-- Address -->
-            <p class="text-sm sm:text-base text-[#266982] flex items-start gap-2 pt-2">
-                <span class="text-lg shrink-0">📍</span>
-                <span>6249 S 242nd Place (bld 8 apt 203) Kent, WA</span>
-            </p>
-        </div>
-        
-        <!-- Right Column -->
-        <div class="bg-soft-yellow p-6 sm:p-7 rounded-3xl border border-soft-yellow/80">
-            <div class="flex items-center gap-3 mb-4">
-                <span class="text-2xl bg-white/80 w-12 h-12 rounded-2xl flex items-center justify-center shrink-0">⚡</span>
-                <h3 class="font-bold text-lg sm:text-xl text-[#0f556e]">Remote & Mobile</h3>
-            </div>
-            
-            <!-- Mobile: Scrollable city list -->
-            <div class="overflow-x-auto pb-3 -mx-1 px-1 sm:overflow-visible sm:pb-0 sm:mx-0 sm:px-0 mb-4 sm:mb-0">
-                <div class="flex sm:flex-wrap gap-2 min-w-max sm:min-w-0">
-                    @php
-                        $cities = ['Auburn', 'Kent', 'Renton', 'Tacoma', 'Olympia', 'Lacey', 'Bellevue', 'Issaquah', 'Tukwila', 'Seatac', 'Port Orchard', 'Seattle', 'Federal Way', 'Everett', 'Redmond', 'Puyallup', 'Kirkland', 'Bothell', 'Lynwood', 'Chehalis', 'Centralia', 'Bremerton', 'Gig Harbor'];
-                    @endphp
-                    
-                    @foreach($cities as $city)
-                        <span class="bg-white/80 px-3 py-1.5 rounded-full text-xs sm:text-sm border border-white/60 whitespace-nowrap sm:whitespace-normal shadow-sm">
-                            {{ $city }}
-                        </span>
-                    @endforeach
+
+                    <!-- item 3 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 relative">
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:text-right">
+                            <div class="bg-white/90 p-4 sm:p-5 md:p-6 rounded-2xl sm:rounded-3xl border border-soft-yellow/70 soft-shadow hover-lift transition-soft md:max-w-md md:ml-auto">
+                                <span class="text-xl sm:text-2xl font-bold text-[#0b5e7c]">2020</span>
+                                <h3 class="text-lg sm:text-xl font-semibold mt-1">Remote & Mobile</h3>
+                                <p class="mt-2 text-sm sm:text-base text-[#306f86]">Invested in a fully stocked trailer. Started serving 20+ cities remotely — from Olympia to Bellevue.</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-0 md:relative md:flex md:items-center md:justify-center">
+                            <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-soft-blue border-3 md:border-4 border-soft-yellow z-10 ml-2 md:ml-0"></div>
+                        </div>
+                        <div class="hidden md:block md:w-1/2"></div>
+                    </div>
+
+                    <!-- item 4 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 relative">
+                        <div class="hidden md:block md:w-1/2"></div>
+                        <div class="absolute left-0 md:relative md:flex md:items-center md:justify-center">
+                            <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-soft-yellow border-3 md:border-4 border-soft-green z-10 ml-2 md:ml-0"></div>
+                        </div>
+                        <div class="ml-12 md:ml-0 md:w-1/2">
+                            <div class="bg-white/90 p-4 sm:p-5 md:p-6 rounded-2xl sm:rounded-3xl border border-soft-blue/70 soft-shadow hover-lift transition-soft md:max-w-md">
+                                <span class="text-xl sm:text-2xl font-bold text-[#0b5e7c]">2025</span>
+                                <h3 class="text-lg sm:text-xl font-semibold mt-1">Today & Beyond</h3>
+                                <p class="mt-2 text-sm sm:text-base text-[#306f86]">350+ 5-star reviews and the same commitment to craftsmanship. Still family owned, still hands-on.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <!-- Availability Badge -->
-            <div class="bg-white/80 rounded-full py-3 px-4 text-sm text-center font-medium text-[#0f556e] border border-soft-yellow/60 mt-4 sm:mt-6">
-                📞 call for same‑week availability • we respond within 2 hours
+        </div>
+
+        <!-- ===== MEET THE TEAM (SINGLE MEMBER) ===== -->
+        <div class="mb-20 sm:mb-24">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#115e7a] mb-4">Meet the Hand Behind the Work</h2>
+            <p class="text-center text-base sm:text-lg text-[#306f86] max-w-2xl mx-auto mb-8 sm:mb-12 px-4">Builder, perfectionist, craftsman — serving your home like it's my own.</p>
+
+            <div class="max-w-2xl mx-auto px-4 sm:px-0">
+                <!-- Single team member card -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-8 border border-soft-blue/70 soft-shadow hover-lift transition-soft">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
+                        <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-soft-blue to-soft-green flex items-center justify-center text-5xl sm:text-6xl flex-shrink-0 border-4 border-white shadow-lg">
+                            👨‍🔧
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-[#115e7a]">Glen</h3>
+                            <p class="text-base sm:text-lg text-[#3d748b] mb-3">Founder · 18+ years experience</p>
+                            <p class="text-sm sm:text-base text-[#2a647a] leading-relaxed">Specializes in bathroom remodeling, tile work, custom carpentry, electrical, plumbing, and flooring. The one who answers the phone at 7am and stays until the job is done right.</p>
+                            <div class="flex flex-wrap gap-2 mt-4 justify-center sm:justify-start">
+                                <span class="bg-soft-blue px-3 py-1.5 rounded-full text-xs sm:text-sm">bathroom pro</span>
+                                <span class="bg-soft-green px-3 py-1.5 rounded-full text-xs sm:text-sm">carpentry</span>
+                                <span class="bg-soft-yellow px-3 py-1.5 rounded-full text-xs sm:text-sm">electrical</span>
+                                <span class="bg-soft-blue px-3 py-1.5 rounded-full text-xs sm:text-sm">plumbing</span>
+                                <span class="bg-soft-green px-3 py-1.5 rounded-full text-xs sm:text-sm">flooring</span>
+                                <span class="bg-soft-yellow px-3 py-1.5 rounded-full text-xs sm:text-sm">drywall</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+
+        <!-- ===== VALUES WITH GRADIENTS ===== -->
+        <div class="mb-20 sm:mb-24">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#115e7a] mb-8 sm:mb-12">What Drives Me</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 max-w-6xl mx-auto px-4 sm:px-0">
+                <div class="bg-gradient-to-br from-soft-blue/40 to-soft-white p-6 sm:p-8 rounded-[2rem] sm:rounded-[3rem] border border-soft-blue/70 soft-shadow text-center hover-lift transition-soft">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto bg-soft-yellow rounded-2xl sm:rounded-3xl flex items-center justify-center text-2xl sm:text-3xl mb-4">🔨</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-[#115e7a]">Craftsmanship First</h3>
+                    <p class="mt-2 text-sm sm:text-base text-[#306f86]">I don't cut corners. Every job, big or small, gets the same attention to detail I'd give my own home.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-soft-green/40 to-soft-white p-6 sm:p-8 rounded-[2rem] sm:rounded-[3rem] border border-soft-green/70 soft-shadow text-center hover-lift transition-soft">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto bg-soft-blue rounded-2xl sm:rounded-3xl flex items-center justify-center text-2xl sm:text-3xl mb-4">🤝</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-[#115e7a]">Neighborly Trust</h3>
+                    <p class="mt-2 text-sm sm:text-base text-[#306f86]">I'm from here. I treat your home like I'd treat my own — with respect, honesty, and care.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-soft-yellow/40 to-soft-white p-6 sm:p-8 rounded-[2rem] sm:rounded-[3rem] border border-soft-yellow/70 soft-shadow text-center hover-lift transition-soft sm:col-span-2 lg:col-span-1 sm:max-w-md sm:mx-auto lg:max-w-none">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto bg-soft-green rounded-2xl sm:rounded-3xl flex items-center justify-center text-2xl sm:text-3xl mb-4">🚐</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-[#115e7a]">Remote Ready</h3>
+                    <p class="mt-2 text-sm sm:text-base text-[#306f86]">Fully mobile. I come to you with everything needed — from Kent to Olympia, Bellevue to Bremerton.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== TESTIMONIAL SECTION ===== -->
+        <div class="mb-20 sm:mb-24">
+            <div class="max-w-4xl mx-auto px-4 sm:px-0">
+                <div class="bg-white/80 backdrop-blur-sm rounded-[2rem] sm:rounded-[4rem] p-6 sm:p-8 lg:p-10 border border-soft-blue/60 soft-shadow">
+                    <div class="flex flex-col sm:flex-row gap-6 sm:gap-8 items-center">
+                        <div class="text-5xl sm:text-7xl lg:text-8xl bg-soft-yellow w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center flex-shrink-0">“</div>
+                        <div>
+                            <p class="text-base sm:text-lg lg:text-xl italic text-[#1d5e78]">Glen remodeled our master bath — he was punctual, clean, and the tile work is stunning. He even fixed a plumbing issue the same day. True pro.</p>
+                            <div class="mt-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+                                <span class="font-semibold text-[#115e7a]">— Sarah, Kent</span>
+                                <span class="flex text-yellow-500 text-sm sm:text-base">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== LOCATION & CONTACT CARD ===== -->
+        <div class="mb-16 sm:mb-20">
+            <div class="bg-gradient-to-r from-soft-blue to-soft-green/70 rounded-[2rem] sm:rounded-[4rem] p-6 sm:p-8 lg:p-10 border border-white/60 soft-shadow mx-2 sm:mx-0">
+                <div class="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-start">
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-[#0b4a61]">Visit or Call — Based in Kent</h2>
+                        <p class="mt-2 sm:mt-3 text-base sm:text-lg text-[#1a5f79]">Stop by or give me a call. I'm always happy to talk through your project.</p>
+                        <div class="mt-4 sm:mt-6 space-y-2 sm:space-y-3">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 bg-white/80 p-3 sm:p-4 rounded-2xl sm:rounded-full text-sm sm:text-base break-all">
+                                <span class="text-xl shrink-0">📍</span>
+                                <span>6249 S 242nd Place, Bldg 8 Apt 203, Kent, WA 98032</span>
+                            </div>
+                            <a href="tel:+12024601753" class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 bg-white/80 p-3 sm:p-4 rounded-2xl sm:rounded-full text-sm sm:text-base hover:bg-soft-blue transition">
+                                <span class="text-xl shrink-0">📞</span>
+                                <span>202 4601753</span>
+                            </a>
+                            <a href="mailto:gbhandymanllc@yahoo.com" class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 bg-white/80 p-3 sm:p-4 rounded-2xl sm:rounded-full text-sm sm:text-base hover:bg-soft-blue transition break-all">
+                                <span class="text-xl shrink-0">✉️</span>
+                                <span>gbhandymanllc@yahoo.com</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-soft-yellow p-5 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl border border-soft-yellow/80">
+                        <p class="font-semibold text-base sm:text-lg">📋 Quick Facts</p>
+                        <ul class="mt-3 sm:mt-4 space-y-2 text-sm sm:text-base">
+                            <li class="flex items-start gap-2">
+                                <span class="text-[#166b8a]">✓</span>
+                                <span>licensed & insured</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-[#166b8a]">✓</span>
+                                <span>18+ years experience</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-[#166b8a]">✓</span>
+                                <span>fully stocked mobile trailer</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-[#166b8a]">✓</span>
+                                <span>serving 20+ cities remotely</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-[#166b8a]">✓</span>
+                                <span>free estimates</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 sm:mt-6 bg-white/80 rounded-full py-3 px-4 text-center text-sm sm:text-base font-medium">
+                            📞 call for same‑week availability
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- end container -->
+</div> <!-- end gradient-bg -->
 @endsection
+
+<style>
+/* Additional responsive styles */
+@media (max-width: 640px) {
+    .timeline-dot {
+        width: 32px;
+        height: 32px;
+        border-width: 3px;
+    }
+
+    .hover-lift:hover {
+        transform: translateY(-2px);
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .hover-lift:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* Ensure text doesn't overflow on small screens */
+.break-all {
+    word-break: break-word;
+}
+</style>

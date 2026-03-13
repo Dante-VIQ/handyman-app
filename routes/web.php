@@ -19,7 +19,7 @@ use App\Models\Employee;
 use App\Models\Image;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'home');
+Route::view('/', 'welcome');
 // Route::middleware(['role:user'])->group(function () {
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

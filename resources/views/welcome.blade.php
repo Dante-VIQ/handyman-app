@@ -12,7 +12,7 @@
 @endpush
 
 @section('content')
-    @include('home')
+    @include('new')
 @endsection
 
 @push('schema')
