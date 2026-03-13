@@ -247,13 +247,13 @@ $breadcrumbSchema = [
             <h2 class="text-4xl md:text-5xl font-bold mb-4">Ready to Transform Your Home?</h2>
             <p class="text-xl max-w-2xl mx-auto mb-8">Let us add your project to our gallery of satisfied customers.</p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="/quote"
+                <a href="/contact"
                     class="bg-yellow-400 text-[#1e3b2c] px-8 py-4 rounded-full text-xl font-bold hover:bg-white transition shadow-lg">
                     <i class="fas fa-calendar-check mr-2"></i> Get Free Estimate
                 </a>
                 <a href="tel:5551234567"
                     class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-white/20 transition">
-                    <i class="fas fa-phone-alt mr-2"></i> (555) 123-4567
+                    <i class="fas fa-phone-alt mr-2"></i> +1 (202) 460-1753
                 </a>
             </div>
             <p class="mt-6 text-sm opacity-80">
@@ -263,7 +263,7 @@ $breadcrumbSchema = [
     </section>
 
     <!-- Instagram Feed Section -->
-    <section class="py-16 bg-[#eef7f0]">
+    {{-- <section class="py-16 bg-[#eef7f0]">
         <div class="container mx-auto px-4 md:px-8 text-center">
             <i class="fab fa-instagram text-5xl text-[#1e4a6f] mb-4"></i>
             <h2 class="text-3xl font-bold text-[#1e4a6f] mb-2">Follow Us on Instagram</h2>
@@ -282,5 +282,5 @@ $breadcrumbSchema = [
                     class="w-full aspect-square object-cover rounded-2xl shadow-lg hover:scale-105 transition">
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection

@@ -275,19 +275,19 @@ $faqSchema = [
     </section>
 
     <!-- CTA Section -->
-    <section class="container mx-auto px-4 md:px-8 my-12">
+    <section class="container mx-auto px-4 md:px-8 my-4">
         <div
             class="bg-gradient-to-r from-[#1e4a6f] to-[#2e6b4e] text-white p-12 rounded-[70px] rounded-bl-none text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">Ready to get started?</h2>
             <p class="text-xl max-w-2xl mx-auto mb-8">Book any service today and get 10% off your first repair.</p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="/quote"
+                <a href="/contact"
                     class="bg-yellow-400 text-[#1e3b2c] px-8 py-4 rounded-full text-xl font-bold hover:bg-white transition shadow-lg">
                     <i class="fas fa-calendar-check mr-2"></i> Schedule online
                 </a>
-                <a href="tel:5551234567"
+                <a href="tel:+12024601753"
                     class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-white/20 transition">
-                    <i class="fas fa-phone-alt mr-2"></i> (555) 123-4567
+                    <i class="fas fa-phone-alt mr-2"></i> (202) 460-1753
                 </a>
             </div>
         </div>

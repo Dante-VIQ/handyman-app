@@ -134,8 +134,8 @@ $breadcrumbSchema = [
                     <p class="text-white/90">Available day or night for urgent repairs</p>
                 </div>
             </div>
-            <a href="tel:5551234567" class="bg-white text-red-500 px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-400 hover:text-[#1e3b2c] transition shadow-lg whitespace-nowrap">
-                <i class="fas fa-phone-alt mr-2"></i> (555) 123-4567
+            <a href="tel:+12024601753" class="bg-white text-red-500 px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-400 hover:text-[#1e3b2c] transition shadow-lg whitespace-nowrap">
+                <i class="fas fa-phone-alt mr-2"></i> +1 (202) 460-1753
             </a>
         </div>
     </div>
@@ -145,49 +145,49 @@ $breadcrumbSchema = [
         <div class="container mx-auto px-4 md:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Phone Card -->
-                <div class="contact-card bg-[#eef7f0] p-8 rounded-3xl text-center group hover:bg-[#1e4a6f] transition">
-                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-400 transition">
+                <div class="contact-card hover:bg-[#eef7f0] p-8 rounded-3xl text-center group bg-[#1e4a6f] transition">
+                    <div class="w-20 h-20 group-hover:bg-white rounded-full flex items-center justify-center mx-auto mb-4 bg-yellow-400 transition">
                         <i class="fas fa-phone-alt text-3xl text-[#1e4a6f] group-hover:text-[#1e3b2c]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#1e4a6f] mb-2 group-hover:text-white">Call Us</h3>
-                    <p class="text-slate-600 mb-4 group-hover:text-white/90">Mon-Fri: 7am-8pm<br>Sat: 8am-4pm</p>
-                    <a href="tel:5551234567" class="text-[#2e6b4e] font-semibold group-hover:text-yellow-400 text-lg">
-                        (555) 123-4567
+                    <h3 class="text-2xl font-bold group-hover:text-[#1e4a6f] mb-2 text-white">Call Us</h3>
+                    <p class="group-hover:text-slate-600 mb-4 text-white/90">Mon-Fri: 7am-8pm<br>Sat: 8am-4pm</p>
+                    <a href="tel:+12024601753" class="group-hover:text-[#2e6b4e] font-semibold text-yellow-400 text-lg">
+                        (202) 460-1753
                     </a>
                 </div>
 
                 <!-- Email Card -->
-                <div class="contact-card bg-[#eef7f0] p-8 rounded-3xl text-center group hover:bg-[#1e4a6f] transition">
-                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-400 transition">
+                <div class="contact-card hover:bg-[#eef7f0] p-8 rounded-3xl text-center group bg-[#1e4a6f] transition">
+                    <div class="w-20 h-20 group-hover:bg-white rounded-full flex items-center justify-center mx-auto mb-4 bg-yellow-400 transition">
                         <i class="fas fa-envelope text-3xl text-[#1e4a6f] group-hover:text-[#1e3b2c]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#1e4a6f] mb-2 group-hover:text-white">Email Us</h3>
-                    <p class="text-slate-600 mb-4 group-hover:text-white/90">24-hour response time</p>
-                    <a href="mailto:support@gbhandyman.com" class="text-[#2e6b4e] font-semibold group-hover:text-yellow-400 text-lg break-all">
-                        support@gbhandyman.com
+                    <h3 class="text-2xl font-bold group-hover:text-[#1e4a6f] mb-2 text-white">Email Us</h3>
+                    <p class="group-hover:text-slate-600 mb-4 text-white/90">24-hour response time</p>
+                    <a href="mailto:gbhandymanllc@yahoo.com" class="group-hover:text-[#2e6b4e] font-semibold text-yellow-400 text-sm break-all">
+                        gbhandymanllc@yahoo.com
                     </a>
                 </div>
 
                 <!-- Location Card -->
-                <div class="contact-card bg-[#eef7f0] p-8 rounded-3xl text-center group hover:bg-[#1e4a6f] transition">
-                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-400 transition">
-                        <i class="fas fa-map-pin text-3xl text-[#1e4a6f] group-hover:text-[#1e3b2c]"></i>
+                <div class="contact-card hover:bg-[#eef7f0] p-8 rounded-3xl text-center group bg-[#1e4a6f] transition">
+                    <div class="w-20 h-20 group-hover:bg-white rounded-full flex items-center justify-center mx-auto mb-4 bg-yellow-400 transition">
+                        <i class="fas fa-map-pin text-3xl group-hover:text-[#1e4a6f] text-[#1e3b2c]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#1e4a6f] mb-2 group-hover:text-white">Visit Us</h3>
-                    <p class="text-slate-600 mb-4 group-hover:text-white/90">By appointment only</p>
-                    <address class="not-italic text-[#2e6b4e] font-semibold group-hover:text-yellow-400">
+                    <h3 class="text-2xl font-bold group-hover:text-[#1e4a6f] mb-2 text-white">Visit Us</h3>
+                    <p class="group-hover:text-slate-600 mb-4 text-white/90">By appointment only</p>
+                    <address class="not-italic group-hover:text-[#2e6b4e] font-semibold text-yellow-400">
                         6249 S 242nd Place<br>Bldg 8 Apt 203<br>Kent, WA 98032
                     </address>
                 </div>
 
                 <!-- Chat Card -->
-                <div class="contact-card bg-[#eef7f0] p-8 rounded-3xl text-center group hover:bg-[#1e4a6f] transition">
-                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-400 transition">
-                        <i class="fas fa-comment-dots text-3xl text-[#1e4a6f] group-hover:text-[#1e3b2c]"></i>
+                <div class="contact-card hover:bg-[#eef7f0] p-8 rounded-3xl text-center group bg-[#1e4a6f] transition">
+                    <div class="w-20 h-20 group-hover:bg-white rounded-full flex items-center justify-center mx-auto mb-4 bg-yellow-400 transition">
+                        <i class="fas fa-comment-dots text-3xl group-hover:text-[#1e4a6f] text-[#1e3b2c]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#1e4a6f] mb-2 group-hover:text-white">Live Chat</h3>
-                    <p class="text-slate-600 mb-4 group-hover:text-white/90">Instant response</p>
-                    <button class="text-[#2e6b4e] font-semibold group-hover:text-yellow-400 text-lg hover:underline">
+                    <h3 class="text-2xl font-bold group-hover:text-[#1e4a6f] mb-2 text-white">Live Chat</h3>
+                    <p class="group-hover:text-slate-600 mb-4 text-white/90">Instant response</p>
+                    <button class="group-hover:text-[#2e6b4e] font-semibold text-yellow-400 text-lg hover:underline">
                         Start chatting
                     </button>
                 </div>
@@ -451,11 +451,11 @@ $breadcrumbSchema = [
             <h2 class="text-4xl md:text-5xl font-bold mb-4">Ready to Start Your Project?</h2>
             <p class="text-xl max-w-2xl mx-auto mb-8">Get a free estimate today - no obligation, just honest advice.</p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="/quote" class="bg-yellow-400 text-[#1e3b2c] px-8 py-4 rounded-full text-xl font-bold hover:bg-white transition shadow-lg">
+                <a href="/contact" class="bg-yellow-400 text-[#1e3b2c] px-8 py-4 rounded-full text-xl font-bold hover:bg-white transition shadow-lg">
                     <i class="fas fa-calendar-check mr-2"></i> Schedule Online
                 </a>
-                <a href="tel:5551234567" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-white/20 transition">
-                    <i class="fas fa-phone-alt mr-2"></i> (555) 123-4567
+                <a href="tel:+12024601753" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-white/20 transition">
+                    <i class="fas fa-phone-alt mr-2"></i> (202) 460-1753
                 </a>
             </div>
         </div>

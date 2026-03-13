@@ -127,49 +127,23 @@ $glenSchema = [
   </section>
 
   <!-- TEAM section (face + names) – classy, with yellow/blue/green -->
-  <section class="py-20 bg-white">
+  <section class="py-10 bg-white">
     <div class="container mx-auto px-4 md:px-8">
       <div class="text-center mb-12">
         <span class="text-yellow-500 font-semibold">— THE FACES BEHIND THE TOOLS —</span>
         <h2 class="text-4xl font-bold text-[#1e4a6f] mt-2">Meet the GB team</h2>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8">
         <!-- team 1 -->
         <div class="fade-in text-center group" style="animation-delay: 0.1s;">
-          <div class="relative mb-4 overflow-hidden rounded-full border-4 border-yellow-400 w-40 h-40 mx-auto">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="Founder" class="w-full h-full object-cover group-hover:scale-105 transition">
+          <div class="relative mb-4 overflow-hidden rounded-2xl border-4 border-yellow-400 w-60 h-60 mx-auto">
+            <img src="/images/glen.jpg" alt="Founder" class="w-full h-full object-cover group-hover:scale-105 transition">
           </div>
-          <h3 class="font-bold text-xl text-[#1e4a6f]">Greg Brewer</h3>
-          <p class="text-[#2e6b4e] font-medium">Founder & Master Carpenter</p>
+          <h3 class="font-bold text-xl text-[#1e4a6f]">Gerald Benjamin</h3>
+          <p class="text-[#2e6b4e] font-medium">Founder & CEO</p>
           <p class="text-sm mt-2 text-slate-500">20+ years experience, still loves the smell of sawdust.</p>
         </div>
-        <!-- team 2 -->
-        <div class="fade-in text-center" style="animation-delay: 0.2s;">
-          <div class="relative mb-4 overflow-hidden rounded-full border-4 border-yellow-400 w-40 h-40 mx-auto">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="plumber" class="w-full h-full object-cover">
-          </div>
-          <h3 class="font-bold text-xl text-[#1e4a6f]">Maya Rivera</h3>
-          <p class="text-[#2e6b4e] font-medium">Plumbing & Gas Specialist</p>
-          <p class="text-sm mt-2 text-slate-500">Licensed, woman-owned, can fix any leak with a smile.</p>
-        </div>
-        <!-- team 3 -->
-        <div class="fade-in text-center" style="animation-delay: 0.3s;">
-          <div class="relative mb-4 overflow-hidden rounded-full border-4 border-yellow-400 w-40 h-40 mx-auto">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="electrician" class="w-full h-full object-cover">
-          </div>
-          <h3 class="font-bold text-xl text-[#1e4a6f]">David Chen</h3>
-          <p class="text-[#2e6b4e] font-medium">Lead Electrician</p>
-          <p class="text-sm mt-2 text-slate-500">Master electrician, fan of smart home & safety first.</p>
-        </div>
-        <!-- team 4 -->
-        <div class="fade-in text-center" style="animation-delay: 0.4s;">
-          <div class="relative mb-4 overflow-hidden rounded-full border-4 border-yellow-400 w-40 h-40 mx-auto">
-            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=2070&auto=format&fit=crop" alt="painter" class="w-full h-full object-cover">
-          </div>
-          <h3 class="font-bold text-xl text-[#1e4a6f]">Sofia Malik</h3>
-          <p class="text-[#2e6b4e] font-medium">Painting & Finishing</p>
-          <p class="text-sm mt-2 text-slate-500">Perfect edges, color consultant, eco-friendly paints.</p>
-        </div>
+
       </div>
       <p class="text-center mt-12 text-slate-500 italic">…and 8 more skilled pros behind the scenes, all background-checked.</p>
     </div>
@@ -182,7 +156,7 @@ $glenSchema = [
         <h3 class="text-3xl font-bold">Feel the GB difference</h3>
         <p class="text-lg opacity-90 mt-2">We treat your home like our own. Free estimate, no obligation.</p>
       </div>
-      <a href="#" class="bg-yellow-400 text-[#1e3b2c] px-8 py-4 rounded-full font-bold text-lg whitespace-nowrap hover:bg-white transition shadow-lg flex items-center gap-2"><i class="fas fa-phone-alt"></i> Call (555) 123-4567</a>
+      <a href="tel:+12024601753" class="bg-yellow-400 text-[#1e3b2c] px-8 py-4 rounded-full font-bold text-lg whitespace-nowrap hover:bg-white transition shadow-lg flex items-center gap-2"><i class="fas fa-phone-alt"></i> Call (202) 460-1753</a>
     </div>
   </section>
 

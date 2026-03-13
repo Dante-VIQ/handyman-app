@@ -260,8 +260,8 @@ $breadcrumbSchema = [
                             <div>
                                 <h3 class="text-xl font-bold text-[#1e4a6f]">Emergency services available 24/7</h3>
                                 <p class="text-slate-600 mt-2">From Kent to Seattle to Tacoma, we respond to emergencies day or night.</p>
-                                <a href="tel:5551234567" class="inline-block mt-4 bg-red-500 text-white px-6 py-3 rounded-full font-bold hover:bg-red-600 transition">
-                                    <i class="fas fa-phone-alt mr-2"></i> Emergency: (555) 123-4567
+                                <a href="tel:+12024601753" class="inline-block mt-4 bg-red-500 text-white px-6 py-3 rounded-full font-bold hover:bg-red-600 transition">
+                                    <i class="fas fa-phone-alt mr-2"></i> Emergency: (460) 460-1753
                                 </a>
                             </div>
                         </div>
@@ -522,8 +522,8 @@ $breadcrumbSchema = [
                 <a href="/quote" class="bg-yellow-400 text-[#1e3b2c] px-8 py-4 rounded-full text-xl font-bold hover:bg-white transition shadow-lg">
                     <i class="fas fa-calendar-check mr-2"></i> Schedule online
                 </a>
-                <a href="tel:5551234567" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-white/20 transition">
-                    <i class="fas fa-phone-alt mr-2"></i> (555) 123-4567
+                <a href="tel:+12024601753" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-white/20 transition">
+                    <i class="fas fa-phone-alt mr-2"></i> (202) 460-1753
                 </a>
             </div>
             <p class="mt-6 text-sm opacity-80">

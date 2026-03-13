@@ -172,7 +172,7 @@
 
     <!-- Footer - Fixed Responsive -->
  <footer class="bg-[#102b36] text-slate-300 pt-16 pb-6" id="contact">
-    <div class="container mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="container mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       <div>
         <div class="text-3xl font-bold text-white"><i class="fas fa-hammer text-yellow-400 mr-2"></i>GB Handyman</div>
         <p class="mt-3">Every job done right, every time.</p>
@@ -183,18 +183,18 @@
       <div>
         <h4 class="text-white text-lg font-semibold">Explore</h4>
         <ul class="mt-4 space-y-2">
-          <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
-          <li><a href="#services" class="hover:text-yellow-400 transition">Services</a></li>
-          <li><a href="#about" class="hover:text-yellow-400 transition">About us</a></li>
-          <li><a href="#" class="hover:text-yellow-400 transition">Careers</a></li>
+          <li><a href="/" class="hover:text-yellow-400 transition">Home</a></li>
+          <li><a href="/services" class="hover:text-yellow-400 transition">Services</a></li>
+          <li><a href="/about" class="hover:text-yellow-400 transition">About us</a></li>
+          <li><a href="/service-area" class="hover:text-yellow-400 transition">Service Area</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white text-lg font-semibold">Contact</h4>
         <address class="not-italic mt-4 space-y-2">
-          <p><i class="fas fa-map-pin text-yellow-400 w-6 mr-2"></i> 412 Solution Ave, Springfield</p>
-          <p><i class="fas fa-phone-alt text-yellow-400 w-6 mr-2"></i> (555) 123-4567</p>
-          <p><i class="fas fa-envelope text-yellow-400 w-6 mr-2"></i> support@gbhandyman.com</p>
+          <p><i class="fas fa-map-pin text-yellow-400 w-6 mr-2"></i> 6249 S 242nd Place, Bldg 8 Apt 203</p>
+          <p><i class="fas fa-phone-alt text-yellow-400 w-6 mr-2"></i> +1 (202) 460-1753</p>
+          <p><i class="fas fa-envelope text-yellow-400 w-6 mr-2"></i> gbhandymanllc@yahoo.com</p>
         </address>
       </div>
       <div>
@@ -204,7 +204,7 @@
       </div>
     </div>
     <div class="text-center text-sm text-slate-500 border-t border-slate-700 mt-12 pt-6">
-      © 2025 GB Handyman Solutions. All rights reserved. Built with <i class="fas fa-heart text-yellow-400"></i> in USA.
+      © 2026 GB Handyman Solutions. All rights reserved.
     </div>
   </footer>
 

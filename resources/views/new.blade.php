@@ -10,7 +10,7 @@
 </section>
 
 <!-- SERVICES section (cards: blue, white, green, yellow) -->
-<section id="services" class="py-20 bg-white">
+<section id="services" class="py-15 bg-white">
     <div class="container mx-auto px-4 md:px-8">
         <h2
             class="text-4xl md:text-5xl font-bold text-[#1e4a6f] relative inline-block after:content-[''] after:block after:w-20 after:h-1 after:bg-yellow-400 after:mt-2 after:rounded mb-4">
@@ -22,7 +22,7 @@
 </section>
 
 <!-- ABOUT / why us (green soft background + yellow highlights) -->
-<section id="about" class="py-20 bg-[#eef7f0]">
+<section id="about" class="py-15 bg-[#eef7f0]">
     <div class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row gap-12 items-center">
         <div class="flex-1">
             <h2 class="text-4xl font-bold text-[#1e4a6f]">Why GB Handyman Solutions?</h2>
@@ -60,16 +60,13 @@
             that list?</h2>
         <p class="text-xl max-w-2xl mx-auto mt-4">We bring the tools, expertise, and a smile. Same-day service
             available.</p>
-        <a href="#"
+        <a href="tel:+12024601753"
             class="inline-block mt-8 bg-yellow-400 text-[#1e3b2c] px-10 py-4 rounded-full text-xl font-bold hover:bg-white transition shadow-lg">📞
-            (555) 789-0123 — call or text</a>
-        <p class="mt-6"><i class="fas fa-envelope text-yellow-400 mr-2"></i> hello@gbhandyman.com | free estimates
+            (202) 460-1753 — call or text</a>
+        <p class="mt-6"><i class="fas fa-envelope text-yellow-400 mr-2"></i> gbhandymanllc@yahoo.com | free estimates
             24/7</p>
     </div>
 </div>
-
-<!-- FOOTER (dark blue/green background) -->
-
 
 <!-- tiny script for smooth scroll (optional) -->
 <script>

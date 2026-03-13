@@ -8,9 +8,9 @@
     $slideWidth = 100 / $slideCount;
 @endphp
 
-<div class="relative w-full h-[400px] md:h-[85vh] min-h-[500px] overflow-hidden bg-[#0b2c3d]" 
-     x-data="{ 
-        currentSlide: 0, 
+<div class="relative w-full h-[400px] md:h-[85vh] min-h-[500px] overflow-hidden bg-[#0b2c3d]"
+     x-data="{
+        currentSlide: 0,
         totalSlides: {{ $slideCount }},
         init() {
             // Ensure currentSlide is valid
@@ -25,11 +25,11 @@
             }
         }
      }">
-    
+
     <!-- Slides container -->
     <div class="flex h-full transition-transform duration-700 ease-in-out"
          :style="'transform: translateX(-' + (currentSlide * 100 / totalSlides) + '%); width: ' + (totalSlides * 100) + '%'">
-        
+
         @forelse($images as $image)
             <!-- Dynamic slide -->
             <div class="relative h-full slide-bg flex-shrink-0"
@@ -50,13 +50,13 @@
                             </h1>
                             <p class="text-lg sm:text-xl md:text-2xl mt-4 opacity-90">Reliable, skilled, and trusted</p>
                         @endif
-                        
+
                         <div class="flex flex-wrap gap-4 mt-6 sm:mt-8 lg:mt-10">
                             <a href="/services"
                                 class="inline-block bg-yellow-400 text-[#1e3b2c] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white hover:text-[#1e4a6f] transition shadow-lg whitespace-nowrap">
                                 Explore services
                             </a>
-                            <a href="/contact"
+                            <a href="tel:+12024601753"
                                 class="inline-block bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white/20 transition shadow-lg whitespace-nowrap">
                                 Call now
                             </a>
@@ -138,7 +138,7 @@
     {{-- @if($slideCount > 1)
     <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
         @for($i = 0; $i < $slideCount; $i++)
-            <button 
+            <button
                 class="w-2.5 h-2.5 rounded-full transition-all duration-300 hover:scale-125"
                 :class="{
                     'bg-yellow-400 w-8': currentSlide === {{ $i }},
@@ -154,14 +154,14 @@
 
     <!-- Navigation arrows -->
     @if($slideCount > 1)
-    <button 
+    <button
         class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center transition"
         @click="currentSlide = (currentSlide - 1 + totalSlides) % totalSlides"
         type="button"
         aria-label="Previous slide">
         <i class="fas fa-chevron-left"></i>
     </button>
-    <button 
+    <button
         class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center transition"
         @click="currentSlide = (currentSlide + 1) % totalSlides"
         type="button"
@@ -189,7 +189,7 @@
     .slide-overlay {
         background: linear-gradient(90deg, rgba(30,74,111,0.9) 0%, rgba(46,107,78,0.6) 100%);
     }
-    
+
     .slide-bg {
         background-position: 70% center !important;
     }
