@@ -101,28 +101,30 @@ $websiteSchema = [
     @include('new')
 @endsection
 
-<style>
-    /* Additional responsive styles */
-    @media (max-width: 640px) {
-        .timeline-dot {
-            width: 32px;
-            height: 32px;
-            border-width: 3px;
+@push('styles')
+    <style>
+        /* Additional responsive styles */
+        @media (max-width: 640px) {
+            .timeline-dot {
+                width: 32px;
+                height: 32px;
+                border-width: 3px;
+            }
+
+            .hover-lift:hover {
+                transform: translateY(-2px);
+            }
         }
 
-        .hover-lift:hover {
-            transform: translateY(-2px);
+        @media (min-width: 641px) and (max-width: 768px) {
+            .hover-lift:hover {
+                transform: translateY(-3px);
+            }
         }
-    }
 
-    @media (min-width: 641px) and (max-width: 768px) {
-        .hover-lift:hover {
-            transform: translateY(-3px);
+        /* Ensure text doesn't overflow on small screens */
+        .break-all {
+            word-break: break-word;
         }
-    }
-
-    /* Ensure text doesn't overflow on small screens */
-    .break-all {
-        word-break: break-word;
-    }
-</style>
+    </style>
+@endpush

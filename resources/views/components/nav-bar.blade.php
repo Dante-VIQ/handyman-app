@@ -1,13 +1,13 @@
 <header x-data="{ mobileMenuOpen: false }" class="relative flex flex-wrap items-center justify-between gap-2 mb-0 bg-white/80 backdrop-blur-md rounded-2xl sm:rounded-full border border-amber-200/60 shadow-lg shadow-amber-100/20 z-50 px-5 sm:px-8 py-3">
 
     <!-- Logo with refined styling -->
-<div class="flex items-center gap-3">
+<div class="flex items-center gap-2">
     <!-- Logo image - fully visible -->
-    <img src="/path/to/your/gb-handyman-logo.png" 
-         alt="GB Handyman Logo" 
+    <img src="/path/to/your/gb-handyman-logo.png"
+         alt="GB Handyman Logo"
          class="h-12 w-auto object-contain transform hover:scale-105 transition-transform duration-300"
          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-    
+
     <!-- Fallback logo (only shows if image fails to load) -->
     <div class="hidden items-center gap-2" style="display: none;" data-fallback-logo>
         <div class="bg-gradient-to-br from-amber-500 to-amber-400 text-white p-2.5 rounded-xl shadow-md shadow-amber-200/50">
