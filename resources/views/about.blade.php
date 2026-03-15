@@ -1,236 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About GB Handyman Solutions | Our Story & Team</title>
-  <!-- SEO meta -->
-  <meta name="description" content="Learn about GB Handyman Solutions: our history, certified team, and commitment to quality. We're your local experts in plumbing, electrical, carpentry & more.">
-  <meta name="keywords" content="about handyman, team, certified, local experts, GB Handyman Solutions">
-  <meta name="author" content="GB Handyman Solutions">
-  <!-- Open Graph -->
-  <meta property="og:title" content="About GB Handyman Solutions">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.gbhandyman.com/about">
-  <meta property="og:description" content="Meet the team behind the tools. 10+ years of trust, fully insured, eco-friendly.">
+        <!-- ===== HERO / ABOUT INTRO ===== -->
+        <section class="relative bg-gradient-to-r from-amber-50 to-white py-16 md:py-24 overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <i class="fas fa-tools absolute text-8xl text-amber-200 -rotate-12 -top-4 left-10"></i>
+                <i class="fas fa-screwdriver-wrench absolute text-7xl text-amber-200 rotate-45 bottom-4 right-10"></i>
+            </div>
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    <span class="bg-amber-200 text-amber-800 px-4 py-1.5 rounded-full text-sm font-semibold inline-flex items-center gap-1"><i class="fas fa-hand-holding-heart"></i> Our story</span>
+                    <h1 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 leading-tight">More than a <span class="text-amber-600">handyman</span> – we’re neighbours</h1>
+                    <p class="text-xl text-gray-600 mt-6 max-w-2xl">Third‑generation craft, modern convenience. Based in Manchester, we’ve been fixing, building, and caring for local homes since 2012.</p>
+                    <div class="flex flex-wrap gap-4 mt-10">
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-md px-6 py-3 flex items-center gap-3"><i class="fas fa-users text-amber-500 text-2xl"></i><span><strong class="text-2xl">15+</strong> <span class="text-gray-500">skilled pros</span></span></div>
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-md px-6 py-3 flex items-center gap-3"><i class="fas fa-calendar-check text-amber-500 text-2xl"></i><span><strong class="text-2xl">5k+</strong> <span class="text-gray-500">jobs completed</span></span></div>
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-md px-6 py-3 flex items-center gap-3"><i class="fas fa-star text-amber-500 text-2xl"></i><span><strong class="text-2xl">4.9</strong> <span class="text-gray-500">★ TrustScore</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Tailwind via CDN + Inter font -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- ===== FOUNDER STORY / HERITAGE ===== -->
+        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 grid md:grid-cols-2 gap-14 items-center">
+            <div class="order-2 md:order-1">
+                <div class="relative">
+                    <img src="https://placehold.co/700x800/E9DFD3/4a3b2c?text=Grace+Baxter+founder" alt="Grace Baxter, founder of GB Handyman" class="rounded-3xl shadow-2xl object-cover w-full h-auto border-8 border-white">
+                    <div class="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-4 border-l-8 border-amber-400">
+                        <i class="fas fa-quote-right text-5xl text-amber-200"></i>
+                        <div><span class="font-bold text-gray-800">Grace Baxter</span><span class="text-gray-500 block text-sm">Founder & master craftswoman</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i class="fas fa-seedling mr-1"></i> Since 2012</span>
+                <h2 class="text-4xl font-bold mt-4 text-gray-900">A family tradition of fixing things properly</h2>
+                <p class="text-gray-600 text-lg mt-4">"My grandad was a joiner in Salford, my dad a plumber. I grew up holding the torch and fetching the right spanner. When I started GB Handyman, I wanted to bring that same honest workmanship to every home – but with online booking, fair pricing, and a guarantee."</p>
+                <p class="text-gray-600 text-lg mt-4">Today we're a team of 15 multi‑skilled tradespeople, all local, all vetted, and all obsessed with leaving customers 100% happy.</p>
+                <div class="flex items-center gap-6 mt-8">
+                    <div class="flex -space-x-3">
+                        <img src="https://placehold.co/50x50/CCBBAA/654321?text=👤" class="w-12 h-12 rounded-full border-4 border-white shadow-md">
+                        <img src="https://placehold.co/50x50/BBAACC/654321?text=👤" class="w-12 h-12 rounded-full border-4 border-white shadow-md">
+                        <img src="https://placehold.co/50x50/AABBCC/654321?text=👤" class="w-12 h-12 rounded-full border-4 border-white shadow-md">
+                    </div>
+                    <span class="text-gray-500 font-medium">+12 friendly experts</span>
+                </div>
+            </div>
+        </section>
 
-  <style>
-    /* tiny custom underline effect */
- 
-  </style>
-</head>
-<body class="font-['Inter'] antialiased text-slate-700 bg-white">
+        <!-- ===== TIMELINE / MILESTONES ===== -->
+        <section class="bg-white py-20 border-y border-gray-200">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="text-center max-w-2xl mx-auto">
+                    <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i class="fas fa-timeline"></i> Our journey</span>
+                    <h2 class="text-4xl font-bold mt-4 text-gray-900">From a van to a Manchester staple</h2>
+                </div>
+                <div class="mt-16 relative flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                    <!-- timeline line (hidden on mobile) -->
+                    <div class="hidden md:block absolute h-1 bg-amber-200 w-full top-7 z-0"></div>
+                    <!-- milestone 1 -->
+                    <div class="relative z-10 bg-white p-6 rounded-2xl shadow-lg border border-gray-100 md:w-60 text-center md:text-left">
+                        <div class="bg-amber-500 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold mx-auto md:mx-0 mb-3 timeline-dot">'12</div>
+                        <h3 class="font-bold text-xl">2012</h3>
+                        <p class="text-gray-500">Grace starts GB Handyman with one van, a bag of tools, and a notebook.</p>
+                    </div>
+                    <!-- milestone 2 -->
+                    <div class="relative z-10 bg-white p-6 rounded-2xl shadow-lg border border-gray-100 md:w-60 text-center md:text-left">
+                        <div class="bg-amber-400 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold mx-auto md:mx-0 mb-3">'16</div>
+                        <h3 class="font-bold text-xl">2016</h3>
+                        <p class="text-gray-500">First employee hired. Outgrow the garage, open a small workshop.</p>
+                    </div>
+                    <!-- milestone 3 -->
+                    <div class="relative z-10 bg-white p-6 rounded-2xl shadow-lg border border-gray-100 md:w-60 text-center md:text-left">
+                        <div class="bg-amber-500 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold mx-auto md:mx-0 mb-3">'20</div>
+                        <h3 class="font-bold text-xl">2020</h3>
+                        <p class="text-gray-500">Team of 8, introduce free video quotes & online booking.</p>
+                    </div>
+                    <!-- milestone 4 -->
+                    <div class="relative z-10 bg-white p-6 rounded-2xl shadow-lg border border-gray-100 md:w-60 text-center md:text-left">
+                        <div class="bg-amber-600 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold mx-auto md:mx-0 mb-3">'25</div>
+                        <h3 class="font-bold text-xl">Today</h3>
+                        <p class="text-gray-500">15 experts, 5k+ jobs, and still the same honest approach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- header (same as landing for consistency) -->
-  <header class="sticky top-0 z-30 bg-white border-b-4 border-yellow-400 shadow-sm py-3">
-    <div class="container mx-auto px-4 md:px-8 flex flex-wrap items-center justify-between">
-      <div class="text-3xl font-bold tracking-tight">
-        <i class="fas fa-wrench text-yellow-400 mr-1 align-middle"></i>
-        <span class="text-[#1e4a6f]">GB</span> <span class="text-[#2e6b4e]">Handyman</span>
-      </div>
-      <div class="hidden md:flex space-x-8 font-medium">
-        <a href="index.html" class="text-[#1e4a6f] hover:text-[#2e6b4e] border-b-2 border-transparent hover:border-yellow-400 pb-1 transition">Home</a>
-        <a href="services.html" class="text-[#1e4a6f] hover:text-[#2e6b4e] border-b-2 border-transparent hover:border-yellow-400 pb-1 transition">Services</a>
-        <a href="about.html" class="text-[#1e4a6f] border-b-2 border-yellow-400 pb-1 font-semibold">About</a>
-        <a href="contact.html" class="text-[#1e4a6f] hover:text-[#2e6b4e] border-b-2 border-transparent hover:border-yellow-400 pb-1 transition">Contact</a>
-      </div>
-      <a href="quote.html" class="bg-[#2e6b4e] text-white px-5 py-2 rounded-full font-semibold shadow-md hover:bg-[#1e4a6f] transition flex items-center gap-2"><i class="fas fa-calendar-check text-yellow-400"></i> Free estimate</a>
+        <!-- ===== VALUES / WHAT MAKES US DIFFERENT ===== -->
+        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i class="fas fa-heart mr-1"></i> Our values</span>
+                    <h2 class="text-4xl font-bold mt-4 text-gray-900">The GB promise: quality, transparency, respect</h2>
+                    <p class="text-gray-600 text-lg mt-4">We don't just fix things – we build relationships. Every job, big or small, comes with:</p>
+                    <ul class="mt-6 space-y-4">
+                        <li class="flex gap-3"><span class="bg-amber-100 w-8 h-8 rounded-full flex items-center justify-center text-amber-700 shrink-0 mt-1"><i class="fas fa-check text-sm"></i></span><div><span class="font-bold">Fixed prices</span> – you'll know the cost before we start, no surprises.</div></li>
+                        <li class="flex gap-3"><span class="bg-amber-100 w-8 h-8 rounded-full flex items-center justify-center text-amber-700 shrink-0 mt-1"><i class="fas fa-check text-sm"></i></span><div><span class="font-bold">1‑year guarantee</span> on all labour and parts.</div></li>
+                        <li class="flex gap-3"><span class="bg-amber-100 w-8 h-8 rounded-full flex items-center justify-center text-amber-700 shrink-0 mt-1"><i class="fas fa-check text-sm"></i></span><div><span class="font-bold">Tidy workers</span> – we clean up, vacuum, and respect your space.</div></li>
+                        <li class="flex gap-3"><span class="bg-amber-100 w-8 h-8 rounded-full flex items-center justify-center text-amber-700 shrink-0 mt-1"><i class="fas fa-check text-sm"></i></span><div><span class="font-bold">Eco‑conscious</span> – we recycle materials and offer green options.</div></li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://placehold.co/500x500/CFC5B6/352d22?text=van+%26+team" class="rounded-2xl shadow-xl col-span-2 object-cover w-full h-64" alt="GB Handyman van">
+                    <img src="https://placehold.co/500x300/B9AA99/241f18?text=tools" class="rounded-2xl shadow-lg object-cover w-full h-36" alt="tools">
+                    <img src="https://placehold.co/500x300/CCC2B3/3f3327?text=certified" class="rounded-2xl shadow-lg object-cover w-full h-36" alt="certification badge">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TEAM SNEAK PEEK ===== -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="text-center max-w-2xl mx-auto">
+                    <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i class="fas fa-user-friends mr-1"></i> Meet a few of us</span>
+                    <h2 class="text-4xl font-bold mt-4 text-gray-900">The faces behind the tools</h2>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+                    <div class="bg-amber-50/70 rounded-3xl p-6 text-center hover-card transition-all">
+                        <div class="w-28 h-28 bg-amber-200 rounded-full mx-auto flex items-center justify-center text-5xl font-bold text-amber-700 border-4 border-white shadow-md">G</div>
+                        <h3 class="font-bold text-xl mt-4">Grace Baxter</h3>
+                        <p class="text-amber-600 text-sm">Founder / carpenter</p>
+                        <p class="text-gray-500 text-sm mt-2">15 years on the tools, still loves the smell of sawdust.</p>
+                    </div>
+                    <div class="bg-amber-50/70 rounded-3xl p-6 text-center hover-card transition-all">
+                        <div class="w-28 h-28 bg-amber-200 rounded-full mx-auto flex items-center justify-center text-5xl font-bold text-amber-700 border-4 border-white shadow-md">M</div>
+                        <h3 class="font-bold text-xl mt-4">Mark Davies</h3>
+                        <p class="text-amber-600 text-sm">Plumbing & heating</p>
+                        <p class="text-gray-500 text-sm mt-2">Ex-RAF engineer, calm under pressure, knows every boiler.</p>
+                    </div>
+                    <div class="bg-amber-50/70 rounded-3xl p-6 text-center hover-card transition-all">
+                        <div class="w-28 h-28 bg-amber-200 rounded-full mx-auto flex items-center justify-center text-5xl font-bold text-amber-700 border-4 border-white shadow-md">L</div>
+                        <h3 class="font-bold text-xl mt-4">Leila Rahman</h3>
+                        <p class="text-amber-600 text-sm">Painting & decorating</p>
+                        <p class="text-gray-500 text-sm mt-2">Colour consultant, perfectionist, leaves walls flawless.</p>
+                    </div>
+                    <div class="bg-amber-50/70 rounded-3xl p-6 text-center hover-card transition-all">
+                        <div class="w-28 h-28 bg-amber-200 rounded-full mx-auto flex items-center justify-center text-5xl font-bold text-amber-700 border-4 border-white shadow-md">J</div>
+                        <h3 class="font-bold text-xl mt-4">Jake O'Brien</h3>
+                        <p class="text-amber-600 text-sm">Multi‑trade / handyman</p>
+                        <p class="text-gray-500 text-sm mt-2">The guy for 'odd jobs' – nothing fazes him.</p>
+                    </div>
+                </div>
+                <p class="text-center mt-12 text-gray-500 text-lg">... and 11 more skilled pros ready to help.</p>
+            </div>
+        </section>
+
+        <!-- ===== COMMUNITY & ACCREDITATIONS ===== -->
+        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
+            <div class="bg-amber-50 rounded-4xl p-10 md:p-16 border border-amber-200 shadow-inner">
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900">Proudly local, proudly certified</h3>
+                        <p class="text-gray-600 mt-3">GB Handyman is fully insured (public liability up to £5M), Checkatrade‑approved, and members of the Federation of Master Builders.</p>
+                        <div class="flex flex-wrap gap-6 mt-6">
+                            <span class="bg-white px-5 py-3 rounded-2xl shadow-sm flex items-center gap-2"><i class="fas fa-shield-alt text-amber-500 text-xl"></i> £5M cover</span>
+                            <span class="bg-white px-5 py-3 rounded-2xl shadow-sm flex items-center gap-2"><i class="fas fa-check-circle text-amber-500 text-xl"></i> Checkatrade</span>
+                            <span class="bg-white px-5 py-3 rounded-2xl shadow-sm flex items-center gap-2"><i class="fas fa-trophy text-amber-500 text-xl"></i> FMB member</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center md:justify-end">
+                        <img src="https://placehold.co/500x300/CCC/666?text=accreditation+logos" class="rounded-2xl shadow-lg max-w-full h-auto" alt="accreditation badges">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== JOIN THE TEAM / CALL OUT ===== -->
+        <section class="bg-gray-900 text-white py-20">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
+                <i class="fas fa-toolbox text-6xl text-amber-400 mb-5"></i>
+                <h2 class="text-4xl font-bold">Love fixing things? Join the crew</h2>
+                <p class="text-gray-300 text-xl mt-3 max-w-2xl mx-auto">We're always on the lookout for skilled, friendly tradespeople who share our values.</p>
+                <a href="careers.html" class="inline-block mt-8 bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition-all">See open positions <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </section>
+
+        <!-- ===== SMALL CONTACT / QUOTE BANNER ===== -->
+        <section class="bg-white border-b border-gray-200 py-14">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <span class="text-2xl font-semibold text-gray-800">Have a job in mind? Let’s talk it through.</span>
+                <a href="quote.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full font-bold shadow-lg text-lg flex items-center gap-2 transition-all"><i class="fas fa-calculator"></i> Get free quote</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- floating chat icon (same style) -->
+    <div class="fixed bottom-6 right-6 bg-amber-500 text-white p-4 rounded-full shadow-2xl cursor-pointer hover:bg-amber-600 transition-all">
+        <i class="fas fa-message text-xl"></i>
     </div>
-  </header>
-
-  <!-- ABOUT hero / page title (blue / green / yellow) -->
-  <section class="bg-gradient-to-r from-[#1e4a6f] to-[#2e6b4e] py-20 text-white">
-    <div class="container mx-auto px-4 md:px-8 text-center">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4"><span class="text-yellow-400">//</span> About Us</h1>
-      <p class="text-xl max-w-2xl mx-auto opacity-90">Your trusted local handyman – committed to quality, transparency, and same‑day smiles.</p>
-    </div>
-  </section>
-
-  <!-- our story / mission (mix of colors) -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row gap-12 items-center">
-      <div class="flex-1 space-y-6">
-        <span class="text-yellow-500 font-semibold tracking-wider">— SINCE 2012</span>
-        <h2 class="text-4xl font-bold text-[#1e4a6f] brand-underline">Craftsmanship with a conscience</h2>
-        <p class="text-lg text-slate-600 leading-relaxed">GB Handyman Solutions started in a small garage with a big dream: to offer reliable, friendly handyman services without the corporate runaround. Over a decade later, we’ve grown into a team of 12 certified pros, but our core stays the same – show up on time, respect the home, and fix it right the first time.</p>
-        <div class="grid grid-cols-2 gap-4 pt-4">
-          <div class="bg-[#eef7f0] p-4 rounded-2xl border-l-4 border-[#2e6b4e]">
-            <p class="text-3xl font-bold text-[#1e4a6f]">2,400+</p>
-            <p class="text-sm">Happy clients</p>
-          </div>
-          <div class="bg-[#fef9e6] p-4 rounded-2xl border-l-4 border-yellow-400">
-            <p class="text-3xl font-bold text-[#1e4a6f]">12</p>
-            <p class="text-sm">Certified experts</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex-1">
-        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" alt="team member working" class="rounded-[50px] rounded-br-none border-8 border-white shadow-2xl w-full">
-      </div>
-    </div>
-  </section>
-
-  <!-- values / badges (green / blue / yellow) -->
-  <section class="py-16 bg-[#eef7f0]">
-    <div class="container mx-auto px-4 md:px-8">
-      <h2 class="text-4xl font-bold text-center text-[#1e4a6f] mb-4">What drives us</h2>
-      <p class="text-center max-w-xl mx-auto text-slate-600 mb-12">Four pillars that haven’t changed since day one.</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-3xl shadow-md text-center border-b-4 border-yellow-400">
-          <div class="w-16 h-16 bg-[#1e4a6f]/10 rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-hand-holding-heart text-3xl text-[#1e4a6f]"></i></div>
-          <h3 class="font-bold text-xl text-[#2e6b4e]">Integrity</h3>
-          <p class="text-sm mt-2">Upfront pricing, no hidden fees. We promise.</p>
-        </div>
-        <div class="bg-white p-6 rounded-3xl shadow-md text-center border-b-4 border-yellow-400">
-          <div class="w-16 h-16 bg-[#2e6b4e]/10 rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-leaf text-3xl text-[#2e6b4e]"></i></div>
-          <h3 class="font-bold text-xl text-[#2e6b4e]">Eco‑smart</h3>
-          <p class="text-sm mt-2">Low‑VOC paints, energy‑saving fixtures.</p>
-        </div>
-        <div class="bg-white p-6 rounded-3xl shadow-md text-center border-b-4 border-yellow-400">
-          <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-clock text-3xl text-yellow-500"></i></div>
-          <h3 class="font-bold text-xl text-[#2e6b4e]">Punctuality</h3>
-          <p class="text-sm mt-2">We respect your time – arrive within window.</p>
-        </div>
-        <div class="bg-white p-6 rounded-3xl shadow-md text-center border-b-4 border-yellow-400">
-          <div class="w-16 h-16 bg-[#1e4a6f]/10 rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-shield-alt text-3xl text-[#1e4a6f]"></i></div>
-          <h3 class="font-bold text-xl text-[#2e6b4e]">Fully insured</h3>
-          <p class="text-sm mt-2">Liability & workers' comp for your peace.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TEAM section (face + names) – classy, with yellow/blue/green -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4 md:px-8">
-      <div class="text-center mb-12">
-        <span class="text-yellow-500 font-semibold">— THE FACES BEHIND THE TOOLS —</span>
-        <h2 class="text-4xl font-bold text-[#1e4a6f] mt-2">Meet the GB team</h2>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- team 1 -->
-        <div class="fade-in text-center group" style="animation-delay: 0.1s;">
-          <div class="relative mb-4 overflow-hidden rounded-full border-4 border-yellow-400 w-40 h-40 mx-auto">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="Founder" class="w-full h-full object-cover group-hover:scale-105 transition">
-          </div>
-          <h3 class="font-bold text-xl text-[#1e4a6f]">Greg Brewer</h3>
-          <p class="text-[#2e6b4e] font-medium">Founder & Master Carpenter</p>
-          <p class="text-sm mt-2 text-slate-500">20+ years experience, still loves the smell of sawdust.</p>
-        </div>
-        <!-- team 2 -->
-        <div class="fade-in text-center" style="animation-delay: 0.2s;">
-          <div class="relative mb-4 overflow-hidden rounded-full border-4 border-yellow-400 w-40 h-40 mx-auto">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="plumber" class="w-full h-full object-cover">
-          </div>
-          <h3 class="font-bold text-xl text-[#1e4a6f]">Maya Rivera</h3>
-          <p class="text-[#2e6b4e] font-medium">Plumbing & Gas Specialist</p>
-          <p class="text-sm mt-2 text-slate-500">Licensed, woman-owned, can fix any leak with a smile.</p>
-        </div>
-        <!-- team 3 -->
-        <div class="fade-in text-center" style="animation-delay: 0.3s;">
-          <div class="relative mb-4 overflow-hidden rounded-full border-4 border-yellow-400 w-40 h-40 mx-auto">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="electrician" class="w-full h-full object-cover">
-          </div>
-          <h3 class="font-bold text-xl text-[#1e4a6f]">David Chen</h3>
-          <p class="text-[#2e6b4e] font-medium">Lead Electrician</p>
-          <p class="text-sm mt-2 text-slate-500">Master electrician, fan of smart home & safety first.</p>
-        </div>
-        <!-- team 4 -->
-        <div class="fade-in text-center" style="animation-delay: 0.4s;">
-          <div class="relative mb-4 overflow-hidden rounded-full border-4 border-yellow-400 w-40 h-40 mx-auto">
-            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=2070&auto=format&fit=crop" alt="painter" class="w-full h-full object-cover">
-          </div>
-          <h3 class="font-bold text-xl text-[#1e4a6f]">Sofia Malik</h3>
-          <p class="text-[#2e6b4e] font-medium">Painting & Finishing</p>
-          <p class="text-sm mt-2 text-slate-500">Perfect edges, color consultant, eco-friendly paints.</p>
-        </div>
-      </div>
-      <p class="text-center mt-12 text-slate-500 italic">…and 8 more skilled pros behind the scenes, all background-checked.</p>
-    </div>
-  </section>
-
-  <!-- CTA mini section (blue/green gradient + yellow) -->
-  <section class="container mx-auto px-4 md:px-8 my-12">
-    <div class="bg-gradient-to-r from-[#1e4a6f] to-[#2e6b4e] text-white p-12 rounded-[70px] rounded-bl-none flex flex-col md:flex-row items-center justify-between gap-6">
-      <div>
-        <h3 class="text-3xl font-bold">Feel the GB difference</h3>
-        <p class="text-lg opacity-90 mt-2">We treat your home like our own. Free estimate, no obligation.</p>
-      </div>
-      <a href="#" class="bg-yellow-400 text-[#1e3b2c] px-8 py-4 rounded-full font-bold text-lg whitespace-nowrap hover:bg-white transition shadow-lg flex items-center gap-2"><i class="fas fa-phone-alt"></i> Call (555) 123-4567</a>
-    </div>
-  </section>
-
-  <!-- fun fact / map / eco friendly (green highlight) -->
-  <section class="py-16 bg-[#fef9e6]">
-    <div class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row gap-12 items-center">
-      <div class="flex-1 order-2 lg:order-1">
-        <h2 class="text-3xl font-bold text-[#1e4a6f] mb-4"><i class="fas fa-map-signs text-yellow-500 mr-2"></i> Proudly local, 100%</h2>
-        <p class="text-lg">We’re based in Springfield and serve all surrounding counties. Every job stays local – we support our neighbors and hire from the community. And we’ve planted over 800 trees through our “green for service” program.</p>
-        <div class="mt-6 flex gap-3">
-          <span class="bg-white px-4 py-2 rounded-full text-sm font-semibold border border-[#2e6b4e]"><i class="fas fa-recycle text-[#2e6b4e] mr-1"></i> Zero plastic waste</span>
-          <span class="bg-white px-4 py-2 rounded-full text-sm font-semibold border border-yellow-400"><i class="fas fa-tree text-yellow-500 mr-1"></i> 800+ trees</span>
-        </div>
-      </div>
-      <div class="flex-1 order-1 lg:order-2">
-        <img src="https://images.unsplash.com/photo-1590959651373-a9db58fefc9f?q=80&w=1974&auto=format&fit=crop" alt="local community" class="rounded-3xl border-8 border-white shadow-xl w-full">
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER (exactly like landing) -->
-  <footer class="bg-[#102b36] text-slate-300 pt-16 pb-6" id="contact">
-    <div class="container mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-      <div>
-        <div class="text-3xl font-bold text-white"><i class="fas fa-hammer text-yellow-400 mr-2"></i>GB Handyman</div>
-        <p class="mt-3">Every job done right, every time.</p>
-        <div class="flex gap-5 mt-5 text-yellow-400 text-2xl">
-          <i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin-in"></i>
-        </div>
-      </div>
-      <div>
-        <h4 class="text-white text-lg font-semibold">Explore</h4>
-        <ul class="mt-4 space-y-2">
-          <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
-          <li><a href="services.html" class="hover:text-yellow-400 transition">Services</a></li>
-          <li><a href="about.html" class="hover:text-yellow-400 transition">About us</a></li>
-          <li><a href="#" class="hover:text-yellow-400 transition">Careers</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-white text-lg font-semibold">Contact</h4>
-        <address class="not-italic mt-4 space-y-2">
-          <p><i class="fas fa-map-pin text-yellow-400 w-6 mr-2"></i> 412 Solution Ave, Springfield</p>
-          <p><i class="fas fa-phone-alt text-yellow-400 w-6 mr-2"></i> (555) 123-4567</p>
-          <p><i class="fas fa-envelope text-yellow-400 w-6 mr-2"></i> support@gbhandyman.com</p>
-        </address>
-      </div>
-      <div>
-        <h4 class="text-white text-lg font-semibold">Hours</h4>
-        <p class="mt-4">Mon-Fri: 7am – 8pm<br>Sat: 8am – 4pm<br>Sun: emergency only</p>
-        <span class="inline-block bg-[#2e6b4e] text-white px-4 py-2 rounded-full mt-4"><i class="fas fa-clock text-yellow-400 mr-2"></i>24/7 support</span>
-      </div>
-    </div>
-    <div class="text-center text-sm text-slate-500 border-t border-slate-700 mt-12 pt-6">
-      © 2025 GB Handyman Solutions. All rights reserved. Built with <i class="fas fa-heart text-yellow-400"></i> in USA.
-    </div>
-  </footer>
-
-  <!-- smooth scroll script -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        if (href === "#" || href === "") return;
-        const target = document.querySelector(href);
-        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-      });
-    });
-  </script>
-</body>
-</html>

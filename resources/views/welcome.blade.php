@@ -8,7 +8,7 @@
 @section('meta_keywords',
     'handyman Kent WA, home remodeling Auburn, bathroom renovation Seattle, flooring Tacoma,
     drywall repair Olympia, plumbing Lacey, electrical Bellevue')
-    {{-- @section('canonical', route('home')) --}}
+    @section('canonical', route('/'))
 
     @push('schema')
         <script type="application/ld+json">

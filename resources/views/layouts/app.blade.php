@@ -15,7 +15,7 @@
     <meta name="robots" content="@yield('robots', 'index, follow')">
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
-<meta name="google-site-verification" content="k5pI9JSyx2tyMJAqzBHh0iHRg1L6AjXWR5FwU6Dhe0w" />
+    <meta name="google-site-verification" content="k5pI9JSyx2tyMJAqzBHh0iHRg1L6AjXWR5FwU6Dhe0w" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="@yield('canonical', url()->current())">
@@ -171,42 +171,49 @@
     </main>
 
     <!-- Footer - Fixed Responsive -->
- <footer class="bg-[#102b36] text-slate-300 pt-16 pb-6" id="contact">
-    <div class="container mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div>
-        <div class="text-3xl font-bold text-white"><i class="fas fa-hammer text-yellow-400 mr-2"></i>GB Handyman</div>
-        <p class="mt-3">Every job done right, every time.</p>
-        <div class="flex gap-5 mt-5 text-yellow-400 text-2xl">
-          <i class="fab fa-facefbook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin"></i>
-        </div>
-      </div>
-      <div>
-        <h4 class="text-white text-lg font-semibold">Explore</h4>
-        <ul class="mt-4 space-y-2">
-          <li><a href="/" class="hover:text-yellow-400 transition">Home</a></li>
-          <li><a href="/services" class="hover:text-yellow-400 transition">Services</a></li>
-          <li><a href="/about" class="hover:text-yellow-400 transition">About us</a></li>
-          <li><a href="/service-area" class="hover:text-yellow-400 transition">Service Area</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-white text-lg font-semibold">Contact</h4>
-        <address class="not-italic mt-4 space-y-2">
-          <p><i class="fas fa-map-pin text-yellow-400 w-6 mr-2"></i> 6249 S 242nd Place, Bldg 8 Apt 203</p>
-          <p><i class="fas fa-phone-alt text-yellow-400 w-6 mr-2"></i> +1 (202) 460-1753</p>
-          <p><i class="fas fa-envelope text-yellow-400 w-6 mr-2"></i> gbhandymanllc@yahoo.com</p>
-        </address>
-      </div>
-      <div>
-        <h4 class="text-white text-lg font-semibold">Hours</h4>
-        <p class="mt-4">Mon-Fri: 7am – 8pm<br>Sat: 8am – 4pm<br>Sun: emergency only</p>
-        <span class="inline-block bg-[#2e6b4e] text-white px-4 py-2 rounded-full mt-4"><i class="fas fa-clock text-yellow-400 mr-2"></i>24/7 support</span>
-      </div>
-    </div>
-    <div class="text-center text-sm text-slate-500 border-t border-slate-700 mt-12 pt-6">
-      © 2026 GB Handyman Solutions. All rights reserved.
-    </div>
-  </footer>
+        <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center gap-2 text-white">
+                        <i class="fas fa-tools text-2xl text-amber-400"></i>
+                        <span class="font-bold text-2xl">GB Handyman</span>
+                    </div>
+                    <p class="mt-4 text-sm">Reliable, local, and fully insured. We treat your home like our own.</p>
+                    <div class="flex gap-4 mt-5 text-amber-300 text-xl">
+                        <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i
+                            class="fab fa-linkedin"></i>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-lg">Quick links</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li><a href="#services" class="hover:text-amber-300">Services</a></li>
+                        <li><a href="#about" class="hover:text-amber-300">About us</a></li>
+                        <li><a href="#reviews" class="hover:text-amber-300">Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-amber-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-lg">Contact</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li><i class="fas fa-phone-alt mr-2 text-amber-400"></i> 0161 234 5678</li>
+                        <li><i class="fas fa-envelope mr-2 text-amber-400"></i> hello@gbhandyman.co.uk</li>
+                        <li><i class="fas fa-map-pin mr-2 text-amber-400"></i> Manchester, UK</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold text-lg">Hours</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li>Mon-Fri: 8am – 8pm</li>
+                        <li>Sat: 9am – 5pm</li>
+                        <li>Sun: emergency only</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto px-5 border-t border-gray-800 mt-12 pt-6 text-sm text-center text-gray-500">
+                © 2026 GB Handyman. All rights reserved. • Company #12345678
+            </div>
+        </footer>
 
     @livewireScripts()
     @stack('scripts')

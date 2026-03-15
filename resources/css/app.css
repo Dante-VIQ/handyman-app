@@ -3,119 +3,66 @@
 @tailwind utilities;
 
 
-/* Slide animation */
-.animate-slide {
-animation: slideAnimation 18s infinite ease-in-out;
+[x-cloak] {
+display: none !important;
 }
 
-@keyframes slideAnimation {
-
-0%,
-28% {
-transform: translateX(0);
+html {
+scroll-behavior: smooth;
 }
 
-33.33%,
-61% {
-transform: translateX(-33.333%);
+.contact-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 20px 25px -5px rgba(245, 158, 11, 0.15);
 }
 
-66.66%,
-94% {
-transform: translateX(-66.666%);
+.bg-subtle-pattern {
+background-color: #fcfaf7;
+background-image: radial-gradient(#e2dcd3 0.8px, transparent 0.8px);
+background-size: 25px 25px;
 }
 
-100% {
-transform: translateX(0);
-}
-}
-
-/* Overlay gradient */
-.slide-overlay {
-background: linear-gradient(90deg, rgba(30, 74, 111, 0.85) 0%, rgba(46, 107, 78, 0.5) 70%);
+.form-input:focus {
+border-color: #f59e0b;
+box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
 }
 
-/* Ensure images cover properly on all devices */
-.slide-bg {
-background-size: cover !important;
-background-position: center !important;
-background-repeat: no-repeat !important;
+.hover-card:hover { transform: translateY(-6px); box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.15); }
+.bg-subtle-pattern { background-color: #fcfaf7; background-image: radial-gradient(#e2dcd3 0.8px, transparent 0.8px);
+background-size: 25px 25px; }
+.timeline-dot { box-shadow: 0 0 0 4px #fbbf24; }
+
+
+
+.hover-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(245, 158, 11, 0.2); }
+.bg-subtle-pattern { background-color: #fcfaf7; background-image: radial-gradient(#e2dcd3 0.8px, transparent 0.8px);
+background-size: 25px 25px; }
+.map-pin { filter: drop-shadow(0 8px 6px rgba(0,0,0,0.2)); }
+.service-badge { background: linear-gradient(145deg, #ffffff, #f3f4f6); }
+
+
+html { scroll-behavior: smooth; }
+.gallery-item:hover img { transform: scale(1.05); }
+.gallery-item:hover .overlay { opacity: 1; }
+.bg-subtle-pattern { background-color: #fcfaf7; background-image: radial-gradient(#e2dcd3 0.8px, transparent 0.8px);
+background-size: 25px 25px; }
+.filter-btn.active { background-color: #f59e0b; color: white; border-color: #f59e0b; }
+
+.hover-lift:hover {
+transform: translateY(-4px);
+box-shadow: 0 20px 25px -5px rgba(0 0 0 / 0.1);
 }
 
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-.slide-overlay {
-background: linear-gradient(90deg, rgba(30, 74, 111, 0.9) 0%, rgba(46, 107, 78, 0.6) 100%);
+.transition-all {
+transition: all 0.2s ease;
 }
 
-.slide-bg {
-background-position: 70% center !important;
-}
-}
-
-/* Pause animation on hover (optional) */
-.animate-slide:hover {
-animation-play-state: paused;
+.bg-pattern {
+background-color: #f8f6f3;
+background-image: radial-gradient(circle at 10px 10px, #e5e2db 1px, transparent 1px);
+background-size: 30px 30px;
 }
 
-.image-zoom {
-transition: transform 0.3s ease;
-}
-.group:hover .image-zoom {
-transform: scale(1.05);
-}
-
-/* Smooth image zoom on hover */
-.group:hover img {
-transform: scale(1.1);
-}
-
-/* Optional: Add a subtle overlay with text on hover */
-.group:hover .absolute.inset-0 {
-opacity: 1;
-}
-
-/* Ensure images maintain aspect ratio */
-.object-cover {
-object-fit: cover;
-}
-
-.brand-underline {
-position: relative;
-display: inline-block;
-}
-.brand-underline:after {
-content: '';
-position: absolute;
-bottom: -8px;
-left: 0;
-width: 80px;
-height: 4px;
-background-color: #eab308; /* yellow-400 */
-border-radius: 4px;
-}
-/* simple fade-in for team cards */
-.fade-in {
-animation: fadeUp 0.6s ease-out forwards;
-opacity: 0;
-}
-@keyframes fadeUp {
-0% { opacity: 0; transform: translateY(12px); }
-100% { opacity: 1; transform: translateY(0); }
-}
-
-.map-container {
-position: relative;
-overflow: hidden;
-border-radius: 2rem;
-}
-.service-pin {
-transition: all 0.3s ease;
-}
-.service-pin:hover {
-transform: scale(1.1);
-filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.2));
-}
-.coverage-badge {
-background: linear-gradient(135deg, #1e4a6f, #2e6b4e);
+.tool-icon {
+filter: drop-shadow(0 4px 2px rgb(0 0 0 / 0.05));
 }
