@@ -10,7 +10,7 @@
                     <h1 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 leading-tight">Serving your <span class="text-amber-600">neighbourhood</span> & beyond</h1>
                     <p class="text-xl text-gray-600 mt-6 max-w-2xl">Based near <strong class="text-gray-900">6249 S 242nd Place, Bldg 8 Apt 203</strong>, we're right in your community. Fast response, friendly service, and no travel fees within our core area.</p>
                     <div class="flex flex-wrap gap-4 mt-10">
-                        <a href="#check-coverage" class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold shadow-lg flex items-center gap-2 transition-all"><i class="fas fa-location-arrow"></i> Check your address</a>
+                        <a href="#check-coverage" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i class="fas fa-location-arrow"></i> Check your address</a>
                         <a href="tel:01612345678" class="bg-white border-2 border-amber-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i class="fas fa-phone-alt text-amber-500"></i> Call (0161) 234 5678</a>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
         </section>
 
         <!-- ===== LOCAL TESTIMONIALS ===== -->
-        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-10">
+        {{-- <section class="max-w-7xl mx-auto px-5 sm:px-8 py-10">
             <div class="text-center">
                 <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i class="fas fa-star mr-1"></i> Neighbours love us</span>
                 <h2 class="text-4xl font-bold mt-4 text-gray-900">Reviews from near 242nd Place</h2>
@@ -177,7 +177,7 @@
                     <div class="flex items-center gap-3 mt-6"><div class="w-12 h-12 bg-amber-200 rounded-full flex items-center justify-center text-amber-700 font-bold text-xl">MT</div><div><span class="font-bold">Mike T.</span><span class="text-gray-400 text-sm block">242nd Place</span></div></div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <!-- ===== FAQ about service area ===== -->
         <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20">
@@ -220,6 +220,10 @@
     </main>
 
     <!-- floating chat icon -->
-    <div class="fixed bottom-6 right-6 bg-amber-500 text-white p-4 rounded-full shadow-2xl cursor-pointer hover:bg-amber-600 transition-all">
-        <i class="fas fa-message text-xl"></i>
-    </div>
+<!-- Floating WhatsApp Icon - Links to WhatsApp -->
+<a href="https://wa.me/441612345678" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl cursor-pointer transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center w-16 h-16 shadow-green-200/50">
+    <i class="fab fa-whatsapp text-3xl"></i>
+</a>

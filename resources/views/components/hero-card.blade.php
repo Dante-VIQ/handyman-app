@@ -3,198 +3,133 @@
 @php
     $slideCount = is_countable($images) ? count($images) : 0;
     if ($slideCount === 0) {
-        $slideCount = 3; // Default to 3 slides for empty state
+        $slideCount = 1; // Default to 1 slide for empty state
     }
-    $slideWidth = 100 / $slideCount;
 @endphp
 
-<div class="relative w-full h-[400px] md:h-[85vh] min-h-[500px] overflow-hidden bg-[#0b2c3d]"
-     x-data="{
-        currentSlide: 0,
-        totalSlides: {{ $slideCount }},
-        init() {
-            // Ensure currentSlide is valid
-            if (this.currentSlide >= this.totalSlides) {
-                this.currentSlide = 0;
-            }
-            // Auto advance slides
-            if (this.totalSlides > 1) {
-                setInterval(() => {
-                    this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
-                }, 5000);
-            }
+<div x-data="{
+    currentSlide: 0,
+    totalSlides: {{ $slideCount }},
+    autoAdvance: null,
+    init() {
+        // Ensure currentSlide is valid
+        if (this.currentSlide >= this.totalSlides) {
+            this.currentSlide = 0;
         }
-     }">
+        // Auto advance slides only if more than 1
+        if (this.totalSlides > 1) {
+            this.startAutoAdvance();
+        }
+        // Pause auto-advance when hovering
+        this.$el.addEventListener('mouseenter', () => this.stopAutoAdvance());
+        this.$el.addEventListener('mouseleave', () => this.startAutoAdvance());
+    },
+    startAutoAdvance() {
+        if (this.totalSlides <= 1) return;
+        this.autoAdvance = setInterval(() => {
+            this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+        }, 5000);
+    },
+    stopAutoAdvance() {
+        if (this.autoAdvance) {
+            clearInterval(this.autoAdvance);
+            this.autoAdvance = null;
+        }
+    },
+    goToSlide(index) {
+        this.currentSlide = index;
+        // Restart auto-advance after manual navigation
+        this.stopAutoAdvance();
+        this.startAutoAdvance();
+    }
+}" class="relative w-full">
 
-    <!-- Slides container -->
-    <div class="flex h-full transition-transform duration-700 ease-in-out"
-         :style="'transform: translateX(-' + (currentSlide * 100 / totalSlides) + '%); width: ' + (totalSlides * 100) + '%'">
+    <div class="relative order-first md:order-last overflow-hidden rounded-3xl">
+        <!-- decorative background blob -->
+        <div class="absolute inset-0 bg-amber-200 rounded-full blur-3xl opacity-30 -z-10"></div>
 
-        @forelse($images as $image)
-            <!-- Dynamic slide -->
-            <div class="relative h-full slide-bg flex-shrink-0"
-                 style="background-image: url({{ asset($image->photo) }}); background-size: cover; background-position: center; background-repeat: no-repeat; width: {{ 100 / $slideCount }}%;">
-                <div class="absolute inset-0 slide-overlay"></div>
-                <div class="relative z-10 flex items-center h-full text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="w-full max-w-3xl bg-white/10 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-2xl border-l-8 border-yellow-400">
-                        @if (isset($image->caption) || isset($image->title) || isset($image->description))
-                            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                                {{ $image->caption ?? ($image->title ?? 'Quality Handyman Services') }}
-                            </h1>
-                            @if(isset($image->description))
-                                <p class="text-lg sm:text-xl md:text-2xl mt-4 opacity-90">{{ $image->description }}</p>
-                            @endif
-                        @else
-                            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                                Professional Handyman Services
-                            </h1>
-                            <p class="text-lg sm:text-xl md:text-2xl mt-4 opacity-90">Reliable, skilled, and trusted</p>
-                        @endif
-
-                        <div class="flex flex-wrap gap-4 mt-6 sm:mt-8 lg:mt-10">
-                            <a href="/services"
-                                class="inline-block bg-yellow-400 text-[#1e3b2c] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white hover:text-[#1e4a6f] transition shadow-lg whitespace-nowrap">
-                                Explore services
-                            </a>
-                            <a href="tel:+12024601753"
-                                class="inline-block bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white/20 transition shadow-lg whitespace-nowrap">
-                                Call now
-                            </a>
-                        </div>
-                    </div>
+        <!-- Slides container -->
+        <div class="relative w-full" style="min-height: 400px;">
+            @forelse($images as $index => $image)
+                <div x-show="currentSlide === {{ $index }}"
+                     x-transition:enter="transition ease-out duration-500"
+                     x-transition:enter-start="opacity-0 scale-95"
+                     x-transition:enter-end="opacity-100 scale-100"
+                     x-transition:leave="transition ease-in duration-300"
+                     x-transition:leave-start="opacity-100 scale-100"
+                     x-transition:leave-end="opacity-0 scale-95"
+                     class="absolute inset-0 w-full h-full"
+                     x-cloak>
+                    <img src="{{ $image->photo ?? $image }}"
+                         alt="Handyman at work - {{ $index + 1 }}"
+                         class="w-full h-full object-cover rounded-3xl shadow-2xl border-8 border-white/70">
                 </div>
-            </div>
-
-        @empty
-            <!-- Default slide 1 -->
-            <div class="relative h-full slide-bg flex-shrink-0"
-                 style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 33.333%;">
-                <div class="absolute inset-0 slide-overlay"></div>
-                <div class="relative z-10 flex items-center h-full text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="w-full max-w-3xl bg-white/10 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-2xl border-l-8 border-yellow-400">
-                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Skilled fixes. Fair prices.</h1>
-                        <p class="text-lg sm:text-xl md:text-2xl mt-4"><i class="fas fa-check-circle text-yellow-400 mr-2"></i>Plumbing · Electrical · Carpentry · Assembly</p>
-                        <div class="flex flex-wrap gap-4 mt-6 sm:mt-8 lg:mt-10">
-                            <a href="/services"
-                                class="inline-block bg-yellow-400 text-[#1e3b2c] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white hover:text-[#1e4a6f] transition shadow-lg">
-                                Explore services
-                            </a>
-                            <a href="/contact"
-                                class="inline-block bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white/20 transition shadow-lg">
-                                Call now
-                            </a>
-                        </div>
-                    </div>
+            @empty
+                <!-- Default placeholder when no images -->
+                <div class="w-full h-full">
+                    <img src="https://placehold.co/800x700/FAF7F2/987654?text=GB+Handyman+at+work"
+                         alt="GB Handyman at work"
+                         class="w-full h-full object-cover rounded-3xl shadow-2xl border-8 border-white/70">
                 </div>
-            </div>
+            @endforelse
+        </div>
 
-            <!-- Default slide 2 -->
-            <div class="relative h-full slide-bg flex-shrink-0"
-                 style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 33.333%;">
-                <div class="absolute inset-0 slide-overlay"></div>
-                <div class="relative z-10 flex items-center h-full text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="w-full max-w-3xl bg-white/10 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-2xl border-l-8 border-yellow-400">
-                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Emergency? 24/7 support</h1>
-                        <p class="text-lg sm:text-xl md:text-2xl mt-4"><i class="fas fa-tint text-blue-300 mr-2"></i>Leak repairs, piping, fixtures – we're there</p>
-                        <div class="flex flex-wrap gap-4 mt-6 sm:mt-8 lg:mt-10">
-                            <a href="/services"
-                                class="inline-block bg-yellow-400 text-[#1e3b2c] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white transition shadow-lg">
-                                24/7 service
-                            </a>
-                            <a href="/contact"
-                                class="inline-block bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white/20 transition shadow-lg">
-                                (555) 123-4567
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- floating badge (shown on all slides) -->
+        <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 border-l-8 border-amber-400 z-30">
+            <i class="fas fa-smile text-4xl text-amber-500"></i>
+            <div><span class="font-black text-xl">200+</span> <span class="text-gray-600 text-sm">happy jobs</span></div>
+        </div>
 
-            <!-- Default slide 3 -->
-            <div class="relative h-full slide-bg flex-shrink-0"
-                 style="background-image: url('https://images.unsplash.com/photo-1558901346-de6a89b8aabf?q=80&w=2066&auto=format&fit=crop'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 33.333%;">
-                <div class="absolute inset-0 slide-overlay"></div>
-                <div class="relative z-10 flex items-center h-full text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="w-full max-w-3xl bg-white/10 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-2xl border-l-8 border-yellow-400">
-                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Quality craftsmanship</h1>
-                        <p class="text-lg sm:text-xl md:text-2xl mt-4"><i class="fas fa-paint-roller text-[#2e6b4e] mr-2"></i>Renovations, drywall, painting & decks</p>
-                        <div class="flex flex-wrap gap-4 mt-6 sm:mt-8 lg:mt-10">
-                            <a href="/about"
-                                class="inline-block bg-yellow-400 text-[#1e3b2c] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white transition shadow-lg">
-                                Our promise
-                            </a>
-                            <a href="/contact"
-                                class="inline-block bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-white/20 transition shadow-lg">
-                                Free quote
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforelse
-    </div>
-
-    <!-- Slide indicators -->
-    {{-- @if($slideCount > 1)
-    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
-        @for($i = 0; $i < $slideCount; $i++)
-            <button
-                class="w-2.5 h-2.5 rounded-full transition-all duration-300 hover:scale-125"
-                :class="{
-                    'bg-yellow-400 w-8': currentSlide === {{ $i }},
-                    'bg-white/50 hover:bg-yellow-400/70': currentSlide !== {{ $i }}
-                }"
-                @click="currentSlide = {{ $i }}"
-                type="button"
-                aria-label="Go to slide {{ $i + 1 }}">
+        <!-- Navigation arrows (only if more than 1 slide) -->
+        @if ($slideCount > 1)
+            <button @click="goToSlide(currentSlide - 1 < 0 ? totalSlides - 1 : currentSlide - 1)"
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white w-12 h-12 rounded-full flex items-center justify-center transition backdrop-blur-sm"
+                type="button" aria-label="Previous slide">
+                <i class="fas fa-chevron-left text-xl"></i>
             </button>
-        @endfor
-    </div>
-    @endif --}}
+            <button @click="goToSlide((currentSlide + 1) % totalSlides)"
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white w-12 h-12 rounded-full flex items-center justify-center transition backdrop-blur-sm"
+                type="button" aria-label="Next slide">
+                <i class="fas fa-chevron-right text-xl"></i>
+            </button>
 
-    <!-- Navigation arrows -->
-    @if($slideCount > 1)
-    <button
-        class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center transition"
-        @click="currentSlide = (currentSlide - 1 + totalSlides) % totalSlides"
-        type="button"
-        aria-label="Previous slide">
-        <i class="fas fa-chevron-left"></i>
-    </button>
-    <button
-        class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center transition"
-        @click="currentSlide = (currentSlide + 1) % totalSlides"
-        type="button"
-        aria-label="Next slide">
-        <i class="fas fa-chevron-right"></i>
-    </button>
-    @endif
+            <!-- Dots indicator -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
+                @foreach(range(0, $slideCount - 1) as $index)
+                    <button @click="goToSlide({{ $index }})"
+                            class="w-3 h-3 rounded-full transition-all duration-300"
+                            :class="currentSlide === {{ $index }} ? 'bg-amber-500 w-6' : 'bg-white/70 hover:bg-white'"
+                            :aria-label="'Go to slide {{ $index + 1 }}'">
+                    </button>
+                @endforeach
+            </div>
+        @endif
+    </div>
 </div>
 
-<style>
-/* Overlay gradient */
-.slide-overlay {
-    background: linear-gradient(90deg, rgba(30,74,111,0.85) 0%, rgba(46,107,78,0.5) 70%);
-}
+@push('styles')
+    <style>
+        /* Fix for Alpine.js cloaking */
+        [x-cloak] { display: none !important; }
 
-/* Ensure images cover properly on all devices */
-.slide-bg {
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
+        /* Ensure images cover properly on all devices */
+        .object-cover {
+            object-fit: cover !important;
+        }
 
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-    .slide-overlay {
-        background: linear-gradient(90deg, rgba(30,74,111,0.9) 0%, rgba(46,107,78,0.6) 100%);
-    }
+        /* Mobile-specific adjustments */
+        @media (max-width: 768px) {
+            .absolute.-bottom-4.-left-4 {
+                bottom: -8px;
+                left: -8px;
+                padding: 12px !important;
+            }
+            .absolute.-bottom-4.-left-4 i {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+@endpush
 
-    .slide-bg {
-        background-position: 70% center !important;
-    }
-}
-</style>
-
-<!-- Include Alpine.js for interactive functionality -->
-<script src="//unpkg.com/alpinejs" defer></script>
+<!-- Include Alpine.js if not already included -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>

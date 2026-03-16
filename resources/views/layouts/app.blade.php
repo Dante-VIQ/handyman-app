@@ -53,7 +53,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+<!-- Font Awesome 5 (Free) -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <!-- Tailwind + Inter font -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -158,8 +159,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-['Inter'] antialiased text-slate-700 bg-white scroll-smooth">
-
+<body class="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 bg-fixed">
     <!-- Navigation - Fixed Responsive -->
     <div class="w-full px-4 sm:px-6 lg:px-8 py-2 sm:py-3">
         <x-nav-bar />
@@ -187,18 +187,18 @@
                 <div>
                     <h4 class="text-white font-semibold text-lg">Quick links</h4>
                     <ul class="mt-4 space-y-2 text-sm">
-                        <li><a href="#services" class="hover:text-amber-300">Services</a></li>
-                        <li><a href="#about" class="hover:text-amber-300">About us</a></li>
-                        <li><a href="#reviews" class="hover:text-amber-300">Reviews</a></li>
-                        <li><a href="#contact" class="hover:text-amber-300">Contact</a></li>
+                        <li><a href="/service" class="hover:text-amber-300">Services</a></li>
+                        <li><a href="/about" class="hover:text-amber-300">About us</a></li>
+                        <li><a href="/gallery" class="hover:text-amber-300">Gallery</a></li>
+                        <li><a href="/contact" class="hover:text-amber-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-white font-semibold text-lg">Contact</h4>
                     <ul class="mt-4 space-y-2 text-sm">
-                        <li><i class="fas fa-phone-alt mr-2 text-amber-400"></i> 0161 234 5678</li>
-                        <li><i class="fas fa-envelope mr-2 text-amber-400"></i> hello@gbhandyman.co.uk</li>
-                        <li><i class="fas fa-map-pin mr-2 text-amber-400"></i> Manchester, UK</li>
+                        <li><i class="fas fa-phone-alt mr-2 text-amber-400"></i> +1 (202) 460 1753</li>
+                        <li><i class="fas fa-envelope mr-2 text-amber-400"></i>gbhandymanllc@yahoo.com</li>
+                        <li><i class="fas fa-map-pin mr-2 text-amber-400"></i> Seattle, WA</li>
                     </ul>
                 </div>
                 <div>

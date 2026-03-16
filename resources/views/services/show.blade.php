@@ -30,8 +30,8 @@
                     <h1 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 leading-tight">Every job, big or small —<br><span class="text-amber-600">we've got the tool</span></h1>
                     <p class="text-xl text-gray-600 mt-6 max-w-2xl">From a dripping tap to a full room refresh. Browse our services, then book us online or give us a call.</p>
                     <div class="flex flex-wrap gap-4 mt-10">
-                        <a href="#service-grid" class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold shadow-lg flex items-center gap-2 transition-all"><i class="fas fa-magnifying-glass"></i> Browse all services</a>
-                        <a href="#contact" class="bg-white border-2 border-amber-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i class="fas fa-phone-alt text-amber-500"></i> Call (0161) 234 5678</a>
+                        <a href="#service-grid" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i class="fas fa-magnifying-glass"></i> Browse all services</a>
+                        <a href="tel:+12024601753" class="bg-white border-2 border-amber-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i class="fas fa-phone-alt text-amber-500"></i> Call +1 (202) 460 1753</a>
                     </div>
                 </div>
             </div>
@@ -259,7 +259,7 @@
                 <h2 class="text-4xl font-bold mt-4 text-gray-900">Need something custom? We build it.</h2>
                 <p class="text-gray-600 text-xl mt-3 max-w-2xl mx-auto">Built-in shelving, home bars, decking, kitchen islands – we can design and build it to your exact specs.</p>
                 <div class="flex flex-wrap justify-center gap-4 mt-8">
-                    <a href="contact.html" class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold shadow-lg flex items-center gap-2 transition-all"><i class="fas fa-drafting-compass"></i> Discuss your project</a>
+                    <a href="/contact" class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold shadow-lg flex items-center gap-2 transition-all"><i class="fas fa-drafting-compass"></i> Discuss your project</a>
                 </div>
             </div>
         </section>
@@ -292,16 +292,23 @@
                 <h2 class="text-4xl font-bold">Ready to tick that to-do list off?</h2>
                 <p class="text-gray-300 text-xl mt-3 max-w-2xl mx-auto">Book online or give us a call. We'll take it from there.</p>
                 <div class="flex flex-wrap justify-center gap-5 mt-10">
-                    <a href="quote.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition-all"><i class="fas fa-calendar-check mr-2"></i> Book online</a>
-                    <a href="tel:01612345678" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i class="fas fa-phone-alt mr-2"></i> 0161 234 5678</a>
+                <a href="#contact"
+                    class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]">
+                    <i class="fas fa-calendar-check mr-2"></i> Book Online
+                </a>
+                    <a href="tel:+12024601753" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i class="fas fa-phone-alt mr-2"></i> +1 (202) 460 1753</a>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- floating chat icon -->
-    <div class="fixed bottom-6 right-6 bg-amber-500 text-white p-4 rounded-full shadow-2xl cursor-pointer hover:bg-amber-600 transition-all">
-        <i class="fas fa-message text-xl"></i>
-    </div>
+<!-- Floating WhatsApp Icon - Links to WhatsApp -->
+<a href="https://wa.me/+12024601753"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl cursor-pointer transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center w-16 h-16 shadow-green-200/50">
+    <i class="fab fa-whatsapp text-3xl"></i>
+</a>
 </body>
 </html>

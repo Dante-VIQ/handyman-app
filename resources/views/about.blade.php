@@ -1,5 +1,5 @@
         <!-- ===== HERO / ABOUT INTRO ===== -->
-        <section class="relative bg-gradient-to-r from-amber-50 to-white py-16 md:py-24 overflow-hidden">
+        <section class="relative bg-gradient-to-r from-amber-50 to-white py-8 md:py-14 overflow-hidden">
             <div class="absolute inset-0 opacity-10">
                 <i class="fas fa-tools absolute text-8xl text-amber-200 -rotate-12 -top-4 left-10"></i>
                 <i class="fas fa-screwdriver-wrench absolute text-7xl text-amber-200 rotate-45 bottom-4 right-10"></i>
@@ -19,13 +19,13 @@
         </section>
 
         <!-- ===== FOUNDER STORY / HERITAGE ===== -->
-        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 grid md:grid-cols-2 gap-14 items-center">
+        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-10 grid md:grid-cols-2 gap-14 items-center">
             <div class="order-2 md:order-1">
                 <div class="relative">
-                    <img src="https://placehold.co/700x800/E9DFD3/4a3b2c?text=Grace+Baxter+founder" alt="Grace Baxter, founder of GB Handyman" class="rounded-3xl shadow-2xl object-cover w-full h-auto border-8 border-white">
+                    <img src="/images/glen.jpg" alt="Grace Baxter, founder of GB Handyman" class="rounded-3xl shadow-2xl object-cover w-full border-8 border-white h-[100vh]" >
                     <div class="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-4 border-l-8 border-amber-400">
                         <i class="fas fa-quote-right text-5xl text-amber-200"></i>
-                        <div><span class="font-bold text-gray-800">Grace Baxter</span><span class="text-gray-500 block text-sm">Founder & master craftswoman</span></div>
+                        <div><span class="font-bold text-gray-800">Gerald Benjamin</span><span class="text-gray-500 block text-sm">Founder & master craftsman</span></div>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
         </section>
 
         <!-- ===== TEAM SNEAK PEEK ===== -->
-        <section class="bg-white py-20">
+        {{-- <section class="bg-white py-20">
             <div class="max-w-7xl mx-auto px-5 sm:px-8">
                 <div class="text-center max-w-2xl mx-auto">
                     <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i class="fas fa-user-friends mr-1"></i> Meet a few of us</span>
@@ -140,7 +140,7 @@
                 </div>
                 <p class="text-center mt-12 text-gray-500 text-lg">... and 11 more skilled pros ready to help.</p>
             </div>
-        </section>
+        </section> --}}
 
         <!-- ===== COMMUNITY & ACCREDITATIONS ===== -->
         <section class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
@@ -176,12 +176,16 @@
         <section class="bg-white border-b border-gray-200 py-14">
             <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
                 <span class="text-2xl font-semibold text-gray-800">Have a job in mind? Let’s talk it through.</span>
-                <a href="quote.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full font-bold shadow-lg text-lg flex items-center gap-2 transition-all"><i class="fas fa-calculator"></i> Get free quote</a>
+                <a href="/contact" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full font-bold shadow-lg text-lg flex items-center gap-2 transition-all"><i class="fas fa-calculator"></i> Get free quote</a>
             </div>
         </section>
     </main>
 
     <!-- floating chat icon (same style) -->
-    <div class="fixed bottom-6 right-6 bg-amber-500 text-white p-4 rounded-full shadow-2xl cursor-pointer hover:bg-amber-600 transition-all">
-        <i class="fas fa-message text-xl"></i>
-    </div>
+<!-- Floating WhatsApp Icon - Links to WhatsApp -->
+<a href="https://wa.me/+12024601753" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl cursor-pointer transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center w-16 h-16 shadow-green-200/50">
+    <i class="fab fa-whatsapp text-3xl"></i>
+</a>

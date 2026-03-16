@@ -7,7 +7,7 @@ use App\Models\Image;
 
 class GalleryCard extends Component
 {
-    public $Images = [];
+    public $images = [];
     public $photos = [];
 
     public function mount()
@@ -17,7 +17,7 @@ class GalleryCard extends Component
 
     private function loadImages()
     {
-        $this->Images = Image::latest()->take(5)->get();
+        $this->images = Image::latest()->take(5)->get();
         
         $this->photos = Image::latest()->take(5)->get();
 

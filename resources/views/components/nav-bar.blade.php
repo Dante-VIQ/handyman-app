@@ -1,32 +1,41 @@
-<header x-data="{ mobileMenuOpen: false }" class="relative flex flex-wrap items-center justify-between gap-2 mb-0 bg-white/80 backdrop-blur-md rounded-2xl sm:rounded-full border border-amber-200/60 shadow-lg shadow-amber-100/20 z-50 px-5 sm:px-8 py-3">
+<header x-data="{ mobileMenuOpen: false }"
+    class="relative flex flex-wrap items-center justify-between gap-2 mb-0 bg-white/80 backdrop-blur-md rounded-2xl sm:rounded-full border border-amber-200/60 shadow-lg shadow-amber-100/20 z-50 px-5 sm:px-8 py-3">
 
     <!-- Logo with refined styling -->
-<div class="flex items-center gap-2">
-    <!-- Logo image - fully visible -->
-    <img src="/path/to/your/gb-handyman-logo.png"
-         alt="GB Handyman Logo"
-         class="h-12 w-auto object-contain transform hover:scale-105 transition-transform duration-300"
-         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="flex items-center gap-2">
+        <!-- Logo image - fully visible -->
+        <img src="/images/logo.png" alt="GB Handyman Logo"
+            class="h-12 w-auto object-contain transform hover:scale-105 transition-transform duration-300"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
 
-    <!-- Fallback logo (only shows if image fails to load) -->
-    <div class="hidden items-center gap-2" style="display: none;" data-fallback-logo>
-        <div class="bg-gradient-to-br from-amber-500 to-amber-400 text-white p-2.5 rounded-xl shadow-md shadow-amber-200/50">
-            <i class="fas fa-tools text-xl"></i>
-        </div>
         <span class="font-bold text-2xl tracking-tight text-gray-800">
-            GB<span class="text-amber-600 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-amber-400/30 after:rounded-full"> Handyman</span>
+            GB<span
+                class="text-amber-600 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-amber-400/30 after:rounded-full">
+                Handyman</span>
         </span>
-    </div>
-</div>
 
-<!-- JavaScript to handle fallback if needed -->
-<script>
-    // This ensures the fallback shows if the logo image fails to load
-    document.querySelector('img[alt="GB Handyman Logo"]').addEventListener('error', function() {
-        this.style.display = 'none';
-        document.querySelector('[data-fallback-logo]').style.display = 'flex';
-    });
-</script>
+        <!-- Fallback logo (only shows if image fails to load) -->
+        <div class="hidden items-center gap-2" style="display: none;" data-fallback-logo>
+            <div
+                class="bg-gradient-to-br from-amber-500 to-amber-400 text-white p-2.5 rounded-xl shadow-md shadow-amber-200/50">
+                <i class="fas fa-tools text-xl"></i>
+            </div>
+            <span class="font-bold text-2xl tracking-tight text-gray-800">
+                GB<span
+                    class="text-amber-600 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-amber-400/30 after:rounded-full">
+                    Handyman</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle fallback if needed -->
+    <script>
+        // This ensures the fallback shows if the logo image fails to load
+        document.querySelector('img[alt="GB Handyman Logo"]').addEventListener('error', function() {
+            this.style.display = 'none';
+            document.querySelector('[data-fallback-logo]').style.display = 'flex';
+        });
+    </script>
 
     <!-- Mobile Menu Button - restyled -->
     <button @click="mobileMenuOpen = !mobileMenuOpen"
@@ -45,39 +54,42 @@
     <!-- Desktop Navigation - completely rethemed to match GB Handyman -->
     <nav class="hidden md:flex items-center gap-1 text-gray-700 font-medium">
         <a href="/"
-            class="px-5 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('/') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
-            <i class="fas fa-home mr-1.5 text-sm {{ request()->is('/') ? 'text-amber-600' : 'text-gray-400' }}"></i>Home
+            class="px-3 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('/') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
+            <i class="mr-1.5 text-sm {{ request()->is('/') ? 'text-amber-600' : 'text-gray-400' }}"></i>Home
         </a>
         <a href="/about"
-            class="px-5 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('about') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
-            <i class="fas fa-info-circle mr-1.5 text-sm {{ request()->is('about') ? 'text-amber-600' : 'text-gray-400' }}"></i>About
+            class="px-3 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('about') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
+            <i class="mr-1.5 text-sm {{ request()->is('about') ? 'text-amber-600' : 'text-gray-400' }}"></i>About
         </a>
         <a href="/services"
-            class="px-5 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('services') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
-            <i class="fas fa-toolbox mr-1.5 text-sm {{ request()->is('services') ? 'text-amber-600' : 'text-gray-400' }}"></i>Services
+            class="px-3 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('services') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
+            <i class="mr-1.5 text-sm {{ request()->is('services') ? 'text-amber-600' : 'text-gray-400' }}"></i>Services
         </a>
         <a href="/service-area"
-            class="px-5 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('service-area') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
-            <i class="fas fa-map-marker-alt mr-1.5 text-sm {{ request()->is('service-area') ? 'text-amber-600' : 'text-gray-400' }}"></i>Service area
+            class="px-3 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('service-area') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
+            <i
+                class="mr-1.5 text-sm {{ request()->is('service-area') ? 'text-amber-600' : 'text-gray-400' }}"></i>Service
+            area
         </a>
         <a href="/gallery"
             class="px-5 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('gallery') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
-            <i class="fas fa-camera-retro mr-1.5 text-sm {{ request()->is('gallery') ? 'text-amber-600' : 'text-gray-400' }}"></i>Gallery
+            <i class=" mr-1.5 text-sm {{ request()->is('gallery') ? 'text-amber-600' : 'text-gray-400' }}"></i>Gallery
         </a>
         <a href="/contact"
-            class="px-5 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('contact') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
-            <i class="fas fa-envelope mr-1.5 text-sm {{ request()->is('contact') ? 'text-amber-600' : 'text-gray-400' }}"></i>Contact
+            class="px-3 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('contact') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
+            <i class="mr-1.5 text-sm {{ request()->is('contact') ? 'text-amber-600' : 'text-gray-400' }}"></i>Contact
         </a>
 
         @role('master|engineer')
             <a href="/analysis"
-                class="px-5 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('analysis') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
-                <i class="fas fa-chart-bar mr-1.5 text-sm {{ request()->is('analysis') ? 'text-amber-600' : 'text-gray-400' }}"></i>Analysis
+                class="px-3 py-2.5 rounded-full text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 {{ request()->is('analysis') ? 'bg-amber-100 text-amber-800 font-semibold shadow-sm border border-amber-200' : '' }}">
+                <i
+                    class="fas fa-chart-bar mr-1.5 text-sm {{ request()->is('analysis') ? 'text-amber-600' : 'text-gray-400' }}"></i>Analysis
             </a>
         @endrole
 
         @auth
-            <div class="relative group ml-3">
+            <div class="relative group ml-2">
                 <button
                     class="flex items-center gap-2 pl-4 pr-3 py-2.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 font-semibold hover:bg-amber-100 transition-all shadow-sm">
                     <i class="fas fa-user-circle text-amber-500 text-lg"></i>
@@ -129,33 +141,47 @@
         <nav class="flex flex-col space-y-1">
             <a href="/" @click="mobileMenuOpen = false"
                 class="px-5 py-3.5 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition-all text-left duration-200 flex items-center gap-3 {{ request()->is('/') ? 'bg-amber-100 text-amber-800 font-semibold border-l-4 border-amber-500' : '' }}">
-                <i class="fas fa-home w-5 text-center {{ request()->is('/') ? 'text-amber-600' : 'text-gray-400' }}"></i> Home
+                <i
+                    class="fas fa-home w-5 text-center {{ request()->is('/') ? 'text-amber-600' : 'text-gray-400' }}"></i>
+                Home
             </a>
             <a href="/about" @click="mobileMenuOpen = false"
                 class="px-5 py-3.5 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition-all text-left duration-200 flex items-center gap-3 {{ request()->is('about') ? 'bg-amber-100 text-amber-800 font-semibold border-l-4 border-amber-500' : '' }}">
-                <i class="fas fa-info-circle w-5 text-center {{ request()->is('about') ? 'text-amber-600' : 'text-gray-400' }}"></i> About
+                <i
+                    class="fas fa-info-circle w-5 text-center {{ request()->is('about') ? 'text-amber-600' : 'text-gray-400' }}"></i>
+                About
             </a>
             <a href="/services" @click="mobileMenuOpen = false"
                 class="px-5 py-3.5 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition-all text-left duration-200 flex items-center gap-3 {{ request()->is('services') ? 'bg-amber-100 text-amber-800 font-semibold border-l-4 border-amber-500' : '' }}">
-                <i class="fas fa-toolbox w-5 text-center {{ request()->is('services') ? 'text-amber-600' : 'text-gray-400' }}"></i> Services
+                <i
+                    class="fas fa-toolbox w-5 text-center {{ request()->is('services') ? 'text-amber-600' : 'text-gray-400' }}"></i>
+                Services
             </a>
             <a href="/service-area" @click="mobileMenuOpen = false"
                 class="px-5 py-3.5 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition-all text-left duration-200 flex items-center gap-3 {{ request()->is('service-area') ? 'bg-amber-100 text-amber-800 font-semibold border-l-4 border-amber-500' : '' }}">
-                <i class="fas fa-map-marker-alt w-5 text-center {{ request()->is('service-area') ? 'text-amber-600' : 'text-gray-400' }}"></i> Service area
+                <i
+                    class="fas fa-map-marker-alt w-5 text-center {{ request()->is('service-area') ? 'text-amber-600' : 'text-gray-400' }}"></i>
+                Service area
             </a>
             <a href="/gallery" @click="mobileMenuOpen = false"
                 class="px-5 py-3.5 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition-all text-left duration-200 flex items-center gap-3 {{ request()->is('gallery') ? 'bg-amber-100 text-amber-800 font-semibold border-l-4 border-amber-500' : '' }}">
-                <i class="fas fa-camera-retro w-5 text-center {{ request()->is('gallery') ? 'text-amber-600' : 'text-gray-400' }}"></i> Gallery
+                <i
+                    class="fas fa-camera-retro w-5 text-center {{ request()->is('gallery') ? 'text-amber-600' : 'text-gray-400' }}"></i>
+                Gallery
             </a>
             <a href="/contact" @click="mobileMenuOpen = false"
                 class="px-5 py-3.5 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition-all text-left duration-200 flex items-center gap-3 {{ request()->is('contact') ? 'bg-amber-100 text-amber-800 font-semibold border-l-4 border-amber-500' : '' }}">
-                <i class="fas fa-envelope w-5 text-center {{ request()->is('contact') ? 'text-amber-600' : 'text-gray-400' }}"></i> Contact
+                <i
+                    class="fas fa-envelope w-5 text-center {{ request()->is('contact') ? 'text-amber-600' : 'text-gray-400' }}"></i>
+                Contact
             </a>
 
             @role('master|engineer')
                 <a href="/analysis" @click="mobileMenuOpen = false"
                     class="px-5 py-3.5 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition-all text-left duration-200 flex items-center gap-3 {{ request()->is('analysis') ? 'bg-amber-100 text-amber-800 font-semibold border-l-4 border-amber-500' : '' }}">
-                    <i class="fas fa-chart-bar w-5 text-center {{ request()->is('analysis') ? 'text-amber-600' : 'text-gray-400' }}"></i> Analysis
+                    <i
+                        class="fas fa-chart-bar w-5 text-center {{ request()->is('analysis') ? 'text-amber-600' : 'text-gray-400' }}"></i>
+                    Analysis
                 </a>
             @endrole
 
