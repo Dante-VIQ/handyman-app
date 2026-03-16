@@ -8,7 +8,7 @@
             class="h-12 w-auto object-contain transform hover:scale-105 transition-transform duration-300"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
 
-        <span class="font-bold text-2xl tracking-tight text-gray-800">
+        <span class="font-bold text-2xl sm:text-lg tracking-tight text-gray-800">
             GB<span
                 class="text-amber-600 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-amber-400/30 after:rounded-full">
                 Handyman</span>
