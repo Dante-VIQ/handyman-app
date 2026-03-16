@@ -17,9 +17,9 @@ class GalleryCard extends Component
 
     private function loadImages()
     {
-        $this->images = Image::latest()->take(5)->get();
+        $this->images = Image::latest()->take(2)->get();
         
-        $this->photos = Image::latest()->take(5)->get();
+        $this->photos = Image::latest()->take(2)->get();
 
     }
 
