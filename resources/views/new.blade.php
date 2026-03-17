@@ -214,6 +214,7 @@
         </div>
     </section>
 
+    @include('components.partials.map')
     <!-- ===== FOOTER ===== -->
 
 </main>
