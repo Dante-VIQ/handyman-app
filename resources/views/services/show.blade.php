@@ -568,8 +568,5 @@
             </div>
         </section>
     </main>
-
-    <!-- floating chat icon -->
-    @include('jobs.float')
 </body>
 </html>

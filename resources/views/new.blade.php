@@ -288,6 +288,3 @@
 
 @include('components.partials.map')
 <!-- ===== FOOTER ===== -->
-
-<!-- small floating button (just for style) -->
-<!-- Floating WhatsApp Icon - Links to WhatsApp -->
