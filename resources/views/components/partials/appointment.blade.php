@@ -11,55 +11,45 @@
          <span>{{ session('error') }}</span>
      </div>
  @endif
- <form action="{{ route('appointments.store') }}" method="POST" class="space-y-5">
-     @csrf
-     <div class="grid md:grid-cols-2 gap-4">
-         <div>
-             <label class="block text-sm font-medium text-[#306f86] mb-1">Full Name *</label>
-             <input type="text" name="full_name" required
-                 class="w-full p-3 rounded-full border border-soft-blue focus:outline-none focus:ring-2 focus:ring-soft-green">
-         </div>
-         <div>
-             <label class="block text-sm font-medium text-[#306f86] mb-1">Phone *</label>
-             <input type="tel" name="phone" required
-                 class="w-full p-3 rounded-full border border-soft-blue focus:outline-none focus:ring-2 focus:ring-soft-green">
-         </div>
-     </div>
-     <div>
-         <label class="block text-sm font-medium text-[#306f86] mb-1">Email</label>
-         <input type="email" name="email"
-             class="w-full p-3 rounded-full border border-soft-blue focus:outline-none focus:ring-2 focus:ring-soft-green">
-     </div>
-     <div>
-         <label class="block text-sm font-medium text-[#306f86] mb-1">Service Location (City) *</label>
-         <input type="text" name="city" required placeholder="Kent, Auburn, Seattle, etc."
-             class="w-full p-3 rounded-full border border-soft-blue focus:outline-none focus:ring-2 focus:ring-soft-green">
-     </div>
-     <div>
-         <label class="block text-sm font-medium text-[#306f86] mb-1">Service Needed *</label>
-         <select name="service" required
-             class="w-full p-3 rounded-full border border-soft-blue focus:outline-none focus:ring-2 focus:ring-soft-green">
-             <option value="">Select a service</option>
-             <option value="bathroom">Bathroom Remodeling</option>
-             <option value="flooring">Flooring Installation</option>
-             <option value="drywall">Drywall Repair</option>
-             <option value="painting">Painting</option>
-             <option value="plumbing">Plumbing</option>
-             <option value="electrical">Electrical</option>
-             <option value="general">General Repairs</option>
-             <option value="other">Other</option>
-         </select>
-     </div>
-     <div>
-         <label class="block text-sm font-medium text-[#306f86] mb-1">Message *</label>
-         <textarea name="message" rows="4" required placeholder="Describe your project..."
-             class="w-full p-3 rounded-2xl border border-soft-blue focus:outline-none focus:ring-2 focus:ring-soft-green"></textarea>
-     </div>
-     <div class="flex items-center gap-2">
-         <input type="checkbox" name="agree" required id="agree" class="w-4 h-4">
-         <label for="agree" class="text-sm text-[#306f86]">I agree to receive calls/texts about my project</label>
-     </div>
-     <button type="submit"
-         class="bg-soft-yellow px-8 py-4 rounded-full font-bold text-lg hover:bg-[#ffefb5] transition w-full">Get Free
-         Estimate</button>
- </form>
+<form  action="{{ route('appointments.store') }}" method="POST" class="mt-8 space-y-5">
+    @csrf
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="full_name" class="block text-sm font-medium text-gray-700 mb-1">Your name *</label>
+                        <input type="text" name="full_name" required placeholder="e.g. David Smith"
+                            class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone number *</label>
+                        <input  type="tel" name="phone" required placeholder="0161 234 5678"
+                            class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
+                    <input type="email" name="email" placeholder="you@example.com"
+                        class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80">
+                </div>
+
+                <div>
+                    <label for="city" class="block text-sm font-medium text-gray-700 mb-1">Your address / location</label>
+                    <input type="text" name="city" required placeholder="6249 S 242nd Place, Bldg 8 Apt 203 (or nearby)"
+                        class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">What needs fixing? *</label>
+                    <textarea name="message" required rows="5" placeholder="Please describe the job – e.g. dripping tap, TV mounting, painting a room..."
+                        class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80"></textarea>
+                </div>
+
+
+                <button type="submit"
+                    class="w-full bg-red-500 hover:bg-amber-600 text-gray-900 font-bold py-5 rounded-2xl shadow-lg text-lg transition-all flex items-center justify-center gap-2">
+                    <i class="fas fa-paper-plane"></i> Send message
+                </button>
+
+                <p class="text-xs text-gray-400 text-center">We'll never share your details. By submitting you
+                    agree to our privacy policy.</p>
+            </form>

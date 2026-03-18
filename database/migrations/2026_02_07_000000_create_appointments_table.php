@@ -19,9 +19,9 @@ class CreateAppointmentsTable extends Migration
             $table->string('email');
             $table->string('phone')->nullable();
             $table->string('city')->nullable();
-            $table->string('service')->nullable();
+            // $table->string('service')->nullable();
             $table->text('message');
-            $table->boolean('consent')->default(false);
+            // $table->boolean('consent')->default(false);
             $table->timestamps();
         });
     }

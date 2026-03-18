@@ -81,52 +81,7 @@
             <p class="text-gray-600 mt-3">Fill out the form and we'll get back to you within the hour – usually
                 faster.</p>
 
-            <form  class="mt-8 space-y-5">
-                <div class="grid sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Your name *</label>
-                        <input type="text" placeholder="e.g. David Smith"
-                            class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Phone number *</label>
-                        <input type="tel" placeholder="0161 234 5678"
-                            class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
-                    <input type="email" placeholder="you@example.com"
-                        class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Your address / location</label>
-                    <input type="text" placeholder="6249 S 242nd Place, Bldg 8 Apt 203 (or nearby)"
-                        class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">What needs fixing? *</label>
-                    <textarea rows="5" placeholder="Please describe the job – e.g. dripping tap, TV mounting, painting a room..."
-                        class="form-input w-full px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-amber-400 transition-all bg-white/80"></textarea>
-                </div>
-
-                <div class="flex items-start gap-3">
-                    <input type="checkbox" id="emergency"
-                        class="mt-1 w-5 h-5 text-amber-500 rounded border-gray-300 focus:ring-amber-400">
-                    <label for="emergency" class="text-gray-600">This is an emergency – need help today</label>
-                </div>
-
-                <button type="submit"
-                    class="w-full bg-red-500 hover:bg-amber-600 text-gray-900 font-bold py-5 rounded-2xl shadow-lg text-lg transition-all flex items-center justify-center gap-2">
-                    <i class="fas fa-paper-plane"></i> Send message
-                </button>
-
-                <p class="text-xs text-gray-400 text-center">We'll never share your details. By submitting you
-                    agree to our privacy policy.</p>
-            </form>
+@include('components.partials.appointment')
         </div>
 
         <!-- Right: Contact info, map, social -->

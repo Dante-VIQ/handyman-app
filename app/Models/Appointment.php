@@ -13,9 +13,9 @@ class Appointment extends Model
         'email',
         'phone',
         'city',
-        'service',
+        // 'service',
         'message',
-        'consent',
+        // 'consent',
     ];
 
     protected $casts = [

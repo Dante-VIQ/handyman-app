@@ -28,16 +28,16 @@ class AppointmentNotification extends Mailable
     /**
      * Get the message envelope.
      */
-    // public function envelope(): Envelope
-    // {
-    //     return new Envelope(
-    //         from: new Address('notifications@gbhandyman.com', 'GB Handyman Solutions'),
-    //         subject: 'Your Appointment Request is Confirmed! (#' . $this->appointment->id . ')',
-    //         replyTo: [
-    //             new Address('gbhandymanllc@yahoo.com', 'GB Handyman Solutions'),
-    //         ],
-    //     );
-    // }
+    public function envelope(): Envelope
+    {
+        return new Envelope(
+            from: new Address('africa@vumbiventures.com', 'GB Handyman Solutions'),
+            subject: 'Your Appointment Request is Confirmed! (#' . $this->appointment->id . ')',
+            replyTo: [
+                new Address('gbhandymanllc@yahoo.com', 'GB Handyman Solutions'),
+            ],
+        );
+    }
 
     /**
      * Get the message content definition.
@@ -45,10 +45,9 @@ class AppointmentNotification extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.appointment-notification', // Changed from markdown to view for custom HTML
+            view: 'emails.appointment-notification',
             with: [
                 'appointment' => $this->appointment,
-                'year' => date('Y'),
             ],
         );
     }
@@ -59,19 +58,5 @@ class AppointmentNotification extends Mailable
     public function attachments(): array
     {
         return [];
-    }
-    
-    /**
-     * Build the message (alternative method if not using envelope/content)
-     */
-    public function build()
-    {
-        return $this->from('notifications@gbhandyman.com', 'GB Handyman Solutions')
-                    ->subject('Your Appointment Request is Confirmed! (#' . $this->appointment->id . ')')
-                    ->view('emails.appointment-notification')
-                    ->with([
-                        'appointment' => $this->appointment,
-                        'year' => date('Y'),
-                    ]);
     }
 }
