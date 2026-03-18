@@ -1,6 +1,6 @@
 
     <!-- ===== HERO ===== -->
-    <section class="max-w-7xl mx-auto px-5 sm:px-8 pt-6 pb-4 md:pt-12 md:pb-14 grid md:grid-cols-2 gap-12 items-center">
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 pt-6 pb-4 md:pt-14 md:pb-14 grid md:grid-cols-2 gap-12 items-center">
         <div>
             <span
                 class="bg-amber-100 text-amber-800 text-sm font-semibold px-4 py-1.5 rounded-full inline-flex items-center gap-1"><i
