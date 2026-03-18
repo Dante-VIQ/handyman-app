@@ -3,7 +3,7 @@
     :class="scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' : 'bg-white/80 backdrop-blur-sm py-3'"
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-4 md:px-6">
 
-    <div class="max-w-8xl mx-auto flex items-center justify-between">
+    <div class="max-w-8xl mx-auto flex items-center justify-between pb-4">
         <!-- Logo with refined styling - more professional -->
         <a href="/" class="flex items-center gap-3 group">
             <!-- Logo image with container -->
@@ -17,7 +17,7 @@
             <!-- Brand text with better typography -->
             <div class="flex flex-col">
                 <span class="font-black text-xl md:text-2xl tracking-tight text-gray-800 leading-tight">
-                    GB<span class="text-amber-600"> Handyman</span>
+                    GB<span class="text-red-600"> Handyman</span>
                 </span>
                 <span class="text-xs text-gray-500 tracking-wider -mt-1">trusted • reliable • local</span>
             </div>
@@ -78,8 +78,8 @@
                 <div class="hidden lg:block">
                     <div class="relative" x-data="{ profileOpen: false }">
                         <button @click="profileOpen = !profileOpen"
-                                class="flex items-center gap-2 pl-4 pr-3 py-2.5 rounded-xl bg-gradient-to-r from-amber-50 to-amber-100/50 border border-amber-200 text-amber-800 font-semibold hover:from-amber-100 hover:to-amber-200 transition-all duration-200 shadow-sm">
-                            <i class="fas fa-user-circle text-amber-500 text-lg"></i>
+                                class="flex items-center gap-2 pl-4 pr-3 py-2.5 rounded-xl bg-gradient-to-r from-red-50 to-red-100/50 border border-red-200 text-amber-800 font-semibold hover:from-amber-100 hover:to-amber-200 transition-all duration-200 shadow-sm">
+                            <i class="fas fa-user-circle text-red-500 text-lg"></i>
                             <span class="truncate max-w-[100px]">{{ Auth::user()->name }}</span>
                             <i class="fas fa-chevron-down text-xs text-amber-600 transition-transform duration-200" :class="profileOpen ? 'rotate-180' : ''"></i>
                         </button>
@@ -122,7 +122,7 @@
                         Sign In
                     </a>
                     <a href="{{ route('register') }}"
-                       class="px-5 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl text-sm font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-200 shadow-md shadow-amber-200/50 flex items-center gap-2">
+                       class="px-5 py-2.5 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl text-sm font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-200 shadow-md shadow-amber-200/50 flex items-center gap-2">
                         <i class="fas fa-user-plus text-xs"></i>
                         Get Started
                     </a>
@@ -131,7 +131,7 @@
 
             <!-- Quote/Estimate Button - Prominent CTA -->
             <a href="/contact"
-               class="hidden lg:flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl text-sm font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-200 shadow-md shadow-amber-200/50 ml-2">
+               class="hidden lg:flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl text-sm font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-200 shadow-md shadow-amber-200/50 ml-2">
                 <i class="fas fa-calculator"></i>
                 Free Quote
             </a>
@@ -188,7 +188,7 @@
                 <!-- Mobile CTA -->
                 <div class="pt-4 mt-4 border-t border-amber-100">
                     <a href="/quote" @click="mobileMenuOpen = false"
-                       class="flex items-center justify-center gap-2 px-5 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-semibold shadow-md hover:from-amber-600 hover:to-amber-700 transition-all duration-200">
+                       class="flex items-center justify-center gap-2 px-5 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl font-semibold shadow-md hover:from-amber-600 hover:to-amber-700 transition-all duration-200">
                         <i class="fas fa-calculator"></i>
                         Get Free Estimate
                     </a>
@@ -229,7 +229,7 @@
 </header>
 
 <!-- Add spacing to push content below fixed header -->
-<div class="h-20 md:h-24"></div>
+{{-- <div class="h-20 md:h-24"></div> --}}
 
 <!-- JavaScript for fallback logo -->
 <script>

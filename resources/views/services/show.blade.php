@@ -18,7 +18,7 @@
 
     <main>
         <!-- ===== SERVICES HERO ===== -->
-        <section class="relative bg-gradient-to-br from-amber-50 via-white to-amber-50/30 py-16 md:py-24 overflow-hidden">
+        <section class="relative bg-gradient-to-br from-amber-50 via-white to-amber-50/30 py-10 md:py-24 overflow-hidden">
             <div class="absolute inset-0 opacity-5">
                 <i class="fas fa-hammer absolute text-9xl text-amber-300 -rotate-12 -top-6 left-10"></i>
                 <i class="fas fa-screwdriver absolute text-8xl text-amber-300 rotate-45 bottom-0 right-10"></i>
@@ -30,8 +30,8 @@
                     <h1 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 leading-tight">Every job, big or small —<br><span class="text-amber-600">we've got the tool</span></h1>
                     <p class="text-xl text-gray-600 mt-6 max-w-2xl">From a dripping tap to a full room refresh. Browse our services, then book us online or give us a call.</p>
                     <div class="flex flex-wrap gap-4 mt-10">
-                        <a href="#service-grid" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i class="fas fa-magnifying-glass"></i> Browse all services</a>
-                        <a href="tel:+12024601753" class="bg-white border-2 border-amber-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i class="fas fa-phone-alt text-amber-500"></i> Call +1 (202) 460 1753</a>
+                        <a href="#service-grid" class="bg-gradient-to-r from-red-400 to-red-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i class="fas fa-magnifying-glass"></i> Browse all services</a>
+                        <a href="tel:+12024601753" class="bg-white border-2 border-red-500 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i class="fas fa-phone-alt text-amber-500"></i> Call +1 (202) 460 1753</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
         </div>
 
         <!-- ===== DETAILED SERVICE GRID ===== -->
-        <section id="service-grid" class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
+        <section id="service-grid" class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
             <!-- REPAIRS category -->
             <div id="repairs" class="scroll-mt-32 mb-16">
                 <div class="flex items-center gap-3 mb-8">
@@ -253,19 +253,19 @@
         </section>
 
         <!-- ===== CUSTOM WORK / BESPOKE BANNER ===== -->
-        <section class="bg-amber-50 border-y border-amber-200 py-16 my-8">
+        <section class="bg-amber-50 border-y border-amber-200 py-8 my-8">
             <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
                 <span class="bg-white text-amber-700 px-5 py-2 rounded-full text-sm font-semibold shadow-sm"><i class="fas fa-pencil-ruler mr-1"></i> Bespoke work</span>
                 <h2 class="text-4xl font-bold mt-4 text-gray-900">Need something custom? We build it.</h2>
                 <p class="text-gray-600 text-xl mt-3 max-w-2xl mx-auto">Built-in shelving, home bars, decking, kitchen islands – we can design and build it to your exact specs.</p>
                 <div class="flex flex-wrap justify-center gap-4 mt-8">
-                    <a href="/contact" class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold shadow-lg flex items-center gap-2 transition-all"><i class="fas fa-drafting-compass"></i> Discuss your project</a>
+                    <a href="/contact" class="bg-gradient-to-r from-red-400 to-red-600 hover:bg-amber-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg flex items-center gap-2 transition-all"><i class="fas fa-drafting-compass"></i> Discuss your project</a>
                 </div>
             </div>
         </section>
 
         <!-- ===== PRICING & GUARANTEE ===== -->
-        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
+        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 text-center">
                     <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center text-3xl text-amber-700 mx-auto mb-4"><i class="fas fa-pound-sign"></i></div>
@@ -286,17 +286,17 @@
         </section>
 
         <!-- ===== CALL TO ACTION (book) ===== -->
-        <section class="bg-gray-900 text-white py-20 mt-8">
+        <section class="bg-gray-900 text-white py-8 mt-8">
             <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
                 <i class="fas fa-tools text-6xl text-amber-400 mb-5"></i>
                 <h2 class="text-4xl font-bold">Ready to tick that to-do list off?</h2>
                 <p class="text-gray-300 text-xl mt-3 max-w-2xl mx-auto">Book online or give us a call. We'll take it from there.</p>
                 <div class="flex flex-wrap justify-center gap-5 mt-10">
                 <a href="#contact"
-                    class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]">
+                    class="bg-gradient-to-r from-red-500 to-red-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-5 px-10 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]">
                     <i class="fas fa-calendar-check mr-2"></i> Book Online
                 </a>
-                    <a href="tel:+12024601753" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i class="fas fa-phone-alt mr-2"></i> +1 (202) 460 1753</a>
+                    <a href="tel:+12024601753" class="bg-transparent border-2 border-red hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i class="fas fa-phone-alt mr-2 "></i> +1 (202) 460 1753</a>
                 </div>
             </div>
         </section>
@@ -304,11 +304,6 @@
 
     <!-- floating chat icon -->
 <!-- Floating WhatsApp Icon - Links to WhatsApp -->
-<a href="https://wa.me/+12024601753"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl cursor-pointer transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center w-16 h-16 shadow-green-200/50">
-    <i class="fab fa-whatsapp text-3xl"></i>
-</a>
+@include('jobs.float')
 </body>
 </html>

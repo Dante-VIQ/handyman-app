@@ -1,6 +1,6 @@
-<main>
+
     <!-- ===== HERO ===== -->
-    <section class="max-w-7xl mx-auto px-5 sm:px-8 pt-10 pb-16 md:pt-5 md:pb-24 grid md:grid-cols-2 gap-12 items-center">
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 pt-6 pb-4 md:pt-12 md:pb-14 grid md:grid-cols-2 gap-12 items-center">
         <div>
             <span
                 class="bg-amber-100 text-amber-800 text-sm font-semibold px-4 py-1.5 rounded-full inline-flex items-center gap-1"><i
@@ -13,12 +13,12 @@
             <div class="flex flex-wrap gap-4 mt-8">
                 <!-- Large Primary Button -->
                 <a href="#contact"
-                    class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]">
+                    class="bg-gradient-to-r from-red-400 to-red-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]">
                     <i class="fas fa-calendar-check mr-2"></i> Book Online
                 </a>
                 <a href="tel:+12024601753"
-                    class="bg-white hover:bg-gray-50 text-gray-700 font-semibold py-2.5 px-5 rounded-lg shadow-sm shadow-gray-200/60 transition-all duration-300 ring-2 ring-amber-300/60 ring-offset-2 ring-offset-white hover:ring-amber-400 border border-gray-200"><i
-                        class="fas fa-phone-alt text-amber-500"></i> Call Now</a>
+                    class="bg-white hover:bg-gray-50 text-gray-700 font-semibold py-2.5 px-5 rounded-lg shadow-sm shadow-gray-200/60 transition-all duration-300 ring-2 ring-red-300/60 ring-offset-2 ring-offset-white hover:ring-amber-400 border border-gray-200"><i
+                        class="fas fa-phone-alt text-red-500"></i> Call Now</a>
             </div>
             <div class="flex items-center gap-5 mt-8 text-sm text-gray-500">
                 <span><i class="far fa-clock text-amber-500"></i> 24/7 emergency</span>
@@ -46,7 +46,7 @@
     </div>
 
     <!-- ===== SERVICES section ===== -->
-    <section id="services" class="max-w-7xl mx-auto px-5 sm:px-8 py-20">
+    <section id="services" class="max-w-7xl mx-auto px-5 sm:px-8 py-5">
         <div class="text-center max-w-2xl mx-auto">
             <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i
                     class="fas fa-toolbox mr-1"></i> what we do</span>
@@ -121,13 +121,13 @@
         </div>
         <div class="text-center mt-12">
             <a href="#contact"
-                class="inline-flex items-center gap-2 bg-white border-2 border-amber-400 text-gray-800 hover:bg-amber-50 px-8 py-4 rounded-full font-semibold transition-all"><span>Need
+                class="inline-flex items-center gap-2 bg-white border-2 border-red-400 text-gray-800 hover:bg-amber-50 px-8 py-4 rounded-full font-semibold transition-all"><span>Need
                     something else? Ask us</span> <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
 
     <!-- ===== ABOUT / WHY US ===== -->
-    <section id="about" class="bg-white py-20">
+    <section id="about" class="bg-white py-4">
         <div class="max-w-7xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-14 items-center">
             <div>
                 <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i
@@ -174,10 +174,8 @@
         </div>
     </section>
 
-
-
     <!-- ===== QUOTE / CONTACT area (hybrid) ===== -->
-    <section id="quote" class="bg-gradient-to-br from-amber-50 to-white py-20 border-y border-amber-200">
+    <section id="quote" class="bg-gradient-to-br from-amber-50 to-white py-8 border-y border-amber-200">
         <div class="max-w-7xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <span class="bg-white text-amber-700 px-5 py-2 rounded-full text-sm font-semibold shadow-sm"><i
@@ -206,7 +204,7 @@
                             class="w-full border border-gray-200 rounded-xl p-4 focus:outline-amber-400"></textarea>
                     </div>
                     <button
-                        class="bg-amber-500 hover:bg-amber-600 w-full text-white font-bold py-4 rounded-xl shadow-lg text-lg transition-all">Get
+                        class="bg-red-500 hover:bg-amber-600 w-full text-white font-bold py-4 rounded-xl shadow-lg text-lg transition-all">Get
                         free estimate <i class="fas fa-paper-plane ml-2"></i></button>
                     <p class="text-xs text-gray-400 text-center">We'll text or call back – no spam</p>
                 </form>
@@ -217,12 +215,6 @@
     @include('components.partials.map')
     <!-- ===== FOOTER ===== -->
 
-</main>
 <!-- small floating button (just for style) -->
 <!-- Floating WhatsApp Icon - Links to WhatsApp -->
-<a href="https://wa.me/+12024601753"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl cursor-pointer transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center w-16 h-16 shadow-green-200/50">
-    <i class="fab fa-whatsapp text-3xl"></i>
-</a>
+

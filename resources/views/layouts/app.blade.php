@@ -53,8 +53,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/logo.png') }}">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<!-- Font Awesome 5 (Free) -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- Font Awesome 5 (Free) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <!-- Tailwind + Inter font -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -168,52 +168,55 @@
     <!-- Main Content - Fixed Responsive -->
     <main class="w-full overflow-x-hidden">
         @yield('content')
+
+        @include('jobs.float')
     </main>
 
     <!-- Footer - Fixed Responsive -->
-        <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
-            <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
-                <div>
-                    <div class="flex items-center gap-2 text-white">
-                        <i class="fas fa-tools text-2xl text-amber-400"></i>
-                        <span class="font-bold text-2xl">GB Handyman</span>
-                    </div>
-                    <p class="mt-4 text-sm">Reliable, local, and fully insured. We treat your home like our own.</p>
-                    <div class="flex gap-4 mt-5 text-amber-300 text-xl">
-                        <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i
-                            class="fab fa-linkedin"></i>
-                    </div>
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div>
+                <div class="flex items-center gap-2 text-white">
+                    <img src="/images/logo.png" alt="GB Handyman Logo"
+                        class="relative h-10 md:h-12 w-auto object-contain transform group-hover:scale-105 transition-all duration-300"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <span class="font-bold text-2xl">GB Handyman</span>
                 </div>
-                <div>
-                    <h4 class="text-white font-semibold text-lg">Quick links</h4>
-                    <ul class="mt-4 space-y-2 text-sm">
-                        <li><a href="/service" class="hover:text-amber-300">Services</a></li>
-                        <li><a href="/about" class="hover:text-amber-300">About us</a></li>
-                        <li><a href="/gallery" class="hover:text-amber-300">Gallery</a></li>
-                        <li><a href="/contact" class="hover:text-amber-300">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold text-lg">Contact</h4>
-                    <ul class="mt-4 space-y-2 text-sm">
-                        <li><i class="fas fa-phone-alt mr-2 text-amber-400"></i> +1 (202) 460 1753</li>
-                        <li><i class="fas fa-envelope mr-2 text-amber-400"></i>gbhandymanllc@yahoo.com</li>
-                        <li><i class="fas fa-map-pin mr-2 text-amber-400"></i> Seattle, WA</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold text-lg">Hours</h4>
-                    <ul class="mt-4 space-y-2 text-sm">
-                        <li>Mon-Fri: 8am – 8pm</li>
-                        <li>Sat: 9am – 5pm</li>
-                        <li>Sun: emergency only</li>
-                    </ul>
+                <p class="mt-4 text-sm">Reliable, local, and fully insured. We treat your home like our own.</p>
+                <div class="flex gap-4 mt-5 text-amber-300 text-xl">
+                    <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin"></i>
                 </div>
             </div>
-            <div class="max-w-7xl mx-auto px-5 border-t border-gray-800 mt-12 pt-6 text-sm text-center text-gray-500">
-                © 2026 GB Handyman. All rights reserved. • Company #12345678
+            <div>
+                <h4 class="text-white font-semibold text-lg">Quick links</h4>
+                <ul class="mt-4 space-y-2 text-sm">
+                    <li><a href="/service" class="hover:text-amber-300">Services</a></li>
+                    <li><a href="/about" class="hover:text-amber-300">About us</a></li>
+                    <li><a href="/gallery" class="hover:text-amber-300">Gallery</a></li>
+                    <li><a href="/contact" class="hover:text-amber-300">Contact</a></li>
+                </ul>
             </div>
-        </footer>
+            <div>
+                <h4 class="text-white font-semibold text-lg">Contact</h4>
+                <ul class="mt-4 space-y-2 text-sm">
+                    <li><i class="fas fa-phone-alt mr-2 text-amber-400"></i> +1 (202) 460 1753</li>
+                    <li><i class="fas fa-envelope mr-2 text-amber-400"></i>gbhandymanllc@yahoo.com</li>
+                    <li><i class="fas fa-map-pin mr-2 text-amber-400"></i> Seattle, WA</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-lg">Hours</h4>
+                <ul class="mt-4 space-y-2 text-sm">
+                    <li>Mon-Fri: 8am – 8pm</li>
+                    <li>Sat: 9am – 5pm</li>
+                    <li>Sun: emergency only</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-5 border-t border-gray-800 mt-12 pt-6 text-sm text-center text-gray-500">
+            © 2026 GB Handyman. All rights reserved. • Company #12345678
+        </div>
+    </footer>
 
     @livewireScripts()
     @stack('scripts')

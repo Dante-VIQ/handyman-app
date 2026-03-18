@@ -19,7 +19,7 @@
         </section>
 
         <!-- ===== FOUNDER STORY / HERITAGE ===== -->
-        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-10 grid md:grid-cols-2 gap-14 items-center">
+        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-8 grid md:grid-cols-2 gap-14 items-center">
             <div class="order-2 md:order-1">
                 <div class="relative">
                     <img src="/images/glen.jpg" alt="Grace Baxter, founder of GB Handyman" class="rounded-3xl shadow-2xl object-cover w-full border-8 border-white h-[100vh]" >
@@ -46,7 +46,7 @@
         </section>
 
         <!-- ===== TIMELINE / MILESTONES ===== -->
-        <section class="bg-white py-20 border-y border-gray-200">
+        <section class="bg-white py-8 border-y border-gray-200">
             <div class="max-w-7xl mx-auto px-5 sm:px-8">
                 <div class="text-center max-w-2xl mx-auto">
                     <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i class="fas fa-timeline"></i> Our journey</span>
@@ -84,7 +84,7 @@
         </section>
 
         <!-- ===== VALUES / WHAT MAKES US DIFFERENT ===== -->
-        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20">
+        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i class="fas fa-heart mr-1"></i> Our values</span>
@@ -143,7 +143,7 @@
         </section> --}}
 
         <!-- ===== COMMUNITY & ACCREDITATIONS ===== -->
-        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
+        <section class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
             <div class="bg-amber-50 rounded-4xl p-10 md:p-16 border border-amber-200 shadow-inner">
                 <div class="grid md:grid-cols-2 gap-10 items-center">
                     <div>
@@ -163,29 +163,29 @@
         </section>
 
         <!-- ===== JOIN THE TEAM / CALL OUT ===== -->
-        <section class="bg-gray-900 text-white py-20">
+        {{-- <section class="bg-gray-900 text-white py-8">
             <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
                 <i class="fas fa-toolbox text-6xl text-amber-400 mb-5"></i>
                 <h2 class="text-4xl font-bold">Love fixing things? Join the crew</h2>
                 <p class="text-gray-300 text-xl mt-3 max-w-2xl mx-auto">We're always on the lookout for skilled, friendly tradespeople who share our values.</p>
                 <a href="careers.html" class="inline-block mt-8 bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition-all">See open positions <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
-        </section>
+        </section> --}}
 
         <!-- ===== SMALL CONTACT / QUOTE BANNER ===== -->
-        <section class="bg-white border-b border-gray-200 py-14">
+        <section class="bg-white border-b border-gray-200 py-10">
             <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
                 <span class="text-2xl font-semibold text-gray-800">Have a job in mind? Let’s talk it through.</span>
-                <a href="/contact" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full font-bold shadow-lg text-lg flex items-center gap-2 transition-all"><i class="fas fa-calculator"></i> Get free quote</a>
+                <a href="/contact" class="bg-red-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full font-bold shadow-lg text-lg flex items-center gap-2 transition-all"><i class="fas fa-calculator"></i> Get free quote</a>
             </div>
         </section>
     </main>
 
     <!-- floating chat icon (same style) -->
 <!-- Floating WhatsApp Icon - Links to WhatsApp -->
-<a href="https://wa.me/+12024601753" 
-   target="_blank" 
+<a href="https://wa.me/+12024601753"
+   target="_blank"
    rel="noopener noreferrer"
    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl cursor-pointer transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center w-16 h-16 shadow-green-200/50">
-    <i class="fab fa-whatsapp text-3xl"></i>
+    <i class="fab fa-phone text-3xl"></i>
 </a>

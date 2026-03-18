@@ -1,5 +1,5 @@
 <!-- Service Area Map Section with Real Map -->
-<section class="py-16 md:py-24 bg-gradient-to-br from-blue-50 via-teal-50 to-green-50">
+<section class="py-8 md:py-24 bg-gradient-to-br from-blue-50 via-teal-50 to-green-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header (same as above) -->
         <div class="text-center max-w-3xl mx-auto mb-12">
@@ -56,7 +56,7 @@
 
             <!-- Link to Service Area Page -->
             <a href="/service-area"
-               class="group flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-lg shadow-amber-200/50">
+               class="group flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-lg shadow-amber-200/50">
                 <span>View Full Service Area</span>
                 <i class="fas fa-arrow-right group-hover:translate-x-1.5 transition-transform"></i>
             </a>

@@ -1,6 +1,6 @@
 <main>
     <!-- ===== GALLERY HERO ===== -->
-    <section class="relative bg-gradient-to-br from-amber-50 via-white to-amber-50/30 py-16 md:py-24 overflow-hidden">
+    <section class="relative bg-gradient-to-br from-amber-50 via-white to-amber-50/30 py-8 md:py-10 overflow-hidden">
         <div class="absolute inset-0 opacity-5">
             <i class="fas fa-camera-retro absolute text-9xl text-amber-300 -rotate-12 -top-6 left-10"></i>
             <i class="fas fa-image absolute text-8xl text-amber-300 rotate-45 bottom-0 right-10"></i>
@@ -16,10 +16,10 @@
                     photos of our recent work around your neighbourhood.</p>
                 <div class="flex flex-wrap gap-4 mt-10">
                     <a href="#gallery-grid"
-                        class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i
+                        class="bg-gradient-to-r from-red-500 to-red-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i
                             class="fas fa-images"></i> View gallery</a>
                     <a href="#featured"
-                        class="bg-white border-2 border-amber-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i
+                        class="bg-white border-2 border-red-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i
                             class="fas fa-star text-amber-500"></i> Featured projects</a>
                 </div>
             </div>
@@ -30,7 +30,7 @@
     <section class="max-w-7xl mx-auto px-5 sm:px-8 pt-8 pb-4">
         <div class="flex flex-wrap justify-center gap-3">
             <button
-                class="filter-btn active bg-amber-500 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-amber-600 transition-all border-2 border-amber-500">All</button>
+                class="filter-btn active bg-red-500 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-amber-600 transition-all border-2 border-amber-500">All</button>
             <button
                 class="filter-btn bg-white text-gray-700 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-amber-100 transition-all border-2 border-gray-200">Repairs</button>
             <button
@@ -47,12 +47,12 @@
     </section>
 
     <!-- ===== GALLERY GRID ===== -->
-    <section id="gallery-grid" class="max-w-7xl mx-auto px-5 sm:px-8 py-12">
+    <section id="gallery-grid" class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
         <livewire:photo-card />
     </section>
 
     <!-- ===== FEATURED PROJECT SPOTLIGHT ===== -->
-    <section id="featured" class="max-w-7xl mx-auto px-5 sm:px-8 py-20">
+    <section id="featured" class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
         <div class="text-center max-w-2xl mx-auto">
             <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i
                     class="fas fa-crown mr-1"></i> Featured project</span>
@@ -81,7 +81,7 @@
                                 concealment</span></div>
                     </div>
                     <a href="quote.html"
-                        class="inline-block mt-8 bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-8 py-4 rounded-xl shadow-lg transition-all">Start
+                        class="inline-block mt-8 bg-red-500 hover:bg-amber-600 text-gray-900 font-bold px-8 py-4 rounded-xl shadow-lg transition-all">Start
                         your project <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <livewire:gallery-card />
@@ -145,7 +145,7 @@
     </section> --}}
 
     <!-- ===== CTA ===== -->
-    <section class="bg-gray-900 text-white py-20">
+    <section class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
             <i class="fas fa-camera text-6xl text-amber-400 mb-5"></i>
             <h2 class="text-4xl font-bold">Ready to create your own 'after' photo?</h2>
@@ -153,10 +153,10 @@
             </p>
             <div class="flex flex-wrap justify-center gap-5 mt-10">
                 <a href="/contact"
-                    class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition-all"><i
+                    class="bg-red-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition-all"><i
                         class="fas fa-calendar-check mr-2"></i> Book online</a>
                 <a href="tel:+12024601753"
-                    class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i
+                    class="bg-transparent border-2 border-red hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i
                         class="fas fa-phone-alt mr-2"></i> +1 (202) 460 1753</a>
             </div>
         </div>
@@ -168,7 +168,7 @@
 <!-- Floating WhatsApp Icon - Links to WhatsApp -->
 <a href="https://wa.me/+12024601753" target="_blank" rel="noopener noreferrer"
     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl cursor-pointer transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center w-16 h-16 shadow-green-200/50">
-    <i class="fab fa-whatsapp text-3xl"></i>
+    <i class="fab fa-phone text-3xl"></i>
 </a>
 
 <!-- simple filter script (demo/interactive) -->

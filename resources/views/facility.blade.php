@@ -1,5 +1,5 @@
 <!-- ===== CONTACT HERO ===== -->
-<section class="relative bg-gradient-to-br from-amber-50 via-white to-amber-50/30 py-16 md:py-24 overflow-hidden">
+<section class="relative bg-gradient-to-br from-amber-50 via-white to-amber-50/30 py-8 md:py-10 overflow-hidden">
     <div class="absolute inset-0 opacity-5">
         <i class="fas fa-envelope absolute text-9xl text-amber-300 -rotate-12 -top-6 left-10"></i>
         <i class="fas fa-phone-alt absolute text-8xl text-amber-300 rotate-45 bottom-0 right-10"></i>
@@ -15,10 +15,10 @@
                 way that works for you. We usually respond within an hour.</p>
             <div class="flex flex-wrap gap-4 mt-10">
                 <a href="#contact-form"
-                    class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i
+                    class="bg-gradient-to-r from-red-500 to-red-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i
                         class="fas fa-paper-plane"></i> Send message</a>
                 <a href="tel:+12024601753"
-                    class="bg-white border-2 border-amber-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i
+                    class="bg-white border-2 border-red-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i
                         class="fas fa-phone-alt text-amber-500"></i> Call now</a>
             </div>
         </div>
@@ -26,7 +26,7 @@
 </section>
 
 <!-- ===== CONTACT CARDS ===== -->
-<section class="max-w-7xl mx-auto px-5 sm:px-8 -mt-8 relative z-20">
+<section class="max-w-7xl mx-auto px-5 sm:px-8 -mt-4 relative z-20">
     <div class="grid md:grid-cols-3 gap-6">
         <!-- Phone Card -->
         <div class="bg-white rounded-3xl shadow-xl p-8 contact-card transition-all border border-gray-100">
@@ -71,7 +71,7 @@
 </section>
 
 <!-- ===== CONTACT FORM & DETAILS ===== -->
-<section id="contact-form" class="max-w-7xl mx-auto px-5 sm:px-8 py-20">
+<section id="contact-form" class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
     <div class="grid md:grid-cols-2 gap-12">
         <!-- Left: Form -->
         <div>
@@ -120,7 +120,7 @@
                 </div>
 
                 <button type="submit"
-                    class="w-full bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-5 rounded-2xl shadow-lg text-lg transition-all flex items-center justify-center gap-2">
+                    class="w-full bg-red-500 hover:bg-amber-600 text-gray-900 font-bold py-5 rounded-2xl shadow-lg text-lg transition-all flex items-center justify-center gap-2">
                     <i class="fas fa-paper-plane"></i> Send message
                 </button>
 
@@ -213,7 +213,7 @@
 </section>
 
 <!-- ===== BUSINESS HOURS ===== -->
-<section class="max-w-7xl mx-auto px-5 sm:px-8 py-10">
+<section class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
     <div class="bg-amber-50 rounded-4xl p-12 border border-amber-200">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -252,7 +252,7 @@
 </section>
 
 <!-- ===== FAQ MINI ===== -->
-<section class="max-w-7xl mx-auto px-5 sm:px-8 py-20">
+<section class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
     <div class="text-center max-w-2xl mx-auto">
         <span class="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold"><i
                 class="fas fa-question-circle mr-1"></i> Quick answers</span>
@@ -285,7 +285,7 @@
 </section>
 
 <!-- ===== CTA BOTTOM ===== -->
-<section class="bg-gray-900 text-white py-20">
+<section class="bg-gray-900 text-white py-8">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
         <i class="fas fa-headset text-6xl text-amber-400 mb-5"></i>
         <h2 class="text-4xl font-bold">Have a question? Just ask.</h2>
@@ -293,10 +293,10 @@
             help.</p>
         <div class="flex flex-wrap justify-center gap-5 mt-10">
             <a href="tel:01612345678"
-                class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition-all"><i
+                class="bg-red-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition-all"><i
                     class="fas fa-phone-alt mr-2"></i> Call +1 (202) 460 1753</a>
             <a href="#contact-form"
-                class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i
+                class="bg-transparent border-2 border-red hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i
                     class="fas fa-envelope mr-2"></i> Send message</a>
         </div>
     </div>
