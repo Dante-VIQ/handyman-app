@@ -240,7 +240,8 @@
             </div>
         </div>
         <div class="grid grid-cols-2 gap-4">
-            <img src="/images/paint.jpg" class="rounded-2xl shadow-xl row-span-2 object-cover h-[50vh] w-full mx-auto mt-8"
+            <img src="/images/paint.jpg"
+                class="rounded-2xl shadow-xl row-span-2 object-cover h-[50vh] w-full mx-auto mt-8"
                 alt="handyman at work">
             <img src="/images/clean.jpg" class="rounded-2xl shadow-lg object-cover w-full h-48" alt="tools">
             <img src="/images/capenter.jpg" class="rounded-2xl shadow-lg object-cover w-full h-48" alt="customer">
@@ -265,14 +266,14 @@
                 <div class="md:flex">
                     <!-- Image Side -->
                     <div class="md:w-2/5 h-64 md:h-auto bg-amber-100 relative">
-                        <img src="/images/glen.jpg"
-                             alt="Michael Chen - GB Handyman"
-                             class="w-full h-full object-cover object-center">
+                        <img src="/images/glen.jpg" alt="Michael Chen - GB Handyman"
+                            class="w-full h-full object-cover object-center">
                     </div>
 
                     <!-- Content Side -->
                     <div class="md:w-3/5 p-8">
-                        <div class="inline-block bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                        <div
+                            class="inline-block bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
                             FOUNDER & OPERATOR
                         </div>
 
@@ -280,7 +281,8 @@
                         <p class="text-amber-600 font-medium mb-4">Master Handyman</p>
 
                         <p class="text-gray-600 mb-4">
-                            With 5+ years of experience, Michael handles everything from plumbing to carpentry with precision and care.
+                            With 5+ years of experience, Michael handles everything from plumbing to carpentry with
+                            precision and care.
                         </p>
 
                         <div class="flex items-center gap-4 mb-4">
@@ -295,13 +297,18 @@
                         </div>
 
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">🔧 Repairs</span>
-                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">🚿 Plumbing</span>
-                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">⚡ Electrical</span>
-                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">🪵 Carpentry</span>
+                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">🔧
+                                Repairs</span>
+                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">🚿
+                                Plumbing</span>
+                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">⚡
+                                Electrical</span>
+                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">🪵
+                                Carpentry</span>
                         </div>
 
-                        <a href="/contact" class="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700">
+                        <a href="/contact"
+                            class="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700">
                             Book a service <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
