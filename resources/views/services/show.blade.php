@@ -90,7 +90,7 @@
                     <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Door repair"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <!-- Content -->
                 <div class="relative z-10 p-7">
@@ -109,7 +109,7 @@
                     <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Drywall repair"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -127,7 +127,7 @@
                     <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Furniture repair"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -154,7 +154,7 @@
                     <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Plumbing repair"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/50 via-gray-900/40 to-gray-900/50"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -172,7 +172,7 @@
                     <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Drain cleaning"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -190,7 +190,7 @@
                     <img src="https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Appliance installation"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -217,7 +217,7 @@
                     <img src="https://images.unsplash.com/photo-1556905200-27956576b70b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Lighting installation"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -235,7 +235,7 @@
                     <img src="https://images.unsplash.com/photo-1556905200-27956576b70b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Electrical socket"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -253,7 +253,7 @@
                     <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Smart home"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -280,7 +280,7 @@
                     <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Custom shelving"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -298,7 +298,7 @@
                     <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Skirting boards"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -316,7 +316,7 @@
                     <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Garden fence"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -343,7 +343,7 @@
                     <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Interior painting"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -361,7 +361,7 @@
                     <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Wallpaper hanging"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -379,7 +379,7 @@
                     <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Paint touch up"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -406,7 +406,7 @@
                     <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Furniture assembly"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -424,7 +424,7 @@
                     <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="TV mounting"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -442,7 +442,7 @@
                     <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Mirror hanging"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -469,7 +469,7 @@
                     <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Garden shed"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -487,7 +487,7 @@
                     <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Playset assembly"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">
@@ -505,7 +505,7 @@
                     <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                          alt="Odd jobs"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
                 </div>
                 <div class="relative z-10 p-7">
                     <div class="bg-amber-100/90 backdrop-blur-sm w-16 h-16 rounded-2xl flex items-center justify-center text-3xl text-amber-700 mb-5 shadow-md">

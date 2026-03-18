@@ -59,7 +59,7 @@
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="Door repair" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
             </div>
             <!-- Content -->
             <div class="relative z-10 p-7">
@@ -83,7 +83,7 @@
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="Plumbing work" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
             </div>
             <!-- Content -->
             <div class="relative z-10 p-7">
@@ -107,7 +107,7 @@
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="Electrical work" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
             </div>
             <!-- Content -->
             <div class="relative z-10 p-7">
@@ -131,7 +131,7 @@
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1562259929-b4ec1b4f2eef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="Painting work" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/30 to-gray-900/40"></div>
             </div>
             <!-- Content -->
             <div class="relative z-10 p-7">
@@ -155,7 +155,7 @@
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1611486212557-88be5ff6f941?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="Carpentry work" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/20 to-gray-900/40"></div>
             </div>
             <!-- Content -->
             <div class="relative z-10 p-7">
@@ -178,7 +178,7 @@
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="TV mounting" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-gray-900/80"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/40 via-gray-900/20 to-gray-900/40"></div>
             </div>
             <!-- Content -->
             <div class="relative z-10 p-7">
@@ -240,10 +240,73 @@
             </div>
         </div>
         <div class="grid grid-cols-2 gap-4">
-            <img src="/images/glen.jpg" class="rounded-2xl shadow-xl row-span-2 object-cover h-full w-full"
+            <img src="/images/paint.jpg" class="rounded-2xl shadow-xl row-span-2 object-cover h-[50vh] w-full mx-auto mt-8"
                 alt="handyman at work">
             <img src="/images/clean.jpg" class="rounded-2xl shadow-lg object-cover w-full h-48" alt="tools">
             <img src="/images/capenter.jpg" class="rounded-2xl shadow-lg object-cover w-full h-48" alt="customer">
+        </div>
+    </div>
+</section>
+
+<!-- ===== OUR TEAM SECTION (Simpler) ===== -->
+<section class="py-16 bg-gradient-to-br from-blue-50 via-teal-50 to-green-50">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="inline-block bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+                <i class="fas fa-user mr-2"></i> Meet Your Handyman
+            </span>
+            <h2 class="text-4xl font-bold text-gray-900 mb-3">
+                One Expert, <span class="text-amber-600">Endless Solutions</span>
+            </h2>
+        </div>
+
+        <div class="flex justify-center">
+            <div class="max-w-2xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="md:flex">
+                    <!-- Image Side -->
+                    <div class="md:w-2/5 h-64 md:h-auto bg-amber-100 relative">
+                        <img src="/images/glen.jpg"
+                             alt="Michael Chen - GB Handyman"
+                             class="w-full h-full object-cover object-center">
+                    </div>
+
+                    <!-- Content Side -->
+                    <div class="md:w-3/5 p-8">
+                        <div class="inline-block bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                            FOUNDER & OPERATOR
+                        </div>
+
+                        <h3 class="text-3xl font-bold text-gray-800 mb-1">Michael Chen</h3>
+                        <p class="text-amber-600 font-medium mb-4">Master Handyman</p>
+
+                        <p class="text-gray-600 mb-4">
+                            With 5+ years of experience, Michael handles everything from plumbing to carpentry with precision and care.
+                        </p>
+
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="flex items-center gap-1">
+                                <i class="fas fa-star text-amber-400"></i>
+                                <span class="font-bold">5.0</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i class="fas fa-toolbox text-amber-400"></i>
+                                <span class="font-bold">500+ jobs</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">🔧 Repairs</span>
+                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">🚿 Plumbing</span>
+                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">⚡ Electrical</span>
+                            <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-medium">🪵 Carpentry</span>
+                        </div>
+
+                        <a href="/contact" class="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700">
+                            Book a service <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
