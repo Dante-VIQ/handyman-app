@@ -123,7 +123,7 @@
                             <p class="font-medium text-gray-500 text-sm">SERVING</p>
                             <p class="text-xl font-bold">6249 S 242nd Place</p>
                             <p class="text-gray-600">Bldg 8 Apt 203 & all surrounding areas</p>
-                            <a href="service-area.html"
+                            <a href="/service-area"
                                 class="text-amber-600 text-sm font-semibold hover:underline">See full service
                                 area →</a>
                         </div>
@@ -136,7 +136,6 @@
                 <div class="flex gap-4 text-3xl text-gray-500">
                     <i class="fab fa-facebook hover:text-amber-500 cursor-pointer transition"></i>
                     <i class="fab fa-instagram hover:text-amber-500 cursor-pointer transition"></i>
-                    <i class="fab fa-linkedin hover:text-amber-500 cursor-pointer transition"></i>
                     <i class="fab fa-whatsapp hover:text-amber-500 cursor-pointer transition"></i>
                 </div>
             </div>
