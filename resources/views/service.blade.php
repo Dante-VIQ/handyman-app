@@ -10,8 +10,8 @@
                     <h1 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 leading-tight">Serving your <span class="text-amber-600">neighbourhood</span> & beyond</h1>
                     <p class="text-xl text-gray-600 mt-6 max-w-2xl">Based near <strong class="text-gray-900">6249 S 242nd Place, Bldg 8 Apt 203</strong>, we're right in your community. Fast response, friendly service, and no travel fees within our core area.</p>
                     <div class="flex flex-wrap gap-4 mt-10">
-                        <a href="#check-coverage" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i class="fas fa-location-arrow"></i> Check your address</a>
-                        <a href="tel:01612345678" class="bg-white border-2 border-amber-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i class="fas fa-phone-alt text-amber-500"></i> Call (0161) 234 5678</a>
+                        <a href="#check-coverage" class="bg-gradient-to-r from-red-500 to-red-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-amber-200/50 transition-all duration-300 ring-2 ring-amber-300/50 ring-offset-2 ring-offset-white hover:ring-amber-400 hover:shadow-xl transform hover:scale-[1.02]"><i class="fas fa-location-arrow"></i> Check your address</a>
+                        <a href="tel:01612345678" class="bg-white border-2 border-red-400 hover:bg-amber-50 text-gray-700 px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all"><i class="fas fa-phone-alt text-amber-500"></i> Call (0161) 234 5678</a>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                         <p class="text-gray-600 mt-3 text-lg">Enter your postcode/zip and we'll tell you if you're in our core zone – and when we can arrive.</p>
                         <div class="mt-8 flex flex-col sm:flex-row gap-3">
                             <input type="text" placeholder="e.g. 98042 or 6249 S 242nd Pl" class="flex-1 px-6 py-4 rounded-2xl border-2 border-white focus:border-amber-400 outline-none shadow-lg">
-                            <button class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-8 py-4 rounded-2xl shadow-lg transition-all flex items-center gap-2 justify-center"><i class="fas fa-search"></i> Check</button>
+                            <button class="bg-red-500 hover:bg-amber-600 text-gray-900 font-bold px-8 py-4 rounded-2xl shadow-lg transition-all flex items-center gap-2 justify-center"><i class="fas fa-search"></i> Check</button>
                         </div>
                         <p class="text-sm text-gray-400 mt-4"><i class="fas fa-info-circle"></i> We cover most of King County and south to Pierce.</p>
                     </div>
@@ -211,8 +211,8 @@
                 <h2 class="text-4xl font-bold">We're just around the corner</h2>
                 <p class="text-gray-300 text-xl mt-3 max-w-2xl mx-auto">6249 S 242nd Place, Bldg 8 Apt 203 – you're in our core zone. Book online or call.</p>
                 <div class="flex flex-wrap justify-center gap-5 mt-10">
-                    <a href="quote.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition-all"><i class="fas fa-calendar-check mr-2"></i> Book online</a>
-                    <a href="tel:01612345678" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i class="fas fa-phone-alt mr-2"></i> 0161 234 5678</a>
+                    <a href="quote.html" class="bg-red-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-5 rounded-full text-lg shadow-2xl transition-all"><i class="fas fa-calendar-check mr-2"></i> Book online</a>
+                    <a href="tel:01612345678" class="bg-transparent border-2 border-red hover:bg-white hover:text-gray-900 text-white font-bold px-10 py-5 rounded-full text-lg transition-all"><i class="fas fa-phone-alt mr-2"></i> 0161 234 5678</a>
                 </div>
                 <p class="text-gray-400 mt-8 text-sm"><i class="fas fa-clock"></i> Mon-Fri 8am-8pm • Sat 9am-5pm • Sun emergency</p>
             </div>
