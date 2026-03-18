@@ -276,7 +276,7 @@
                             FOUNDER & OPERATOR
                         </div>
 
-                        <h3 class="text-3xl font-bold text-gray-800 mb-1">Michael Chen</h3>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-1">Gerald Benjamin</h3>
                         <p class="text-amber-600 font-medium mb-4">Master Handyman</p>
 
                         <p class="text-gray-600 mb-4">
