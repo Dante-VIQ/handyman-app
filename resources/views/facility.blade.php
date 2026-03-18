@@ -109,7 +109,7 @@
                         </div>
                         <div>
                             <p class="font-medium text-gray-500 text-sm">EMAIL</p>
-                            <p class="text-xl font-bold">gbhandymanllc2yahoo.com</p>
+                            <p class="text-xl font-bold">gbhandymanllc@yahoo.com</p>
                             <p class="text-sm text-gray-400">Reply within 1 hour</p>
                         </div>
                     </div>
