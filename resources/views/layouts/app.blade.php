@@ -153,6 +153,7 @@
         }
     </style>
 
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="UVdkbpgkTie4/A7w1YWM+A" async></script>
     @stack('styles')
     @stack('schema')
     @livewireStyles()
