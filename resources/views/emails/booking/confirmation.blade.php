@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Confirmation - Amazing Palace</title>
+    <title>Booking Confirmation - GB Handyman</title>
     <style>
         body {
             font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
