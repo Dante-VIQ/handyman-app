@@ -39,4 +39,4 @@ Allow: /licenses
 Allow: /sitemap.xml
 
 # Sitemap location
-Sitemap: https://amazingpalace.com/sitemap.xml
+Sitemap: https://www.gbhandymanllc.com/sitemap.xml
